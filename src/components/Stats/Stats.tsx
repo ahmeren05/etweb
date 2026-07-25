@@ -1,0 +1,95 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
+import { useEffect, useRef, useState } from 'react';
+import styles from './Stats.module.css';
+
+interface StatConfig {
+  value: number;
+  suffix: string;
+  labelKey: string;
+}
+
+const statsData: StatConfig[] = [
+  { value: 25, suffix: '+', labelKey: 'years' },
+  { value: 500, suffix: '+', labelKey: 'projects' },
+  { value: 100, suffix: '%', labelKey: 'turnkey' },
+  { value: 12, suffix: '+', labelKey: 'certifications' },
+];
+
+function useCountUp(target: number, duration: number = 2000, isVisible: boolean) {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (!isVisible) return;
+
+    let start = 0;
+    const increment = target / (duration / 16);
+    let rafId: number;
+
+    const animate = () => {
+      start += increment;
+      if (start >= target) {
+        setCount(target);
+        return;
+      }
+      setCount(Math.floor(start));
+      rafId = requestAnimationFrame(animate);
+    };
+
+    rafId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(rafId);
+  }, [target, duration, isVisible]);
+
+  return count;
+}
+
+function StatItem({ stat, isVisible }: { stat: StatConfig; isVisible: boolean }) {
+  const t = useTranslations('Stats');
+  const count = useCountUp(stat.value, stat.value > 100 ? 2000 : 1200, isVisible);
+
+  return (
+    <div className={styles.statItem}>
+      <div className={styles.statNumber}>
+        {count}
+        {stat.suffix && <span className={styles.statSuffix}>{stat.suffix}</span>}
+      </div>
+      <p className={styles.statLabel}>{t(stat.labelKey)}</p>
+    </div>
+  );
+}
+
+export default function Stats() {
+  const ref = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <section className={styles.stats} ref={ref} aria-label="Company Statistics">
+      <div className="container">
+        <div className={styles.statsGrid}>
+          {statsData.map((stat) => (
+            <StatItem key={stat.labelKey} stat={stat} isVisible={isVisible} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

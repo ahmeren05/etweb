@@ -1,0 +1,282 @@
+'use client';
+
+import { useEffect, useRef, useState } from 'react';
+import { Link } from '@/i18n/navigation';
+import { Zap, Cpu, Wrench, Building2 } from 'lucide-react';
+
+export default function SchematicSVG() {
+  const [isVisible, setIsVisible] = useState(false);
+  const svgRef = useRef<SVGSVGElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (svgRef.current) {
+      observer.observe(svgRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  const reducedMotion = typeof window !== 'undefined'
+    ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    : false;
+
+  const animClass = isVisible || reducedMotion ? 'visible' : '';
+
+  return (
+    <svg
+      ref={svgRef}
+      viewBox="0 0 480 480"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ width: '100%', maxWidth: 480, height: 'auto', overflow: 'visible' }}
+      aria-hidden="true"
+    >
+      <style>{`
+        /* 1. Snake Line (Soldan gelen yılan) */
+        .snake-line {
+          stroke: url(#fireworkGradient);
+          stroke-width: 4;
+          fill: none;
+          stroke-linecap: round;
+          filter: url(#glow);
+          stroke-dasharray: 20 200; 
+          stroke-dashoffset: 20;   
+          opacity: 0;
+        }
+        .snake-line.visible {
+          animation: snakeMove 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+
+        /* 2. Center Dot (Merkez Nokta) */
+        .center-dot {
+          fill: #00BCD4;
+          opacity: 0;
+          transform: scale(0);
+          transform-origin: 240px 250px;
+        }
+        .center-dot.visible {
+          animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+          animation-delay: 1.5s; 
+        }
+
+        /* 3. Outward Lines (Merkezden çıkan 4 çizgi) */
+        .outward-line {
+          stroke: #00BCD4;
+          stroke-width: 1.5;
+          fill: none;
+          stroke-dasharray: 100;
+          stroke-dashoffset: 100;
+          opacity: 0.6;
+        }
+        .outward-line.visible {
+          animation: drawLine 0.6s ease-out forwards;
+          animation-delay: 1.5s; 
+        }
+
+        /* 4. Node Backgrounds (Beyaz arka planlar) */
+        .node-bg {
+          fill: #FFFFFF;
+          opacity: 0;
+          transform: scale(0);
+        }
+        /* Yeni X yapısına göre koordinatlar (dx=100, dy=100 from center 240,250) */
+        .bg-top-left { transform-origin: 140px 150px; }
+        .bg-top-right { transform-origin: 340px 150px; }
+        .bg-bottom-left { transform-origin: 140px 350px; }
+        .bg-bottom-right { transform-origin: 340px 350px; }
+        
+        .node-bg.visible {
+          animation: scaleUp 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+          animation-delay: 1.5s; 
+        }
+
+        /* 5. Icons and Labels (İkonlar ve Yazılar) */
+        .node-icon, .node-label {
+          opacity: 0;
+          transition: opacity 0.4s ease;
+        }
+        .node-icon { stroke: #0097A7; color: #0097A7; }
+        .node-label {
+          font-family: var(--font-display), system-ui, sans-serif;
+          font-size: 13px;
+          font-weight: 600;
+          fill: #334155;
+          letter-spacing: 0.5px;
+          text-anchor: middle;
+        }
+        .node-icon.visible, .node-label.visible {
+          opacity: 1;
+          transition-delay: 1.9s; 
+        }
+
+        /* Hover Effect for Links */
+        .node-link {
+          cursor: pointer;
+          outline: none;
+        }
+        .node-link:hover .node-bg {
+          fill: #E0F7FA !important;
+          transition: fill 0.25s ease;
+        }
+        .node-link:hover .node-icon {
+          stroke: #00BCD4 !important;
+          color: #00BCD4 !important;
+          transition: all 0.25s ease;
+        }
+        .node-link:hover .node-label {
+          fill: #0097A7 !important;
+          font-weight: bold;
+          transition: fill 0.25s ease;
+        }
+
+        /* 6. Node Outlines (İkiye ayrılarak çizen yarım daire yolları) */
+        .node-outline-half {
+          stroke: #00BCD4;
+          stroke-width: 2;
+          fill: none;
+          stroke-dasharray: 100;
+          stroke-dashoffset: 100;
+        }
+        .node-outline-half.visible {
+          animation: drawLine 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+          animation-delay: 2.1s; 
+        }
+
+        /* Animations */
+        @keyframes snakeMove {
+          0% { stroke-dashoffset: 20; opacity: 1; }
+          99% { opacity: 1; }
+          100% { stroke-dashoffset: -100; opacity: 0; }
+        }
+        @keyframes popIn {
+          0% { opacity: 0; transform: scale(0); }
+          100% { opacity: 1; transform: scale(1); }
+        }
+        @keyframes scaleUp {
+          0% { opacity: 0; transform: scale(0); }
+          100% { opacity: 1; transform: scale(1); }
+        }
+        @keyframes drawLine {
+          to { stroke-dashoffset: 0; }
+        }
+
+        /* Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+          .snake-line { display: none; }
+          .outward-line, .node-outline-half { stroke-dashoffset: 0 !important; animation: none !important; }
+          .node-bg, .center-dot { transform: scale(1) !important; opacity: 1 !important; animation: none !important; }
+          .node-icon, .node-label { opacity: 1 !important; transition: none !important; }
+        }
+      `}</style>
+
+      {/* Filters and Gradients */}
+      <defs>
+        <pattern id="schematicGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ECEFF1" strokeWidth="0.5" />
+        </pattern>
+        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="4" result="blur1" />
+          <feGaussianBlur stdDeviation="8" result="blur2" />
+          <feMerge>
+            <feMergeNode in="blur2" />
+            <feMergeNode in="blur1" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+        <linearGradient id="fireworkGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#004D40" />
+          <stop offset="60%" stop-color="#00BCD4" />
+          <stop offset="100%" stop-color="#FFFFFF" />
+        </linearGradient>
+      </defs>
+
+      <rect width="480" height="480" fill="url(#schematicGrid)" opacity="0.3" />
+
+      {/* 1. Snake Line */}
+      <path 
+        d="M -800 350 C -600 350, -500 100, -350 100 C -200 100, -100 350, 50 350 C 150 350, 200 250, 240 250" 
+        pathLength="100"
+        className={`snake-line ${animClass}`} 
+      />
+
+      {/* 2. Outward Lines (Merkezden X köşelerine giden çapraz çizgiler) */}
+      <line x1="240" y1="250" x2="165.45" y2="175.45" pathLength="100" className={`outward-line ${animClass}`} />
+      <line x1="240" y1="250" x2="314.55" y2="175.45" pathLength="100" className={`outward-line ${animClass}`} />
+      <line x1="240" y1="250" x2="165.45" y2="324.55" pathLength="100" className={`outward-line ${animClass}`} />
+      <line x1="240" y1="250" x2="314.55" y2="324.55" pathLength="100" className={`outward-line ${animClass}`} />
+
+      {/* 3. Center Dot */}
+      <circle cx="240" cy="250" r="6" className={`center-dot ${animClass}`} />
+
+
+      {/* 4. Disciplines (X Şeklinde Dizilim) */}
+
+      {/* Top-Left — ELEKTRİK */}
+      <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'elektrik' } }} className="node-link">
+        <g>
+          <circle cx="140" cy="150" r="36" className={`node-bg bg-top-left ${animClass}`} />
+          <path d="M 165.45 175.45 A 36 36 0 0 1 114.55 124.55" pathLength="100" className={`node-outline-half ${animClass}`} />
+          <path d="M 165.45 175.45 A 36 36 0 0 0 114.55 124.55" pathLength="100" className={`node-outline-half ${animClass}`} />
+          
+          <g transform="translate(126, 136)" className={`node-icon ${animClass}`}>
+            <Zap width={28} height={28} strokeWidth={2} />
+          </g>
+          <text x="140" y="98" className={`node-label ${animClass}`}>ELEKTRİK</text>
+        </g>
+      </Link>
+
+      {/* Top-Right — OTOMASYON */}
+      <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'otomasyon' } }} className="node-link">
+        <g>
+          <circle cx="340" cy="150" r="36" className={`node-bg bg-top-right ${animClass}`} />
+          <path d="M 314.55 175.45 A 36 36 0 0 1 365.45 124.55" pathLength="100" className={`node-outline-half ${animClass}`} />
+          <path d="M 314.55 175.45 A 36 36 0 0 0 365.45 124.55" pathLength="100" className={`node-outline-half ${animClass}`} />
+
+          <g transform="translate(326, 136)" className={`node-icon ${animClass}`}>
+            <Cpu width={28} height={28} strokeWidth={2} />
+          </g>
+          <text x="340" y="98" className={`node-label ${animClass}`}>OTOMASYON</text>
+        </g>
+      </Link>
+
+      {/* Bottom-Right — İNŞAAT */}
+      <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'insaat' } }} className="node-link">
+        <g>
+          <circle cx="340" cy="350" r="36" className={`node-bg bg-bottom-right ${animClass}`} />
+          <path d="M 314.55 324.55 A 36 36 0 0 1 365.45 375.45" pathLength="100" className={`node-outline-half ${animClass}`} />
+          <path d="M 314.55 324.55 A 36 36 0 0 0 365.45 375.45" pathLength="100" className={`node-outline-half ${animClass}`} />
+
+          <g transform="translate(326, 336)" className={`node-icon ${animClass}`}>
+            <Building2 width={28} height={28} strokeWidth={2} />
+          </g>
+          <text x="340" y="406" className={`node-label ${animClass}`}>İNŞAAT</text>
+        </g>
+      </Link>
+
+      {/* Bottom-Left — MEKANİK */}
+      <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'mekanik' } }} className="node-link">
+        <g>
+          <circle cx="140" cy="350" r="36" className={`node-bg bg-bottom-left ${animClass}`} />
+          <path d="M 165.45 324.55 A 36 36 0 0 1 114.55 375.45" pathLength="100" className={`node-outline-half ${animClass}`} />
+          <path d="M 165.45 324.55 A 36 36 0 0 0 114.55 375.45" pathLength="100" className={`node-outline-half ${animClass}`} />
+
+          <g transform="translate(126, 336)" className={`node-icon ${animClass}`}>
+            <Wrench width={28} height={28} strokeWidth={2} />
+          </g>
+          <text x="140" y="406" className={`node-label ${animClass}`}>MEKANİK</text>
+        </g>
+      </Link>
+
+    </svg>
+  );
+}

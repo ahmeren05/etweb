@@ -1,0 +1,139 @@
+.disciplinesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+}
+
+/* About Preview */
+.aboutPreview {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: var(--space-12);
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.aboutContent h2 {
+  margin-bottom: var(--space-6);
+}
+
+.aboutText {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-8);
+}
+
+.aboutVisual {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* Contact CTA */
+.contactCTA {
+  background: linear-gradient(135deg, var(--color-cyan-deep), var(--color-cyan));
+  padding: var(--space-20) 0;
+}
+
+.ctaInner {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ctaInner h2 {
+  color: var(--color-snow);
+  margin-bottom: var(--space-4);
+}
+
+.ctaInner p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-8);
+}
+
+.ctaInner .btn-primary {
+  background-color: var(--color-snow);
+  color: var(--color-cyan-deep);
+}
+
+.ctaInner .btn-primary:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Eyebrow Link */
+.eyebrowLink {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.eyebrowLink:hover span {
+  color: var(--color-cyan) !important;
+  transition: color 0.2s ease;
+}
+
+/* Disciplines Section Title Link */
+.sectionTitleLink {
+  display: inline-block;
+  border-bottom: 3px solid var(--color-cyan-deep);
+  padding-bottom: 8px;
+  text-decoration: none;
+}
+
+.sectionTitleText {
+  color: var(--color-graphite);
+  background-image: linear-gradient(
+    90deg,
+    var(--color-graphite) 0%,
+    var(--color-graphite) 30%,
+    var(--color-cyan) 45%,
+    var(--color-cyan-deep) 50%,
+    var(--color-cyan) 55%,
+    var(--color-graphite) 70%,
+    var(--color-graphite) 100%
+  );
+  background-size: 300% 100%;
+  background-position: 100% 0%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sectionTitleLink:hover .sectionTitleText {
+  animation: gradientWipe 1.6s linear infinite;
+}
+
+@keyframes gradientWipe {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .disciplinesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .aboutPreview {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutPreview {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+}
+
+@media (max-width: 800px) {
+  .disciplinesGrid {
+    grid-template-columns: 1fr;
+  }
+}

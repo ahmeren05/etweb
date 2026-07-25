@@ -1,0 +1,227 @@
+.marqueeContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.track {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  width: 100%;
+}
+
+.column:hover .track {
+  animation-play-state: paused !important;
+}
+
+.scrollDown {
+  animation: scrollDown 22s linear infinite;
+}
+
+.scrollUp {
+  animation: scrollUp 26s linear infinite;
+}
+
+.scrollDownSlow {
+  animation: scrollDown 24s linear infinite;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Reference Card */
+.logoCard {
+  background-color: var(--color-snow);
+  border: 1px solid var(--color-silver);
+  border-radius: var(--radius-lg);
+  height: 72px;
+  padding: 0 var(--space-4);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+}
+
+.logoCard:hover {
+  filter: grayscale(0%) opacity(1);
+  transform: scale(1.08);
+  border-color: var(--brand-color, var(--color-cyan));
+  box-shadow: 0 10px 25px -5px rgba(0, 188, 212, 0.22);
+  z-index: 10;
+  background-color: #FFFFFF;
+}
+
+.iconContainer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brand-color);
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.logoCard:hover .iconContainer {
+  opacity: 0;
+  transform: scale(0.5) translateY(-12px);
+  pointer-events: none;
+}
+
+.nameContainer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.7) translateY(12px);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  pointer-events: none;
+}
+
+.logoCard:hover .nameContainer {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.brandName {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--brand-color, var(--color-cyan));
+  text-align: center;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  padding: 0 6px;
+}
+
+/* 
+ * Switch to 3 Horizontal Rows when stacked/responsive (<= 1024px), 
+ * where the middle row scrolls LEFT and the top/bottom rows scroll RIGHT!
+ */
+@media (max-width: 1024px) {
+  .marqueeContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    height: auto;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+    mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+    padding: var(--space-4) 0;
+  }
+
+  .column {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .column:nth-child(3) {
+    display: flex !important;
+  }
+
+  .track {
+    display: flex;
+    flex-direction: row !important;
+    width: max-content !important;
+    gap: var(--space-4);
+  }
+
+  /* Row 1: Scroll Right */
+  .column:nth-child(1) .track {
+    animation: scrollRight 30s linear infinite !important;
+  }
+
+  /* Row 2: Scroll Left */
+  .column:nth-child(2) .track {
+    animation: scrollLeft 30s linear infinite !important;
+  }
+
+  /* Row 3: Scroll Right */
+  .column:nth-child(3) .track {
+    animation: scrollRight 26s linear infinite !important;
+  }
+
+  .logoCard {
+    width: 220px;
+    height: 64px;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .logoCard {
+    width: 180px;
+    height: 56px;
+  }
+  .brandName {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,35 @@
+.pageHero {
+  padding-top: 140px;
+  padding-bottom: var(--space-16);
+  background-color: var(--color-cloud);
+  border-bottom: 1px solid var(--color-silver);
+}
+
+.pageHeroInner {
+  max-width: 720px;
+}
+
+.pageHeroInner h1 {
+  margin-bottom: var(--space-4);
+}
+
+.pageHeroInner p {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-8);
+}
+
+@media (max-width: 800px) {
+  .servicesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .pageHero {
+    padding-top: 100px;
+  }
+}

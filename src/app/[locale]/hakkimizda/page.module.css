@@ -1,0 +1,127 @@
+.pageHero {
+  padding-top: 140px;
+  padding-bottom: var(--space-16);
+  background-color: var(--color-cloud);
+  border-bottom: 1px solid var(--color-silver);
+}
+
+.pageHeroInner {
+  max-width: 720px;
+}
+
+.pageHeroInner h1 {
+  white-space: pre-line;
+  margin-bottom: var(--space-4);
+}
+
+.pageHeroInner p {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+}
+
+/* Story */
+.story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: start;
+}
+
+.storyContent h2 {
+  margin-bottom: var(--space-6);
+}
+
+.storyContent p {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-6);
+}
+
+.storyContent p:last-child {
+  margin-bottom: 0;
+}
+
+.missionVision {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.mvCard {
+  background-color: var(--color-cloud);
+  border: 1px solid var(--color-silver);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+}
+
+.mvCard h3 {
+  color: var(--color-cyan-deep);
+  margin-bottom: var(--space-3);
+}
+
+.mvCard p {
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+}
+
+/* Values */
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+}
+
+.valueCard {
+  text-align: center;
+  padding: var(--space-8);
+  background-color: var(--color-snow);
+  border: 1px solid var(--color-silver);
+  border-radius: var(--radius-lg);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.valueCard:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-cyan-light);
+}
+
+.valueIcon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto var(--space-4);
+  background-color: var(--color-cyan-light);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-cyan-deep);
+}
+
+.valueCard h4 {
+  margin-bottom: var(--space-2);
+}
+
+.valueCard p {
+  font-size: var(--text-sm);
+}
+
+@media (max-width: 900px) {
+  .story {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+
+  .valuesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .pageHero {
+    padding-top: 100px;
+  }
+}

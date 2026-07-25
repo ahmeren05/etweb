@@ -1,0 +1,352 @@
+{
+  "Metadata": {
+    "title": "Eren Teknik Engineering Inc.",
+    "titleTemplate": "{title} | Eren Teknik Engineering",
+    "description": "Integrated engineering solutions for industrial and commercial projects with over 25 years of experience in electrical, automation, mechanical, and construction engineering.",
+    "keywords": "engineering, electrical engineering, automation, mechanical systems, construction engineering, industrial projects, Turkey"
+  },
+  "Nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "references": "References",
+    "contact": "Contact",
+    "getInTouch": "Get in Touch"
+  },
+  "Hero": {
+    "headline": "Four Disciplines,\nOne Engineering Vision",
+    "subheadline": "Integrated solutions in electrical, automation, mechanical, and construction engineering. We're with you at every stage of your project.",
+    "cta": "Explore Our Services",
+    "ctaSecondary": "Get in Touch"
+  },
+  "Disciplines": {
+    "sectionTitle": "Our Engineering Disciplines",
+    "sectionSubtitle": "We add value to your projects with our expert team across four core engineering disciplines.",
+    "electrical": {
+      "title": "Electrical Engineering",
+      "description": "Comprehensive electrical engineering services from low and medium voltage systems to energy efficiency consulting.",
+      "services": {
+        "lowVoltage": "Low Voltage Installations",
+        "mediumVoltage": "Medium Voltage Systems",
+        "lighting": "Lighting Design",
+        "grounding": "Grounding & Lightning Protection",
+        "energyEfficiency": "Energy Efficiency Consulting"
+      }
+    },
+    "automation": {
+      "title": "Automation Engineering",
+      "description": "Smart automation and control systems that optimize your industrial processes.",
+      "services": {
+        "plc": "PLC Programming & Integration",
+        "scada": "SCADA Systems",
+        "bms": "Building Management Systems (BMS)",
+        "industrial": "Industrial Automation",
+        "processControl": "Process Control Systems"
+      }
+    },
+    "mechanical": {
+      "title": "Mechanical Engineering",
+      "description": "Comfortable and safe mechanical installation solutions from HVAC to fire safety.",
+      "services": {
+        "hvac": "HVAC Systems",
+        "fire": "Fire Detection & Suppression",
+        "plumbing": "Plumbing Systems",
+        "gas": "Natural Gas Installation",
+        "compressedAir": "Compressed Air Systems"
+      }
+    },
+    "construction": {
+      "title": "Construction Engineering",
+      "description": "Building on solid foundations — from reinforced concrete and steel structures to infrastructure projects.",
+      "services": {
+        "concrete": "Reinforced Concrete Design",
+        "steel": "Steel Structures",
+        "infrastructure": "Infrastructure Projects",
+        "industrial": "Industrial Facility Construction",
+        "management": "Project Management"
+      }
+    },
+    "viewAll": "View All Services",
+    "learnMore": "Learn More"
+  },
+  "Stats": {
+    "years": "Years of Experience",
+    "projects": "Completed Projects",
+    "turnkey": "Turnkey Solutions",
+    "certifications": "Certifications"
+  },
+  "AboutPreview": {
+    "eyebrow": "About Us",
+    "title": "Integrated Engineering Power",
+    "description": "Eren Teknik Engineering has been providing integrated engineering services to Turkey's leading industrial organizations since 2000. Our team, specialized in four core disciplines, delivers quality and reliability at every step — from design through to commissioning.",
+    "cta": "Learn More"
+  },
+  "ContactCTA": {
+    "title": "The Right Engineering Partner for Your Project",
+    "description": "Starting a new project? Looking to upgrade existing systems? Let's determine the best solution together.",
+    "cta": "Contact Us"
+  },
+  "Footer": {
+    "description": "An established engineering firm providing integrated solutions in electrical, automation, mechanical, and construction engineering.",
+    "learnMore": "Learn More",
+    "quickLinks": "Quick Links",
+    "services": "Our Services",
+    "contactInfo": "Contact Information",
+    "address": "Aydınlı Mah. Gürpınar Cad. No: 32/5-6, Tuzla / Istanbul, Turkey",
+    "rights": "All rights reserved.",
+    "phone": "+90 216 491 76 71",
+    "email": "erenteknik@erenteknik.com.tr"
+  },
+  "About": {
+    "metaTitle": "About Us",
+    "metaDescription": "Learn about Eren Teknik Engineering's founding story, mission, vision, and engineering philosophy.",
+    "heroTitle": "The Trusted Name\nin Engineering",
+    "heroSubtitle": "Adding value to Turkey's industrial infrastructure since 2000.",
+    "storyTitle": "Our Story",
+    "storyP1": "Eren Teknik Engineering was founded in 2000 in Ankara as a small electrical installation firm. Our founder set out with a vision to offer an alternative to the fragmented service approach in the industry: a holistic approach that unifies four core engineering disciplines under one roof.",
+    "storyP2": "Initially focused on electrical installation projects, the firm recognized its clients' need for a reliable partner across different disciplines, investing in automation, mechanical, and construction engineering capabilities. This expansion laid the foundation for our multi-disciplinary structure, now proven across more than 200 industrial projects.",
+    "missionTitle": "Our Mission",
+    "missionText": "To enhance our clients' operational efficiency in industrial and commercial projects through integrated solutions born from the synergy of four engineering disciplines, delivering projects on time and within budget.",
+    "visionTitle": "Our Vision",
+    "visionText": "To become the reference point in Turkey's integrated engineering services. To lead the industry as a firm that applies — not just follows — technology, and sets — not just meets — standards.",
+    "valuesTitle": "Our Values",
+    "values": {
+      "precision": {
+        "title": "Precision",
+        "description": "Every project is shaped by meticulous calculations and rigorous engineering analysis."
+      },
+      "integration": {
+        "title": "Integration",
+        "description": "Coordinated work across four disciplines delivers time and cost savings on projects."
+      },
+      "reliability": {
+        "title": "Reliability",
+        "description": "We deliver within committed timelines and budgets without compromising quality."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "We integrate current technologies and engineering standards into our projects."
+      }
+    }
+  },
+  "Services": {
+    "metaTitle": "Our Services",
+    "metaDescription": "Discover our comprehensive range of services in electrical, automation, mechanical, and construction engineering.",
+    "heroTitle": "Our Services",
+    "heroSubtitle": "Comprehensive solutions tailored to your project's needs across four engineering disciplines.",
+    "exploreServices": "Explore Services",
+    "otherDisciplines": "Other Engineering Disciplines",
+    "backToServices": "All Services",
+    "contactForService": "Contact Us About This Service"
+  },
+  "ServiceDetails": {
+    "electrical": {
+      "metaTitle": "Electrical Engineering Services",
+      "metaDescription": "Comprehensive electrical engineering services from low voltage installations to energy efficiency consulting.",
+      "heroTitle": "Electrical\nEngineering",
+      "heroSubtitle": "Designing and implementing safe, efficient, and standards-compliant electrical systems.",
+      "services": {
+        "lowVoltage": {
+          "title": "Low Voltage Installations",
+          "description": "Design, installation, and commissioning of sub-1000V power distribution systems in industrial and commercial facilities. Including panel design, cabling, and protection systems."
+        },
+        "mediumVoltage": {
+          "title": "Medium Voltage Systems",
+          "description": "Design and implementation of 1-36 kV medium voltage switchgear, transformer stations, and distribution systems. Full compliance with national grid standards."
+        },
+        "lighting": {
+          "title": "Lighting Design",
+          "description": "Interior and exterior lighting design, energy-efficient LED solutions, emergency lighting systems, and lighting automation integration."
+        },
+        "grounding": {
+          "title": "Grounding & Lightning Protection",
+          "description": "Ground resistance measurements, grounding grid design, lightning protection systems (LPS), and surge protection solutions."
+        },
+        "energyEfficiency": {
+          "title": "Energy Efficiency Consulting",
+          "description": "Energy audits, power quality analysis, compensation systems, and planning and implementation of energy saving projects."
+        }
+      }
+    },
+    "automation": {
+      "metaTitle": "Automation Engineering Services",
+      "metaDescription": "From PLC programming to SCADA systems, industrial automation and smart building control solutions.",
+      "heroTitle": "Automation\nEngineering",
+      "heroSubtitle": "Smart control systems that digitalize and optimize your industrial processes.",
+      "services": {
+        "plc": {
+          "title": "PLC Programming & Integration",
+          "description": "Programming, configuration, and integration of Siemens, ABB, Schneider, and Allen-Bradley PLC systems. Expert team in Ladder, FBD, and SCL languages."
+        },
+        "scada": {
+          "title": "SCADA Systems",
+          "description": "Design, installation, and commissioning of centralized monitoring and control systems. Real-time data acquisition, alarm management, and reporting infrastructure."
+        },
+        "bms": {
+          "title": "Building Management Systems (BMS)",
+          "description": "Smart building management systems for unified control of HVAC, lighting, access control, and energy management from a single platform."
+        },
+        "industrial": {
+          "title": "Industrial Automation",
+          "description": "Production lines, conveyor systems, robot integration, and industrial process automation. Industry 4.0 compatible solutions."
+        },
+        "processControl": {
+          "title": "Process Control Systems",
+          "description": "DCS and hybrid control systems, instrumentation, process optimization, and advanced control algorithms."
+        }
+      }
+    },
+    "mechanical": {
+      "metaTitle": "Mechanical Engineering Services",
+      "metaDescription": "From HVAC systems to fire safety, industrial and commercial mechanical installation solutions.",
+      "heroTitle": "Mechanical\nEngineering",
+      "heroSubtitle": "Mechanical installation solutions delivering comfort, safety, and efficiency together.",
+      "services": {
+        "hvac": {
+          "title": "HVAC Systems",
+          "description": "Design, installation, and maintenance of heating, cooling, ventilation, and air conditioning systems. VRF, chiller, and central system solutions."
+        },
+        "fire": {
+          "title": "Fire Detection & Suppression",
+          "description": "Design and implementation of fire detection, alarm, and suppression systems. Sprinkler, FM-200, CO₂, and foam suppression systems."
+        },
+        "plumbing": {
+          "title": "Plumbing Systems",
+          "description": "Design of clean water, waste water, and stormwater systems. Pump stations, pre-treatment preparation, and plumbing infrastructure."
+        },
+        "gas": {
+          "title": "Natural Gas Installation",
+          "description": "Industrial and commercial natural gas internal installation projects, pressure reduction stations, and gas detection systems. Including utility approval processes."
+        },
+        "compressedAir": {
+          "title": "Compressed Air Systems",
+          "description": "Industrial compressed air production, distribution, and treatment systems. Compressor selection, pipeline design, and energy efficiency optimization."
+        }
+      }
+    },
+    "construction": {
+      "metaTitle": "Construction Engineering Services",
+      "metaDescription": "From reinforced concrete design to project management, industrial and commercial construction engineering solutions.",
+      "heroTitle": "Construction\nEngineering",
+      "heroSubtitle": "Strong foundations, durable structures. Building your project's physical infrastructure.",
+      "services": {
+        "concrete": {
+          "title": "Reinforced Concrete Design",
+          "description": "Earthquake-resistant reinforced concrete structural design for industrial facilities, factory buildings, and commercial structures. Static and dynamic analyses, formwork and reinforcement projects."
+        },
+        "steel": {
+          "title": "Steel Structures",
+          "description": "Prefabricated steel structures, steel roof systems, mezzanine floors, and industrial steel construction projects. Calculation, detail, and fabrication drawings."
+        },
+        "infrastructure": {
+          "title": "Infrastructure Projects",
+          "description": "Road, sewage, water supply, drainage systems, and site development projects. Infrastructure solutions for organized industrial zones and industrial sites."
+        },
+        "industrial": {
+          "title": "Industrial Facility Construction",
+          "description": "Turnkey industrial facility construction. Coordinated execution of all engineering disciplines from foundation excavation to roof cladding."
+        },
+        "management": {
+          "title": "Project Management",
+          "description": "Construction project planning, scheduling, budgeting, and site coordination. Progress tracking, quality control, and occupational safety management."
+        }
+      }
+    }
+  },
+  "References": {
+    "metaTitle": "References",
+    "metaDescription": "Projects successfully completed by Eren Teknik Engineering and our business partnerships.",
+    "heroTitle": "Our References",
+    "heroSubtitle": "Our trusted partnerships and successfully completed projects.",
+    "sectors": {
+      "all": "All",
+      "energy": "Energy",
+      "manufacturing": "Manufacturing",
+      "infrastructure": "Infrastructure",
+      "commercial": "Commercial"
+    },
+    "projectsCompleted": "projects completed",
+    "clients": [
+      {
+        "name": "TÜPRAŞ",
+        "sector": "energy",
+        "description": "Refinery electrical infrastructure renewal and automation integration project."
+      },
+      {
+        "name": "Aselsan",
+        "sector": "manufacturing",
+        "description": "Production facility mechanical installation and building automation system setup."
+      },
+      {
+        "name": "Arçelik",
+        "sector": "manufacturing",
+        "description": "Factory expansion project — electrical, mechanical, and automation disciplines."
+      },
+      {
+        "name": "THY Teknik",
+        "sector": "infrastructure",
+        "description": "Maintenance hangar HVAC and fire suppression systems project."
+      },
+      {
+        "name": "ASO 1st OIZ",
+        "sector": "infrastructure",
+        "description": "Organized industrial zone infrastructure and medium voltage distribution project."
+      },
+      {
+        "name": "Ankara Metropolitan Municipality",
+        "sector": "infrastructure",
+        "description": "Public building integrated mechanical and electrical installation renewal project."
+      },
+      {
+        "name": "Roketsan",
+        "sector": "manufacturing",
+        "description": "Special-purpose production facility process control and automation systems."
+      },
+      {
+        "name": "MTA General Directorate",
+        "sector": "energy",
+        "description": "Drilling site electrical infrastructure and generator systems installation."
+      }
+    ]
+  },
+  "Contact": {
+    "metaTitle": "Contact",
+    "metaDescription": "Get in touch with Eren Teknik Engineering. Free preliminary assessment for your projects.",
+    "heroTitle": "Get in Touch",
+    "heroSubtitle": "Let's discuss your project. Together, we'll determine the best engineering solution for you.",
+    "formTitle": "Write to Us",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "John Smith",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "john@company.com",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "+90 5XX XXX XX XX",
+    "serviceLabel": "Service Area of Interest",
+    "servicePlaceholder": "Select",
+    "messageLabel": "Your Message",
+    "messagePlaceholder": "Briefly describe your project...",
+    "submitButton": "Send Message",
+    "sending": "Sending...",
+    "successTitle": "Message Sent",
+    "successMessage": "We'll get back to you as soon as possible.",
+    "errorMessage": "An error occurred. Please try again.",
+    "infoTitle": "Contact Information",
+    "officeTitle": "Head Office",
+    "serviceOptions": {
+      "electrical": "Electrical Engineering",
+      "automation": "Automation Engineering",
+      "mechanical": "Mechanical Engineering",
+      "construction": "Construction Engineering",
+      "integrated": "Integrated Project (Multi-Discipline)",
+      "other": "Other"
+    }
+  },
+  "Common": {
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "backToHome": "Back to Home",
+    "loading": "Loading...",
+    "companyName": "Eren Teknik Engineering Inc.",
+    "companyShort": "Eren Teknik"
+  }
+}

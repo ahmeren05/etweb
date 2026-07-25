@@ -1,0 +1,192 @@
+.pageHero {
+  padding-top: 130px;
+  padding-bottom: 40px;
+  background-color: var(--color-cloud);
+  border-bottom: 1px solid var(--color-silver);
+}
+
+.pageHeroInner {
+  max-width: 720px;
+}
+
+.pageHeroInner h1 {
+  margin-bottom: var(--space-3);
+}
+
+.pageHeroInner p {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+}
+
+.contentSection {
+  padding-top: 0;
+  padding-bottom: var(--space-20);
+}
+
+/* Search Box */
+.searchContainer {
+  max-width: 640px;
+  margin: 45px auto 45px auto;
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94A3B8;
+  pointer-events: none;
+  transition: color 0.3s ease;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 16px 48px 16px 56px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-graphite, #1E293B);
+  background-color: var(--color-snow, #FFFFFF);
+  border: 2px solid var(--color-silver, #E2E8F0);
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.searchInput::placeholder {
+  color: #94A3B8;
+  font-weight: 400;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--color-cyan, #00BCD4);
+  box-shadow: 0 8px 30px -5px rgba(0, 188, 212, 0.2);
+}
+
+.searchContainer:focus-within .searchIcon {
+  color: var(--color-cyan, #00BCD4);
+}
+
+.clearBtn {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #94A3B8;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.clearBtn:hover {
+  color: var(--color-graphite);
+  background-color: var(--color-cloud);
+}
+
+.noResults {
+  text-align: center;
+  padding: var(--space-12) 0;
+  color: var(--color-slate);
+  font-size: var(--text-lg);
+  grid-column: 1 / -1;
+}
+
+/* Reference grid */
+.referencesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+  margin-top: 0;
+  margin-bottom: var(--space-12);
+}
+
+.referenceCard {
+  background-color: var(--color-snow, #FFFFFF);
+  border: 1px solid var(--color-silver, #E2E8F0);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all var(--duration-normal) var(--ease-out);
+  height: clamp(180px, calc(100vh - 480px), 500px);
+  height: clamp(180px, calc(100dvh - 480px), 500px);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.referenceCard:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-cyan, #00BCD4);
+  box-shadow: 0 20px 35px -10px rgba(0, 188, 212, 0.22);
+  background-color: #FFFFFF;
+}
+
+.logoBadge {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: var(--space-5);
+  box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.referenceCard:hover .logoBadge {
+  transform: scale(1.12) rotate(-4deg);
+}
+
+.referenceName {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-graphite, #1E293B);
+  margin-bottom: var(--space-2);
+  line-height: 1.3;
+  transition: color 0.3s ease;
+}
+
+.referenceCard:hover .referenceName {
+  color: var(--color-cyan-deep, #00838F);
+}
+
+.referenceSector {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-slate, #64748B);
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 1024px) {
+  .referencesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .referencesGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pageHero {
+    padding-top: 100px;
+  }
+}

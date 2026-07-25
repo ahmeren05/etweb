@@ -1,0 +1,352 @@
+{
+  "Metadata": {
+    "title": "Eren Teknik Mühendislik A.Ş.",
+    "titleTemplate": "{title} | Eren Teknik Mühendislik",
+    "description": "Elektrik, otomasyon, mekanik ve inşaat mühendisliği alanlarında 25 yılı aşkın deneyimle endüstriyel ve ticari projeler için entegre mühendislik çözümleri sunuyoruz.",
+    "keywords": "mühendislik, elektrik mühendisliği, otomasyon, mekanik tesisat, inşaat mühendisliği, endüstriyel projeler, Türkiye"
+  },
+  "Nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "services": "Hizmetler",
+    "references": "Referanslar",
+    "contact": "İletişim",
+    "getInTouch": "Bize Ulaşın"
+  },
+  "Hero": {
+    "headline": "Dört Disiplin,\nBir Mühendislik Vizyonu",
+    "subheadline": "Elektrik, otomasyon, mekanik ve inşaat mühendisliğinde bütünleşik çözümler. Projenizin her aşamasında yanınızdayız.",
+    "cta": "Hizmetlerimizi Keşfedin",
+    "ctaSecondary": "Bize Ulaşın"
+  },
+  "Disciplines": {
+    "sectionTitle": "Mühendislik Alanlarımız",
+    "sectionSubtitle": "Dört temel mühendislik disiplininde uzman ekibimizle projelerinize değer katıyoruz.",
+    "electrical": {
+      "title": "Elektrik Mühendisliği",
+      "description": "Alçak ve orta gerilim sistemlerinden enerji verimliliğine kadar kapsamlı elektrik mühendisliği hizmetleri.",
+      "services": {
+        "lowVoltage": "Alçak Gerilim Tesisatları",
+        "mediumVoltage": "Orta Gerilim Sistemleri",
+        "lighting": "Aydınlatma Projeleri",
+        "grounding": "Topraklama ve Yıldırımdan Korunma",
+        "energyEfficiency": "Enerji Verimliliği Danışmanlığı"
+      }
+    },
+    "automation": {
+      "title": "Otomasyon Mühendisliği",
+      "description": "Endüstriyel süreçlerinizi optimize eden akıllı otomasyon ve kontrol sistemleri.",
+      "services": {
+        "plc": "PLC Programlama ve Entegrasyon",
+        "scada": "SCADA Sistemleri",
+        "bms": "Bina Otomasyon Sistemleri (BMS)",
+        "industrial": "Endüstriyel Otomasyon",
+        "processControl": "Proses Kontrol Sistemleri"
+      }
+    },
+    "mechanical": {
+      "title": "Mekanik Mühendisliği",
+      "description": "HVAC'den yangın güvenliğine, konforlu ve güvenli mekanik tesisat çözümleri.",
+      "services": {
+        "hvac": "HVAC Sistemleri",
+        "fire": "Yangın Algılama ve Söndürme",
+        "plumbing": "Sıhhi Tesisat",
+        "gas": "Doğalgaz Tesisatı",
+        "compressedAir": "Basınçlı Hava Sistemleri"
+      }
+    },
+    "construction": {
+      "title": "İnşaat Mühendisliği",
+      "description": "Betonarme ve çelik yapılardan altyapı projelerine, sağlam temeller üzerine inşa ediyoruz.",
+      "services": {
+        "concrete": "Betonarme Yapı Tasarımı",
+        "steel": "Çelik Yapılar",
+        "infrastructure": "Altyapı Projeleri",
+        "industrial": "Endüstriyel Tesis İnşaatı",
+        "management": "Proje Yönetimi"
+      }
+    },
+    "viewAll": "Tüm Hizmetleri Görüntüle",
+    "learnMore": "Detaylı Bilgi"
+  },
+  "Stats": {
+    "years": "Yıllık Deneyim",
+    "projects": "Tamamlanan Proje",
+    "turnkey": "Anahtar Teslim Çözümler",
+    "certifications": "Sertifika"
+  },
+  "AboutPreview": {
+    "eyebrow": "Hakkımızda",
+    "title": "Entegre Mühendislik Gücü",
+    "description": "Eren Teknik Mühendislik, 2000 yılından bu yana Türkiye'nin önde gelen sanayi kuruluşlarına entegre mühendislik hizmetleri sunmaktadır. Dört temel disiplinde uzmanlaşmış ekibimiz, projelerin tasarım aşamasından devreye almaya kadar her adımında kalite ve güvenilirlik sunar.",
+    "cta": "Daha Fazla Bilgi"
+  },
+  "ContactCTA": {
+    "title": "Projeniz İçin Doğru Mühendislik Ortağı",
+    "description": "Yeni bir projeye mi başlıyorsunuz? Mevcut sisteminizi mi geliştirmek istiyorsunuz? Size en uygun çözümü birlikte belirleyelim.",
+    "cta": "İletişime Geçin"
+  },
+  "Footer": {
+    "description": "Elektrik, otomasyon, mekanik ve inşaat mühendisliğinde entegre çözümler sunan köklü bir mühendislik firması.",
+    "learnMore": "Daha Fazla Bilgi",
+    "quickLinks": "Hızlı Bağlantılar",
+    "services": "Hizmetlerimiz",
+    "contactInfo": "İletişim Bilgileri",
+    "address": "Aydınlı Mah. Gürpınar Cad. No: 32/5-6, Tuzla / İstanbul",
+    "rights": "Tüm hakları saklıdır.",
+    "phone": "+90 216 491 76 71",
+    "email": "erenteknik@erenteknik.com.tr"
+  },
+  "About": {
+    "metaTitle": "Hakkımızda",
+    "metaDescription": "Eren Teknik Mühendislik'in kuruluş hikayesi, misyonu, vizyonu ve mühendislik felsefesi hakkında bilgi edinin.",
+    "heroTitle": "Mühendislikte\nGüvenin Adresi",
+    "heroSubtitle": "2000 yılından bu yana Türkiye'nin endüstriyel altyapısına değer katıyoruz.",
+    "storyTitle": "Hikayemiz",
+    "storyP1": "Eren Teknik Mühendislik, 2000 yılında Ankara'da küçük bir elektrik tesisat firması olarak kuruldu. Kurucumuz, sektördeki parçalı hizmet anlayışına bir alternatif sunma vizyonuyla yola çıktı: dört temel mühendislik disiplinini tek çatı altında birleştiren, bütüncül bir yaklaşım.",
+    "storyP2": "İlk yıllarında elektrik tesisat projelerine odaklanan firma, müşterilerinin farklı disiplinlerde de güvenilir bir iş ortağına ihtiyaç duyduğunu fark ederek otomasyon, mekanik ve inşaat mühendisliği alanlarına da yatırım yaptı. Bu genişleme, bugün 200'den fazla endüstriyel projede kendini kanıtlayan çok disiplinli yapımızın temelini oluşturdu.",
+    "missionTitle": "Misyonumuz",
+    "missionText": "Endüstriyel ve ticari projelerde, dört mühendislik disiplininin sinerjisinden doğan bütünleşik çözümlerle müşterilerimizin operasyonel verimliliğini artırmak ve projelerini zamanında, bütçe dahilinde teslim etmek.",
+    "visionTitle": "Vizyonumuz",
+    "visionText": "Türkiye'nin entegre mühendislik hizmetlerinde referans noktası olmak. Teknolojiyi takip eden değil, uygulayan; standartları karşılayan değil, belirleyen bir firma olarak sektöre yön vermek.",
+    "valuesTitle": "Değerlerimiz",
+    "values": {
+      "precision": {
+        "title": "Hassasiyet",
+        "description": "Her proje, milimetrik hesaplamalar ve titiz mühendislik analizleriyle şekillenir."
+      },
+      "integration": {
+        "title": "Entegrasyon",
+        "description": "Dört disiplinin koordineli çalışması, projelerde zaman ve maliyet tasarrufu sağlar."
+      },
+      "reliability": {
+        "title": "Güvenilirlik",
+        "description": "Taahhüt ettiğimiz süre ve bütçe dahilinde, kaliteden ödün vermeden teslim ederiz."
+      },
+      "innovation": {
+        "title": "Yenilikçilik",
+        "description": "Güncel teknolojileri ve mühendislik standartlarını projelerimize entegre ederiz."
+      }
+    }
+  },
+  "Services": {
+    "metaTitle": "Hizmetlerimiz",
+    "metaDescription": "Elektrik, otomasyon, mekanik ve inşaat mühendisliği alanlarındaki kapsamlı hizmet yelpazemizi keşfedin.",
+    "heroTitle": "Hizmetlerimiz",
+    "heroSubtitle": "Dört mühendislik disiplininde, projenizin ihtiyaçlarına özel kapsamlı çözümler sunuyoruz.",
+    "exploreServices": "Hizmetleri İnceleyin",
+    "otherDisciplines": "Diğer Mühendislik Alanları",
+    "backToServices": "Tüm Hizmetler",
+    "contactForService": "Bu Hizmet İçin Bize Ulaşın"
+  },
+  "ServiceDetails": {
+    "electrical": {
+      "metaTitle": "Elektrik Mühendisliği Hizmetleri",
+      "metaDescription": "Alçak gerilim tesisatlarından enerji verimliliği danışmanlığına kadar kapsamlı elektrik mühendisliği hizmetleri.",
+      "heroTitle": "Elektrik\nMühendisliği",
+      "heroSubtitle": "Güvenli, verimli ve standartlara uygun elektrik sistemleri tasarlıyor ve uyguluyoruz.",
+      "services": {
+        "lowVoltage": {
+          "title": "Alçak Gerilim Tesisatları",
+          "description": "Endüstriyel ve ticari tesislerde 1000V altı güç dağıtım sistemlerinin projelendirilmesi, kurulumu ve devreye alınması. Pano tasarımı, kablolama ve koruma sistemleri dahil."
+        },
+        "mediumVoltage": {
+          "title": "Orta Gerilim Sistemleri",
+          "description": "1-36 kV aralığındaki orta gerilim hücreleri, trafo merkezleri ve dağıtım sistemlerinin tasarımı ve uygulaması. TEDAŞ standartlarına tam uyumluluk."
+        },
+        "lighting": {
+          "title": "Aydınlatma Projeleri",
+          "description": "İç mekan ve dış mekan aydınlatma tasarımı, enerji verimli LED çözümleri, acil aydınlatma sistemleri ve aydınlatma otomasyon entegrasyonu."
+        },
+        "grounding": {
+          "title": "Topraklama ve Yıldırımdan Korunma",
+          "description": "Topraklama ölçümleri, topraklama ızgara tasarımı, yıldırımdan korunma sistemleri (LPS) ve aşırı gerilim koruma çözümleri."
+        },
+        "energyEfficiency": {
+          "title": "Enerji Verimliliği Danışmanlığı",
+          "description": "Enerji etüdleri, güç kalitesi analizleri, kompanzasyon sistemleri ve enerji tasarrufu projelerinin planlanması ve uygulanması."
+        }
+      }
+    },
+    "automation": {
+      "metaTitle": "Otomasyon Mühendisliği Hizmetleri",
+      "metaDescription": "PLC programlamadan SCADA sistemlerine, endüstriyel otomasyon ve akıllı bina kontrol çözümleri.",
+      "heroTitle": "Otomasyon\nMühendisliği",
+      "heroSubtitle": "Endüstriyel süreçlerinizi dijitalleştiren ve optimize eden akıllı kontrol sistemleri.",
+      "services": {
+        "plc": {
+          "title": "PLC Programlama ve Entegrasyon",
+          "description": "Siemens, ABB, Schneider ve Allen-Bradley PLC sistemlerinin programlanması, konfigürasyonu ve mevcut sistemlere entegrasyonu. Ladder, FBD ve SCL dillerinde uzman kadro."
+        },
+        "scada": {
+          "title": "SCADA Sistemleri",
+          "description": "Merkezi izleme ve kontrol sistemlerinin tasarımı, kurulumu ve devreye alınması. Gerçek zamanlı veri toplama, alarm yönetimi ve raporlama altyapısı."
+        },
+        "bms": {
+          "title": "Bina Otomasyon Sistemleri (BMS)",
+          "description": "Akıllı bina yönetim sistemleri ile HVAC, aydınlatma, erişim kontrolü ve enerji yönetiminin tek platformdan kontrolü."
+        },
+        "industrial": {
+          "title": "Endüstriyel Otomasyon",
+          "description": "Üretim hatları, konveyör sistemleri, robot entegrasyonu ve endüstriyel proses otomasyonu. Endüstri 4.0 uyumlu çözümler."
+        },
+        "processControl": {
+          "title": "Proses Kontrol Sistemleri",
+          "description": "DCS ve hibrit kontrol sistemleri, enstrümantasyon, proses optimizasyonu ve ileri kontrol algoritmaları."
+        }
+      }
+    },
+    "mechanical": {
+      "metaTitle": "Mekanik Mühendisliği Hizmetleri",
+      "metaDescription": "HVAC sistemlerinden yangın güvenliğine, endüstriyel ve ticari mekanik tesisat çözümleri.",
+      "heroTitle": "Mekanik\nMühendisliği",
+      "heroSubtitle": "Konfor, güvenlik ve verimliliği bir arada sunan mekanik tesisat çözümleri.",
+      "services": {
+        "hvac": {
+          "title": "HVAC Sistemleri",
+          "description": "Isıtma, soğutma, havalandırma ve klima sistemlerinin projelendirilmesi, kurulumu ve bakımı. VRF, chiller ve merkezi sistem çözümleri."
+        },
+        "fire": {
+          "title": "Yangın Algılama ve Söndürme",
+          "description": "Yangın algılama, ihbar ve söndürme sistemlerinin tasarımı ve uygulaması. Sprinkler, FM-200, CO₂ ve köpüklü söndürme sistemleri."
+        },
+        "plumbing": {
+          "title": "Sıhhi Tesisat",
+          "description": "Temiz su, atık su ve yağmur suyu sistemlerinin projelendirilmesi. Pompa istasyonları, arıtma ön hazırlığı ve sıhhi tesisat altyapısı."
+        },
+        "gas": {
+          "title": "Doğalgaz Tesisatı",
+          "description": "Endüstriyel ve ticari doğalgaz iç tesisat projeleri, basınç düşürme istasyonları ve gaz algılama sistemleri. İGDAŞ/EGO onay süreçleri dahil."
+        },
+        "compressedAir": {
+          "title": "Basınçlı Hava Sistemleri",
+          "description": "Endüstriyel basınçlı hava üretim, dağıtım ve arıtma sistemleri. Kompresör seçimi, boru hattı tasarımı ve enerji verimliliği optimizasyonu."
+        }
+      }
+    },
+    "construction": {
+      "metaTitle": "İnşaat Mühendisliği Hizmetleri",
+      "metaDescription": "Betonarme yapı tasarımından proje yönetimine, endüstriyel ve ticari inşaat mühendisliği çözümleri.",
+      "heroTitle": "İnşaat\nMühendisliği",
+      "heroSubtitle": "Sağlam temeller, dayanıklı yapılar. Projenizin fiziksel altyapısını inşa ediyoruz.",
+      "services": {
+        "concrete": {
+          "title": "Betonarme Yapı Tasarımı",
+          "description": "Endüstriyel tesisler, fabrika binaları ve ticari yapılar için depreme dayanıklı betonarme yapı tasarımı. Statik ve dinamik analizler, kalıp ve donatı projeleri."
+        },
+        "steel": {
+          "title": "Çelik Yapılar",
+          "description": "Prefabrik çelik yapılar, çelik çatı sistemleri, mezzanine katlar ve endüstriyel çelik konstrüksiyon projeleri. Hesap, detay ve imalat çizimleri."
+        },
+        "infrastructure": {
+          "title": "Altyapı Projeleri",
+          "description": "Yol, kanalizasyon, içme suyu hatları, drenaj sistemleri ve saha düzenleme projeleri. Organize sanayi bölgeleri ve endüstriyel siteler için altyapı çözümleri."
+        },
+        "industrial": {
+          "title": "Endüstriyel Tesis İnşaatı",
+          "description": "Anahtar teslimi endüstriyel tesis inşaatı. Temel kazıdan çatı kaplamaya, tüm mühendislik disiplinlerinin koordineli yürütülmesi."
+        },
+        "management": {
+          "title": "Proje Yönetimi",
+          "description": "İnşaat projelerinin planlama, programlama, bütçeleme ve saha koordinasyonu. İlerleme takibi, kalite kontrolü ve iş güvenliği yönetimi."
+        }
+      }
+    }
+  },
+  "References": {
+    "metaTitle": "Referanslar",
+    "metaDescription": "Eren Teknik Mühendislik'in başarıyla tamamladığı projeler ve iş ortaklıkları.",
+    "heroTitle": "Referanslarımız",
+    "heroSubtitle": "Güvenilir iş ortaklıklarımız ve başarıyla tamamladığımız projeler.",
+    "sectors": {
+      "all": "Tümü",
+      "energy": "Enerji",
+      "manufacturing": "Üretim",
+      "infrastructure": "Altyapı",
+      "commercial": "Ticari"
+    },
+    "projectsCompleted": "proje tamamlandı",
+    "clients": [
+      {
+        "name": "TÜPRAŞ",
+        "sector": "energy",
+        "description": "Rafineri elektrik altyapı yenileme ve otomasyon entegrasyonu projesi."
+      },
+      {
+        "name": "Aselsan",
+        "sector": "manufacturing",
+        "description": "Üretim tesisi mekanik tesisat ve bina otomasyon sistemi kurulumu."
+      },
+      {
+        "name": "Arçelik",
+        "sector": "manufacturing",
+        "description": "Fabrika genişleme projesi — elektrik, mekanik ve otomasyon disiplinleri."
+      },
+      {
+        "name": "THY Teknik",
+        "sector": "infrastructure",
+        "description": "Bakım hangarı HVAC ve yangın söndürme sistemleri projesi."
+      },
+      {
+        "name": "ASO 1. OSB",
+        "sector": "infrastructure",
+        "description": "Organize sanayi bölgesi altyapı ve orta gerilim dağıtım projesi."
+      },
+      {
+        "name": "Ankara Büyükşehir Belediyesi",
+        "sector": "infrastructure",
+        "description": "Kamu binası entegre mekanik ve elektrik tesisat yenileme projesi."
+      },
+      {
+        "name": "Roketsan",
+        "sector": "manufacturing",
+        "description": "Özel amaçlı üretim tesisi proses kontrol ve otomasyon sistemleri."
+      },
+      {
+        "name": "MTA Genel Müdürlüğü",
+        "sector": "energy",
+        "description": "Sondaj sahası elektrik altyapı ve jeneratör sistemleri kurulumu."
+      }
+    ]
+  },
+  "Contact": {
+    "metaTitle": "İletişim",
+    "metaDescription": "Eren Teknik Mühendislik ile iletişime geçin. Projeleriniz için ücretsiz ön değerlendirme.",
+    "heroTitle": "İletişime Geçin",
+    "heroSubtitle": "Projeniz hakkında konuşalım. Size en uygun mühendislik çözümünü birlikte belirleyelim.",
+    "formTitle": "Bize Yazın",
+    "nameLabel": "Adınız Soyadınız",
+    "namePlaceholder": "Ahmet Yılmaz",
+    "emailLabel": "E-posta Adresiniz",
+    "emailPlaceholder": "ahmet@firma.com",
+    "phoneLabel": "Telefon Numaranız",
+    "phonePlaceholder": "+90 5XX XXX XX XX",
+    "serviceLabel": "İlgilendiğiniz Hizmet Alanı",
+    "servicePlaceholder": "Seçiniz",
+    "messageLabel": "Mesajınız",
+    "messagePlaceholder": "Projeniz hakkında kısaca bilgi verin...",
+    "submitButton": "Mesajı Gönder",
+    "sending": "Gönderiliyor...",
+    "successTitle": "Mesajınız İletildi",
+    "successMessage": "En kısa sürede sizinle iletişime geçeceğiz.",
+    "errorMessage": "Bir hata oluştu. Lütfen tekrar deneyin.",
+    "infoTitle": "İletişim Bilgileri",
+    "officeTitle": "Merkez Ofis",
+    "serviceOptions": {
+      "electrical": "Elektrik Mühendisliği",
+      "automation": "Otomasyon Mühendisliği",
+      "mechanical": "Mekanik Mühendisliği",
+      "construction": "İnşaat Mühendisliği",
+      "integrated": "Entegre Proje (Çoklu Disiplin)",
+      "other": "Diğer"
+    }
+  },
+  "Common": {
+    "readMore": "Devamını Oku",
+    "viewAll": "Tümünü Görüntüle",
+    "backToHome": "Ana Sayfaya Dön",
+    "loading": "Yükleniyor...",
+    "companyName": "Eren Teknik Mühendislik A.Ş.",
+    "companyShort": "Eren Teknik"
+  }
+}

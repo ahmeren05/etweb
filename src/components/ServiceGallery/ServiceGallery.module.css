@@ -1,0 +1,290 @@
+.gallerySection {
+  margin-bottom: var(--space-12);
+}
+
+.galleryBox {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  background-color: var(--color-graphite);
+  border: 1px solid var(--color-silver);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Completely flat, straight horizontal container with NO skewing */
+.marqueeContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  z-index: 0;
+}
+
+.marqueeTrack {
+  display: flex;
+  gap: 0;
+  width: max-content;
+  animation: marqueeScroll 35s linear infinite;
+}
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Straight, flat rectangular slide cards */
+.slideWrapper {
+  width: 280px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-right: 3px solid var(--color-cyan);
+  transition: opacity var(--duration-fast) var(--ease-out);
+  flex-shrink: 0;
+  background-color: #1a1a1a;
+}
+
+.slideWrapper:hover {
+  opacity: 0.85;
+}
+
+/* Normal 100% image covering the box cleanly with NO transforms or skews */
+.slideImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.galleryMist {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.72);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.galleryOverlay {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-8) var(--space-10);
+  max-width: 620px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid var(--color-silver);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: transform var(--duration-normal) var(--ease-out),
+              box-shadow var(--duration-normal) var(--ease-out);
+}
+
+.galleryOverlay:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.overlayTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-graphite);
+  margin-bottom: var(--space-3);
+}
+
+.overlayDesc {
+  font-size: var(--text-base);
+  color: var(--color-slate);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-6);
+}
+
+.galleryBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-snow);
+  background-color: var(--color-cyan);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-out);
+  box-shadow: var(--shadow-sm);
+}
+
+.galleryBtn:hover {
+  background-color: var(--color-cyan-deep);
+  box-shadow: var(--shadow-cyan);
+}
+
+/* Lightbox Modal */
+.lightboxModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.92);
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-6);
+  animation: fadeIn var(--duration-fast) var(--ease-out);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.lightboxContent {
+  position: relative;
+  max-width: 85vw;
+  max-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightboxImg {
+  max-width: 85vw;
+  max-height: 82vh;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  user-select: none;
+}
+
+/* Fixed positioning relative to the screen so buttons never jump around */
+.closeBtn {
+  position: fixed;
+  top: 30px;
+  right: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  z-index: 1000000;
+  transition: all var(--duration-fast);
+}
+
+.closeBtn:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: scale(1.05);
+}
+
+.prevBtn,
+.nextBtn {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000000;
+  transition: all var(--duration-fast);
+}
+
+.prevBtn:hover,
+.nextBtn:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.prevBtn {
+  left: 40px;
+}
+
+.nextBtn {
+  right: 40px;
+}
+
+.counter {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #FFFFFF;
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: var(--space-2) var(--space-6);
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 1000000;
+}
+
+@media (max-width: 768px) {
+  .galleryBox {
+    height: 420px;
+  }
+  .galleryOverlay {
+    padding: var(--space-6);
+    margin: 0 var(--space-4);
+  }
+  .prevBtn {
+    left: 15px;
+    width: 44px;
+    height: 44px;
+  }
+  .nextBtn {
+    right: 15px;
+    width: 44px;
+    height: 44px;
+  }
+  .closeBtn {
+    top: 15px;
+    right: 15px;
+    width: 44px;
+    height: 44px;
+  }
+  .counter {
+    bottom: 15px;
+    font-size: var(--text-sm);
+  }
+}
