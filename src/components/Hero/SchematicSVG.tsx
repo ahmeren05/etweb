@@ -197,9 +197,9 @@ export default function SchematicSVG() {
           </feMerge>
         </filter>
         <linearGradient id="fireworkGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#004D40" />
-          <stop offset="60%" stop-color="#00BCD4" />
-          <stop offset="100%" stop-color="#FFFFFF" />
+          <stop offset="0%" stopColor="#004D40" />
+          <stop offset="60%" stopColor="#00BCD4" />
+          <stop offset="100%" stopColor="#FFFFFF" />
         </linearGradient>
       </defs>
 
