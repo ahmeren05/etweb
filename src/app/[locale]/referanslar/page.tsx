@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { Search, X } from 'lucide-react';
 import JsonLd from '@/components/JsonLd';
@@ -16,8 +16,17 @@ export default function ReferencesPage() {
   const isEn = locale === 'en';
   const [searchQuery, setSearchQuery] = useState('');
 
+  const [shuffledClients, setShuffledClients] = useState(clients);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    const shuffled = [...clients].sort(() => Math.random() - 0.5);
+    setShuffledClients(shuffled);
+    setIsMounted(true);
+  }, []);
+
   const isSearching = searchQuery.trim() !== '';
-  const filteredClients = clients.filter((client) => {
+  const filteredClients = shuffledClients.filter((client) => {
     const query = searchQuery.toLowerCase().trim();
     return (
       client.name.toLowerCase().includes(query) ||
@@ -28,7 +37,7 @@ export default function ReferencesPage() {
   });
 
   // Render all clients in the grid so Row 2 starts right below Row 1 just below the fold
-  const displayedClients = isSearching ? filteredClients : clients;
+  const displayedClients = isSearching ? filteredClients : shuffledClients;
 
   return (
     <>
@@ -57,8 +66,8 @@ export default function ReferencesPage() {
               className={styles.searchInput}
               placeholder={
                 isEn
-                  ? 'Search by company name or sector... (e.g. Aselsan, Energy)'
-                  : 'Firma adı veya sektör ara... (Örn: Aselsan, Enerji, Savunma)'
+                  ? 'Search company name...'
+                  : 'Firma adı ara...'
               }
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
