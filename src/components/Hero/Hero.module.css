@@ -356,6 +356,10 @@
     justify-content: center;
   }
 
+  .siemensEmblemInline {
+    justify-content: center;
+  }
+
   .heroVisual {
     min-height: 360px;
     order: -1;
