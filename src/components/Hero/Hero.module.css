@@ -73,7 +73,7 @@
 .heroContent {
   position: relative;
   z-index: 2;
-  margin-bottom: 48px; /* Push content up to make room for logo */
+  transform: translateY(-32px); /* Shift content up without expanding slide height */
 }
 
 .heroEyebrow {
