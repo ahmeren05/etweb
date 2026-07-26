@@ -2,7 +2,31 @@
 .heroWrapper {
   position: relative;
   margin: 84px 40px 0 40px;
+  /* overflow removed or kept? We will keep it but logos are inside. */
   overflow: hidden;
+}
+
+/* Siemens Partner Logos */
+.partnerLogos {
+  position: absolute;
+  top: 32px;
+  right: 48px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 12px 24px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.partnerLogoWrapper {
+  position: relative;
+  width: 140px;
+  height: 48px;
 }
 
 /* Hero card */
@@ -329,6 +353,17 @@
   .cornerTop {
     display: block;
   }
+
+  .partnerLogos {
+    top: 24px;
+    right: 32px;
+    padding: 10px 20px;
+    gap: var(--space-3);
+  }
+  .partnerLogoWrapper {
+    width: 120px;
+    height: 40px;
+  }
 }
 
 /* When the notch exceeds 90% of the page width (<720px), CANCEL THE NOTCH */
@@ -404,6 +439,18 @@
   .certLabel {
     font-size: 10px;
     line-height: 1.15;
+  }
+
+  .partnerLogos {
+    top: 20px;
+    right: 24px;
+    padding: 8px 16px;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  .partnerLogoWrapper {
+    width: 100px;
+    height: 32px;
   }
 
   .certDivider {

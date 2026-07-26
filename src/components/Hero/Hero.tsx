@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
+import Image from 'next/image';
 import SchematicSVG from './SchematicSVG';
 import styles from './Hero.module.css';
 
@@ -8,6 +9,26 @@ export default function Hero() {
 
   return (
     <div className={styles.heroWrapper}>
+      {/* Siemens Partner Logos */}
+      <div className={styles.partnerLogos}>
+        <div className={styles.partnerLogoWrapper}>
+          <Image 
+            src="/references/logo_siemens.png" 
+            alt="Siemens Partner Logo" 
+            fill
+            style={{ objectFit: 'contain' }}
+          />
+        </div>
+        <div className={styles.partnerLogoWrapper}>
+          <Image 
+            src="/references/logo_1.png" 
+            alt="Siemens Solution Partner" 
+            fill
+            style={{ objectFit: 'contain' }}
+          />
+        </div>
+      </div>
+
       <section className={styles.hero} id="hero">
         <div className={`container ${styles.heroInner}`}>
           <div className={styles.heroContent}>
