@@ -112,7 +112,7 @@
   position: relative;
 }
 
-/* Horizontal line for branches */
+/* Horizontal line for branches (Desktop) */
 .level2::before {
   content: "";
   position: absolute;
@@ -162,27 +162,52 @@
   border: 1px solid rgba(0, 188, 212, 0.2);
 }
 
-@media (max-width: 1024px) {
-  .node {
-    min-width: 160px;
-    padding: var(--space-4) var(--space-2);
-    font-size: var(--text-sm);
+/* TABLET (2x2 Grid) */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .level2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    padding-top: 40px;
+    /* Central vertical trunk connecting row 1 and row 2 */
+    background-image: linear-gradient(var(--color-cyan), var(--color-cyan));
+    background-position: center top;
+    background-size: 2px 50%;
+    background-repeat: no-repeat;
   }
   
-  .avatar {
-    padding: var(--space-2);
+  /* Horizontal line for Row 1 */
+  .level2::before {
+    left: 25%;
+    right: 25%;
   }
   
-  .primaryNode {
-    min-width: 260px;
-    min-height: 120px;
+  /* Horizontal line for Row 2 */
+  .level2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    right: 25%;
+    height: 2px;
+    background-color: var(--color-cyan);
+  }
+  
+  .branch {
+    padding-top: 0;
+  }
+
+  .branch::before {
+    top: -40px;
+    height: 40px;
   }
 }
 
+/* MOBILE (Vertical Tree) */
 @media (max-width: 768px) {
   .orgChart {
     align-items: flex-start;
-    padding: var(--space-6);
+    padding: var(--space-4);
   }
   
   .level1 {
@@ -201,47 +226,63 @@
   }
 
   .mainConnection {
-    margin-left: 42px;
-    height: var(--space-6);
+    margin-left: 32px;
+    height: 30px;
   }
 
   .level2 {
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 42px;
-    gap: var(--space-6);
-    max-width: 100%;
+    padding-left: 32px;
+    gap: 0;
   }
 
-  /* Vertical trunk line */
   .level2::before {
-    top: 0;
-    bottom: calc(50% + 20px);
-    left: 0;
-    right: auto;
-    width: 2px;
-    height: auto;
+    display: none;
   }
 
   .branch {
     width: 100%;
-    padding-top: 0;
-    padding-left: var(--space-8);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
     align-items: flex-start;
+    position: relative;
   }
 
-  /* Horizontal connector */
-  .branch::before {
-    top: 45px;
+  /* Branch vertical trunk piece */
+  .branch::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
     left: 0;
-    width: var(--space-8);
+    width: 2px;
+    background-color: var(--color-cyan);
+  }
+  
+  /* First branch reaches up to mainConnection */
+  .branch:first-child::after {
+    top: -30px;
+  }
+  
+  /* Last branch stops at its own horizontal line */
+  .branch:last-child::after {
+    bottom: calc(100% - 60px); 
+  }
+
+  /* Horizontal connector to node */
+  .branch::before {
+    top: 60px; /* roughly center of avatar */
+    left: 0;
+    width: 30px;
     height: 2px;
     transform: none;
   }
 
   .node {
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
     min-height: auto;
     min-width: auto;
     padding: var(--space-4);
@@ -251,13 +292,12 @@
     gap: var(--space-4);
   }
 
-  /* Align subNodes */
   .subConnection {
-    margin-left: 42px;
+    margin-left: 32px;
   }
   
   .subNode {
-    margin-left: 42px;
+    margin-left: 32px;
     align-self: flex-start;
   }
 }
