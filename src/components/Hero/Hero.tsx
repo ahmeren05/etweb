@@ -18,6 +18,32 @@ export default function Hero() {
               <span className={styles.heroEyebrowDot} />
               Eren Teknik Mühendislik A.Ş.
             </div>
+
+            <div className={styles.siemensEmblemInline}>
+              <div className={styles.siemensGreyBoxInline}>
+                <Image 
+                  src="/references/logo_siemens.png" 
+                  alt="Siemens Partner" 
+                  fill
+                  style={{ objectFit: 'contain' }}
+                />
+              </div>
+              
+              <div className={styles.siemensLogoColInline}>
+                <div className={styles.siemensLogoInline}>
+                  <Image 
+                    src="/references/logo_1.png" 
+                    alt="Siemens" 
+                    fill
+                    style={{ objectFit: 'contain', objectPosition: 'left bottom' }}
+                  />
+                </div>
+                <div className={styles.siemensTaglineInline}>
+                  Solution Partner - Building Technologies
+                </div>
+              </div>
+            </div>
+
             <h1 className={styles.heroTitle}>{t('headline')}</h1>
             <p className={styles.heroSubtitle}>{t('subheadline')}</p>
             <div className={styles.heroCTAs}>

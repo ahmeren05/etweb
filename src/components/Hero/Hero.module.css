@@ -88,7 +88,40 @@
   background-color: var(--color-cyan-light);
   padding: var(--space-1) var(--space-4);
   border-radius: var(--radius-full);
+  margin-bottom: var(--space-3);
+}
+
+.siemensEmblemInline {
+  display: flex;
+  gap: 6px;
+  align-items: center;
   margin-bottom: var(--space-6);
+}
+
+.siemensGreyBoxInline {
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+
+.siemensLogoColInline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.siemensLogoInline {
+  position: relative;
+  width: 112px;
+  height: 22px;
+}
+
+.siemensTaglineInline {
+  font-family: var(--font-sans);
+  font-size: 8.5px;
+  color: var(--color-slate);
+  margin-top: 2px;
+  line-height: 1;
 }
 
 .heroEyebrowDot {
@@ -105,7 +138,7 @@
   line-height: 1.08;
   letter-spacing: -0.03em;
   color: var(--color-graphite);
-  margin-bottom: var(--space-6);
+  margin-bottom: var(--space-3);
   white-space: pre-line;
 }
 
@@ -114,7 +147,7 @@
   line-height: var(--leading-relaxed);
   color: var(--color-slate);
   max-width: 480px;
-  margin-bottom: var(--space-10);
+  margin-bottom: var(--space-5);
 }
 
 .heroCTAs {
