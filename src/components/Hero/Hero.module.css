@@ -9,13 +9,14 @@
 /* Siemens Partner Emblem */
 .siemensEmblem {
   position: absolute;
-  top: 32px;
+  top: auto;
+  bottom: 120px;
   right: 24px;
   display: flex;
   gap: 4px; /* 1.2mm scaled */
   z-index: 10;
   transform: scale(0.7);
-  transform-origin: top right;
+  transform-origin: bottom right;
 }
 
 .siemensGreyBoxWrapper {
@@ -52,7 +53,7 @@
 /* Hero card */
 .hero {
   position: relative;
-  min-height: 82vh;
+  min-height: 75vh;
   display: flex;
   align-items: center;
   padding: var(--space-16) 0;
@@ -375,7 +376,8 @@
   }
 
   .siemensEmblem {
-    top: 24px;
+    top: auto;
+    bottom: 120px;
     right: 32px;
   }
   .siemensGreyBoxWrapper {
@@ -468,6 +470,7 @@
 
   .siemensEmblem {
     top: 16px;
+    bottom: auto;
     right: 16px;
   }
   .siemensGreyBoxWrapper {
