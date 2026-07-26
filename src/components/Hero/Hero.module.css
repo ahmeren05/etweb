@@ -18,8 +18,8 @@
 
 .siemensGreyBoxWrapper {
   position: relative;
-  width: 56px;
-  height: 56px;
+  width: 52px;
+  height: 52px;
 }
 
 
@@ -36,6 +36,7 @@
   position: relative;
   width: 160px;
   height: 36px;
+  margin-left: -1px;
 }
 
 .siemensCustomTagline {
