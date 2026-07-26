@@ -16,31 +16,13 @@
   z-index: 10;
 }
 
-.emblemTextSquare {
+.siemensGreyBoxWrapper {
+  position: relative;
   width: 56px;
   height: 56px;
-  box-sizing: border-box;
-  background-color: #8A9BA8;
-  padding: 6px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  color: white;
 }
 
-.emblemCategory {
-  font-family: var(--font-sans);
-  font-weight: 700;
-  font-size: 11px;
-  line-height: 1.2;
-}
 
-.emblemDescriptor {
-  font-family: var(--font-sans);
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 1.2;
-}
 
 .siemensLogoColumn {
   display: flex;
@@ -392,12 +374,9 @@
     top: 24px;
     right: 32px;
   }
-  .emblemTextSquare {
+  .siemensGreyBoxWrapper {
     width: 52px;
     height: 52px;
-  }
-  .emblemCategory, .emblemDescriptor {
-    font-size: 9px;
   }
   .siemensLogoWrapper {
     width: 110px;
@@ -487,13 +466,9 @@
     top: 16px;
     right: 16px;
   }
-  .emblemTextSquare {
+  .siemensGreyBoxWrapper {
     width: 44px;
     height: 44px;
-  }
-  .emblemCategory, .emblemDescriptor {
-    font-size: 8px;
-    line-height: 1.1;
   }
   .siemensLogoWrapper {
     width: 90px;

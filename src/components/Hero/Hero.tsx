@@ -11,14 +11,14 @@ export default function Hero() {
     <div className={styles.heroWrapper}>
       {/* Siemens Custom Partner Structure */}
       <div className={styles.siemensEmblem}>
-        {/* Sol taraftaki gri amblem kutusu */}
-        <div className={styles.emblemTextSquare}>
-          <div className={styles.emblemCategory}>
-            Solution<br />Partner
-          </div>
-          <div className={styles.emblemDescriptor}>
-            Building<br />Technologies
-          </div>
+        {/* Sol taraftaki gri amblem kutusu görseli */}
+        <div className={styles.siemensGreyBoxWrapper}>
+          <Image 
+            src="/references/logo_siemens.png" 
+            alt="Siemens Partner" 
+            fill
+            style={{ objectFit: 'contain' }}
+          />
         </div>
         
         {/* Sağ taraftaki Siemens logosu ve altındaki ince yazı */}
