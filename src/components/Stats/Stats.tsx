@@ -53,10 +53,10 @@ function StatItem({ stat, isVisible }: { stat: StatConfig; isVisible: boolean })
     <div className={styles.statItem}>
       <div 
         className={styles.statNumber}
-        style={stat.labelKey === 'validation' ? { display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '1em' } : {}}
+        style={stat.labelKey === 'validation' ? { display: 'flex', alignItems: 'center', justifyContent: 'center', height: '1em' } : {}}
       >
         {stat.labelKey === 'validation' ? (
-          <Check size={64} strokeWidth={3} className={styles.statIcon} style={{ transform: 'translateY(-4px)' }} />
+          <Check size={56} strokeWidth={4} className={styles.statIcon} style={{ transform: 'translateY(-2px)' }} />
         ) : (
           <>
             {count}
