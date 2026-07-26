@@ -9,8 +9,9 @@ export default function Hero() {
 
   return (
     <div className={styles.heroWrapper}>
-      {/* Siemens Partner Emblem */}
+      {/* Siemens Custom Partner Structure */}
       <div className={styles.siemensEmblem}>
+        {/* Sol taraftaki gri amblem kutusu */}
         <div className={styles.emblemTextSquare}>
           <div className={styles.emblemCategory}>
             Solution<br />Partner
@@ -19,13 +20,20 @@ export default function Hero() {
             Building<br />Technologies
           </div>
         </div>
-        <div className={styles.emblemLogoSquare}>
-          <Image 
-            src="/references/logo_siemens.png" 
-            alt="Siemens" 
-            fill
-            style={{ objectFit: 'contain', padding: '12px' }}
-          />
+        
+        {/* Sağ taraftaki Siemens logosu ve altındaki ince yazı */}
+        <div className={styles.siemensLogoColumn}>
+          <div className={styles.siemensLogoWrapper}>
+            <Image 
+              src="/references/logo_siemens.png" 
+              alt="Siemens" 
+              fill
+              style={{ objectFit: 'contain' }}
+            />
+          </div>
+          <div className={styles.siemensCustomTagline}>
+            Solution Partner - Building Technologies
+          </div>
         </div>
       </div>
 
