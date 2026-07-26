@@ -2,7 +2,7 @@
   "Metadata": {
     "title": "Eren Teknik Engineering Inc.",
     "titleTemplate": "{title} | Eren Teknik Engineering",
-    "description": "Integrated engineering solutions for industrial and commercial projects with over 30 years of experience in electrical, automation, mechanical, construction, and clean room engineering.",
+    "description": "Integrated engineering solutions for industrial and commercial projects with over 30 years of experience in electrical, automation, mechanical, construction, and clean room systems.",
     "keywords": "engineering, electrical engineering, automation, mechanical systems, construction engineering, clean room, industrial projects, Turkey"
   },
   "Nav": {
@@ -67,7 +67,7 @@
       }
     },
     "cleanroom": {
-      "title": "Clean Room Engineering",
+      "title": "Clean Room Systems",
       "description": "GMP-compliant clean room design, validation, and particle control systems.",
       "services": {
         "cleanRoomDesign": "Clean Room Design & Engineering",
@@ -265,9 +265,9 @@
       }
     },
     "cleanroom": {
-      "metaTitle": "Clean Room Engineering Services",
+      "metaTitle": "Clean Room Systems Services",
       "metaDescription": "GMP-compliant clean room design, HVAC validation, and particle control systems.",
-      "heroTitle": "Clean Room\nEngineering",
+      "heroTitle": "Clean Room\nSystems",
       "heroSubtitle": "GMP-standard clean room solutions for pharmaceutical, electronics, and food industries.",
       "services": {
         "cleanRoomDesign": {
@@ -377,7 +377,7 @@
       "automation": "Automation Engineering",
       "mechanical": "Mechanical Engineering",
       "construction": "Construction Engineering",
-      "cleanroom": "Clean Room Engineering",
+      "cleanroom": "Clean Room Systems",
       "integrated": "Integrated Project (Multi-Discipline)",
       "other": "Other"
     }

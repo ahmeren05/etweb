@@ -2,7 +2,7 @@
   "Metadata": {
     "title": "Eren Teknik Mühendislik A.Ş.",
     "titleTemplate": "{title} | Eren Teknik Mühendislik",
-    "description": "Elektrik, otomasyon, mekanik, inşaat ve temiz oda mühendisliği alanlarında 30 yılı aşkın deneyimle endüstriyel ve ticari projeler için entegre mühendislik çözümleri sunuyoruz.",
+    "description": "Elektrik, otomasyon, mekanik, inşaat ve temiz oda sistemleri alanlarında 30 yılı aşkın deneyimle endüstriyel ve ticari projeler için entegre mühendislik çözümleri sunuyoruz.",
     "keywords": "mühendislik, elektrik mühendisliği, otomasyon, mekanik tesisat, inşaat mühendisliği, temiz oda, endüstriyel projeler, Türkiye"
   },
   "Nav": {
@@ -67,7 +67,7 @@
       }
     },
     "cleanroom": {
-      "title": "Temiz Oda Mühendisliği",
+      "title": "Temiz Oda Sistemleri",
       "description": "GMP standartlarına uygun temiz oda tasarımı, validasyon ve partikül kontrol sistemleri.",
       "services": {
         "cleanRoomDesign": "Temiz Oda Tasarımı ve Projelendirme",
@@ -265,9 +265,9 @@
       }
     },
     "cleanroom": {
-      "metaTitle": "Temiz Oda Mühendisliği Hizmetleri",
+      "metaTitle": "Temiz Oda Sistemleri Hizmetleri",
       "metaDescription": "GMP uyumlu temiz oda tasarımı, HVAC validasyonu ve partikül kontrol sistemleri.",
-      "heroTitle": "Temiz Oda\nMühendisliği",
+      "heroTitle": "Temiz Oda\nSistemleri",
       "heroSubtitle": "İlaç, elektronik ve gıda endüstrileri için GMP standartlarında temiz oda çözümleri.",
       "services": {
         "cleanRoomDesign": {
@@ -377,7 +377,7 @@
       "automation": "Otomasyon Mühendisliği",
       "mechanical": "Mekanik Mühendisliği",
       "construction": "İnşaat Mühendisliği",
-      "cleanroom": "Temiz Oda Mühendisliği",
+      "cleanroom": "Temiz Oda Sistemleri",
       "integrated": "Entegre Proje (Çoklu Disiplin)",
       "other": "Diğer"
     }
