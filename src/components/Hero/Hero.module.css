@@ -469,8 +469,8 @@
   }
 
   .siemensEmblem {
-    top: 16px;
-    bottom: auto;
+    top: auto;
+    bottom: 95px;
     right: 16px;
   }
   .siemensGreyBoxWrapper {
