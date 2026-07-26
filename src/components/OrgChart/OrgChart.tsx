@@ -50,7 +50,7 @@ export default function OrgChart() {
                 </div>
                 <div className={styles.subConnection}></div>
                 <div className={styles.subNode}>
-                  +10 Personel
+                  +5 Personel
                 </div>
               </div>
 
@@ -63,7 +63,7 @@ export default function OrgChart() {
                 </div>
                 <div className={styles.subConnection}></div>
                 <div className={styles.subNode}>
-                  +20 Personel
+                  +15 Personel
                 </div>
               </div>
 
@@ -76,7 +76,7 @@ export default function OrgChart() {
                 </div>
                 <div className={styles.subConnection}></div>
                 <div className={styles.subNode}>
-                  +15 Personel
+                  +4 Personel
                 </div>
               </div>
 
@@ -89,7 +89,7 @@ export default function OrgChart() {
                 </div>
                 <div className={styles.subConnection}></div>
                 <div className={styles.subNode}>
-                  +25 Personel
+                  +15 Personel
                 </div>
               </div>
             </div>

@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useEffect, useRef, useState } from 'react';
+import { Check } from 'lucide-react';
 import styles from './Stats.module.css';
 
 interface StatConfig {
@@ -12,9 +13,9 @@ interface StatConfig {
 
 const statsData: StatConfig[] = [
   { value: 30, suffix: '+', labelKey: 'years' },
-  { value: 120, suffix: '+', labelKey: 'projects' },
+  { value: 100, suffix: '+', labelKey: 'projects' },
   { value: 100, suffix: '%', labelKey: 'turnkey' },
-  { value: 5, suffix: '', labelKey: 'certifications' },
+  { value: 0, suffix: '', labelKey: 'validation' },
 ];
 
 function useCountUp(target: number, duration: number = 2000, isVisible: boolean) {
@@ -51,8 +52,14 @@ function StatItem({ stat, isVisible }: { stat: StatConfig; isVisible: boolean })
   return (
     <div className={styles.statItem}>
       <div className={styles.statNumber}>
-        {count}
-        {stat.suffix && <span className={styles.statSuffix}>{stat.suffix}</span>}
+        {stat.labelKey === 'validation' ? (
+          <Check size={48} strokeWidth={3} className={styles.statIcon} />
+        ) : (
+          <>
+            {count}
+            {stat.suffix && <span className={styles.statSuffix}>{stat.suffix}</span>}
+          </>
+        )}
       </div>
       <p className={styles.statLabel}>{t(stat.labelKey)}</p>
       
