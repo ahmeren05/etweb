@@ -25,7 +25,7 @@ export default function Hero() {
         <div className={styles.siemensLogoColumn}>
           <div className={styles.siemensLogoWrapper}>
             <Image 
-              src="/references/logo_siemens.png" 
+              src="/references/logo_1.png" 
               alt="Siemens" 
               fill
               style={{ objectFit: 'contain' }}
