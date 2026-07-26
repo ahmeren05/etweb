@@ -6,27 +6,53 @@
   overflow: hidden;
 }
 
-/* Siemens Partner Logos */
-.partnerLogos {
+/* Siemens Partner Emblem */
+.siemensEmblem {
   position: absolute;
   top: 32px;
   right: 48px;
   display: flex;
-  align-items: center;
-  gap: var(--space-4);
+  gap: 4px; /* 1.2mm scaled */
   z-index: 10;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 12px 24px;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
 }
 
-.partnerLogoWrapper {
+.emblemTextSquare, .emblemLogoSquare {
+  width: 90px;
+  height: 90px;
+  box-sizing: border-box;
+}
+
+.emblemTextSquare {
+  background-color: #8A9BA8;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.emblemCategory {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.emblemDescriptor {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.emblemLogoSquare {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
   position: relative;
-  width: 140px;
-  height: 48px;
 }
 
 /* Hero card */
@@ -354,15 +380,16 @@
     display: block;
   }
 
-  .partnerLogos {
+  .siemensEmblem {
     top: 24px;
     right: 32px;
-    padding: 10px 20px;
-    gap: var(--space-3);
   }
-  .partnerLogoWrapper {
-    width: 120px;
-    height: 40px;
+  .emblemTextSquare, .emblemLogoSquare {
+    width: 70px;
+    height: 70px;
+  }
+  .emblemCategory, .emblemDescriptor {
+    font-size: 9px;
   }
 }
 
@@ -441,16 +468,17 @@
     line-height: 1.15;
   }
 
-  .partnerLogos {
-    top: 20px;
-    right: 24px;
-    padding: 8px 16px;
-    flex-direction: column;
-    gap: var(--space-2);
+  .siemensEmblem {
+    top: 16px;
+    right: 16px;
   }
-  .partnerLogoWrapper {
-    width: 100px;
-    height: 32px;
+  .emblemTextSquare, .emblemLogoSquare {
+    width: 60px;
+    height: 60px;
+  }
+  .emblemCategory, .emblemDescriptor {
+    font-size: 8px;
+    line-height: 1.1;
   }
 
   .certDivider {

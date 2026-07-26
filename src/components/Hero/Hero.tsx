@@ -9,22 +9,22 @@ export default function Hero() {
 
   return (
     <div className={styles.heroWrapper}>
-      {/* Siemens Partner Logos */}
-      <div className={styles.partnerLogos}>
-        <div className={styles.partnerLogoWrapper}>
+      {/* Siemens Partner Emblem */}
+      <div className={styles.siemensEmblem}>
+        <div className={styles.emblemTextSquare}>
+          <div className={styles.emblemCategory}>
+            Solution<br />Partner
+          </div>
+          <div className={styles.emblemDescriptor}>
+            Building<br />Technologies
+          </div>
+        </div>
+        <div className={styles.emblemLogoSquare}>
           <Image 
             src="/references/logo_siemens.png" 
-            alt="Siemens Partner Logo" 
+            alt="Siemens" 
             fill
-            style={{ objectFit: 'contain' }}
-          />
-        </div>
-        <div className={styles.partnerLogoWrapper}>
-          <Image 
-            src="/references/logo_1.png" 
-            alt="Siemens Solution Partner" 
-            fill
-            style={{ objectFit: 'contain' }}
+            style={{ objectFit: 'contain', padding: '12px' }}
           />
         </div>
       </div>
