@@ -96,17 +96,18 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <a 
-                href="https://maps.app.goo.gl/TiKA8o4wNanR83sx6"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.mapPlaceholder}
-                style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column', gap: '8px' }}
-              >
-                <MapPin size={32} color="var(--color-cyan-deep)" />
-                <span style={{ fontWeight: 600 }}>Google Haritalar'da Görüntüle</span>
-                <span style={{ fontSize: '12px' }}>{tFooter('address')}</span>
-              </a>
+              <div className={styles.mapPlaceholder} style={{ padding: 0, overflow: 'hidden' }}>
+                <iframe
+                  src="https://maps.google.com/maps?q=Eren%20Teknik%20M%C3%BChendislik%20Tuzla&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Google Haritalar - Eren Teknik"
+                />
+              </div>
             </div>
           </div>
         </div>
