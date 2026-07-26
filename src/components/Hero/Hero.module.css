@@ -53,7 +53,7 @@
 /* Hero card */
 .hero {
   position: relative;
-  min-height: calc(100vh - 168px);
+  min-height: calc(100vh - 96px);
   display: flex;
   align-items: center;
   padding: var(--space-8) 0;
