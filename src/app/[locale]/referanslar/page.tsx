@@ -12,18 +12,23 @@ import { allReferences as clients } from '@/lib/references';
 
 const getSectorColor = (sectorTr: string) => {
   switch (sectorTr) {
-    case 'Tekstil & Endüstriyel':
-    case 'Kimya':
-      return '#e00010'; // Red
+    case 'Ambalaj Sanayi':
+    case 'Elektrik & Otomasyon':
+    case 'İklimlendirme & Filtre':
+      return '#e00010'; // Red (Industry)
     case 'İlaç Sanayi':
-    case 'Kozmetik':
-      return '#20c0c0'; // Teal
+    case 'Biyoteknoloji':
+    case 'Sağlık Sanayi':
+      return '#20c0c0'; // Teal (Health/Pharma)
     case 'Gıda & İçecek':
-      return '#80c000'; // Green
-    case 'Sağlık / Hastane':
-    case 'Diğer':
+    case 'Et Entegre':
+    case 'Gıda & Dağıtım':
+      return '#80c000'; // Green (Food)
+    case 'Kamu / Kurum':
+    case 'Kamu / Eğitim':
+    case 'Kamu / Belediye':
     default:
-      return '#00a0f0'; // Blue
+      return '#00a0f0'; // Blue (Public/Other)
   }
 };
 
