@@ -73,7 +73,6 @@
 .heroContent {
   position: relative;
   z-index: 2;
-  transform: translateY(-32px); /* Shift content up without expanding slide height */
 }
 
 .heroEyebrow {
