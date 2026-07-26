@@ -49,12 +49,12 @@ export default function ReferencesPage() {
 
   const isSearching = searchQuery.trim() !== '';
   const filteredClients = shuffledClients.filter((client) => {
-    const query = searchQuery.toLowerCase().trim();
+    const query = searchQuery.toLocaleLowerCase('tr-TR').trim();
     return (
-      client.name.toLowerCase().includes(query) ||
-      client.sectorTr.toLowerCase().includes(query) ||
-      client.sectorEn.toLowerCase().includes(query) ||
-      (client.tags && client.tags.some(tag => tag.toLowerCase().includes(query)))
+      client.name.toLocaleLowerCase('tr-TR').includes(query) ||
+      client.sectorTr.toLocaleLowerCase('tr-TR').includes(query) ||
+      client.sectorEn.toLocaleLowerCase('tr-TR').includes(query) ||
+      (client.tags && client.tags.some(tag => tag.toLocaleLowerCase('tr-TR').includes(query)))
     );
   });
 
