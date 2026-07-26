@@ -9,33 +9,7 @@ export default function Hero() {
 
   return (
     <div className={styles.heroWrapper}>
-      {/* Siemens Custom Partner Structure */}
-      <div className={styles.siemensEmblem}>
-        {/* Sol taraftaki gri amblem kutusu görseli */}
-        <div className={styles.siemensGreyBoxWrapper}>
-          <Image 
-            src="/references/logo_siemens.png" 
-            alt="Siemens Partner" 
-            fill
-            style={{ objectFit: 'contain' }}
-          />
-        </div>
-        
-        {/* Sağ taraftaki Siemens logosu ve altındaki ince yazı */}
-        <div className={styles.siemensLogoColumn}>
-          <div className={styles.siemensLogoWrapper}>
-            <Image 
-              src="/references/logo_1.png" 
-              alt="Siemens" 
-              fill
-              style={{ objectFit: 'contain', objectPosition: 'left bottom' }}
-            />
-          </div>
-          <div className={styles.siemensCustomTagline}>
-            Solution Partner - Building Technologies
-          </div>
-        </div>
-      </div>
+
 
       <section className={styles.hero} id="hero">
         <div className={`container ${styles.heroInner}`}>
