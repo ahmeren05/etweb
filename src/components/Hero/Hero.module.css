@@ -53,7 +53,7 @@
 /* Hero card */
 .hero {
   position: relative;
-  min-height: 75vh;
+  min-height: 82vh;
   display: flex;
   align-items: center;
   padding: var(--space-16) 0;
@@ -129,9 +129,8 @@
   align-items: center;
   justify-content: center;
   min-height: 480px;
-  /* Kendi yüksekliği bozulmasın diye padding yerine transform kullanıyoruz:
-     Kullanıcı isteği üzerine 10px yukarı kaydırıldı (eski değer -31px) */
-  transform: translateY(-41px) scale(1.22);
+  /* Orijinal yükseklik algısını geri getirmek için eski -68px değerine dönüldü */
+  transform: translateY(-68px) scale(1.22);
 }
 
 
