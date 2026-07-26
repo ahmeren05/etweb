@@ -93,7 +93,7 @@
   filter: grayscale(0%) opacity(1);
   transform: scale(1.08);
   border-color: var(--brand-color, var(--color-cyan));
-  box-shadow: 0 10px 25px -5px rgba(0, 188, 212, 0.22);
+  box-shadow: 0 10px 25px -5px color-mix(in srgb, var(--brand-color) 25%, transparent);
   z-index: 10;
   background-color: #FFFFFF;
 }

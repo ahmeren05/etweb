@@ -54,20 +54,20 @@ export default function Footer() {
               </Link>
             </h4>
             <div className={styles.footerLinks}>
+              <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'temizoda' }}} className={styles.footerLink}>
+                {t('Disciplines.cleanroom.title')}
+              </Link>
+              <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'mekanik' }}} className={styles.footerLink}>
+                {t('Disciplines.mechanical.title')}
+              </Link>
               <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'elektrik' }}} className={styles.footerLink}>
                 {t('Disciplines.electrical.title')}
               </Link>
               <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'otomasyon' }}} className={styles.footerLink}>
                 {t('Disciplines.automation.title')}
               </Link>
-              <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'mekanik' }}} className={styles.footerLink}>
-                {t('Disciplines.mechanical.title')}
-              </Link>
               <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'insaat' }}} className={styles.footerLink}>
                 {t('Disciplines.construction.title')}
-              </Link>
-              <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'temizoda' }}} className={styles.footerLink}>
-                {t('Disciplines.cleanroom.title')}
               </Link>
             </div>
           </div>
