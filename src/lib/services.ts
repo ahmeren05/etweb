@@ -15,10 +15,10 @@ export interface Discipline {
 
 export const disciplines: Discipline[] = [
   {
-    slug: 'elektrik',
-    translationKey: 'electrical',
-    icon: 'Zap',
-    serviceKeys: ['lowVoltage', 'mediumVoltage', 'lighting', 'grounding', 'energyEfficiency'],
+    slug: 'temizoda',
+    translationKey: 'cleanroom',
+    icon: 'Sparkles',
+    serviceKeys: ['cleanRoomDesign', 'hvacValidation', 'particleMonitoring', 'gmpCompliance', 'pressureDifferential'],
   },
   {
     slug: 'otomasyon',
@@ -39,10 +39,10 @@ export const disciplines: Discipline[] = [
     serviceKeys: ['concrete', 'steel', 'infrastructure', 'industrial', 'management'],
   },
   {
-    slug: 'temizoda',
-    translationKey: 'cleanroom',
-    icon: 'Sparkles',
-    serviceKeys: ['cleanRoomDesign', 'hvacValidation', 'particleMonitoring', 'gmpCompliance', 'pressureDifferential'],
+    slug: 'elektrik',
+    translationKey: 'electrical',
+    icon: 'Zap',
+    serviceKeys: ['lowVoltage', 'mediumVoltage', 'lighting', 'grounding', 'energyEfficiency'],
   },
 ];
 

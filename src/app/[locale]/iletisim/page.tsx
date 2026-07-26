@@ -90,7 +90,7 @@ export default function ContactPage() {
                     <Clock size={20} />
                   </div>
                   <div className={styles.infoText}>
-                    <h4>08:30 &ndash; 18:00</h4>
+                    <h4>09:00 &ndash; 17:00</h4>
                     <p>Pazartesi &ndash; Cuma</p>
                   </div>
                 </div>

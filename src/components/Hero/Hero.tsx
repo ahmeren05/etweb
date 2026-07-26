@@ -53,7 +53,6 @@ export default function Hero() {
             </div>
             <div className={styles.certText}>
               <span className={styles.certName}>ISO</span>
-              <span className={styles.certLabel}>Kalite Yönetimi</span>
             </div>
           </div>
           <div className={styles.certDivider} />
@@ -66,7 +65,6 @@ export default function Hero() {
             </div>
             <div className={styles.certText}>
               <span className={styles.certName}>GMP</span>
-              <span className={styles.certLabel}>İyi Üretim</span>
             </div>
           </div>
           <div className={styles.certDivider} />
@@ -79,7 +77,6 @@ export default function Hero() {
             </div>
             <div className={styles.certText}>
               <span className={styles.certName}>FDA</span>
-              <span className={styles.certLabel}>Onaylı</span>
             </div>
           </div>
         </div>

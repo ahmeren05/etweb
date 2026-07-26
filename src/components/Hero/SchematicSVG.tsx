@@ -6,6 +6,7 @@ import { Zap, Cpu, Wrench, Building2, Sparkles } from 'lucide-react';
 
 export default function SchematicSVG() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isInteractive, setIsInteractive] = useState(false);
   const svgRef = useRef<SVGSVGElement>(null);
 
   useEffect(() => {
@@ -13,6 +14,7 @@ export default function SchematicSVG() {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
+          setTimeout(() => setIsInteractive(true), 2700);
           observer.disconnect();
         }
       },
@@ -40,6 +42,7 @@ export default function SchematicSVG() {
       xmlns="http://www.w3.org/2000/svg"
       style={{ width: '100%', maxWidth: 480, height: 'auto', overflow: 'visible' }}
       aria-hidden="true"
+      className={isInteractive || reducedMotion ? 'interactive' : ''}
     >
       <style>{`
         /* 1. Snake Line (Soldan gelen yılan) */
@@ -119,6 +122,10 @@ export default function SchematicSVG() {
         .node-link {
           cursor: pointer;
           outline: none;
+          pointer-events: none;
+        }
+        .interactive .node-link {
+          pointer-events: auto;
         }
         .node-link:hover .node-bg {
           fill: #E0F7FA !important;
@@ -217,17 +224,17 @@ export default function SchematicSVG() {
 
       {/* 4. Disciplines (Pentagon Şeklinde Dizilim) */}
 
-      {/* Top — ELEKTRİK */}
-      <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'elektrik' } }} className="node-link">
+      {/* Top — TEMİZ ODA (was ELEKTRİK) */}
+      <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'temizoda' } }} className="node-link">
         <g transform="translate(240, 120) rotate(-90)">
           <circle cx="0" cy="0" r="36" className={`node-bg ${animClass}`} />
           <path d="M -36 0 A 36 36 0 0 1 36 0" className={`node-outline-half ${animClass}`} />
           <path d="M -36 0 A 36 36 0 0 0 36 0" className={`node-outline-half ${animClass}`} />
           <g transform="rotate(90)">
             <g transform="translate(-14, -14)" className={`node-icon ${animClass}`}>
-              <Zap width={28} height={28} strokeWidth={2} />
+              <Sparkles width={28} height={28} strokeWidth={2} />
             </g>
-            <text x="0" y="-48" className={`node-label ${animClass}`}>ELEKTRİK</text>
+            <text x="0" y="-48" className={`node-label ${animClass}`}>TEMİZ ODA</text>
           </g>
         </g>
       </Link>
@@ -277,17 +284,17 @@ export default function SchematicSVG() {
         </g>
       </Link>
 
-      {/* Top-Left — TEMİZ ODA */}
-      <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'temizoda' } }} className="node-link">
+      {/* Top-Left — ELEKTRİK (was TEMİZ ODA) */}
+      <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'elektrik' } }} className="node-link">
         <g transform="translate(126, 203) rotate(-162)">
           <circle cx="0" cy="0" r="36" className={`node-bg ${animClass}`} />
           <path d="M -36 0 A 36 36 0 0 1 36 0" className={`node-outline-half ${animClass}`} />
           <path d="M -36 0 A 36 36 0 0 0 36 0" className={`node-outline-half ${animClass}`} />
           <g transform="rotate(162)">
             <g transform="translate(-14, -14)" className={`node-icon ${animClass}`}>
-              <Sparkles width={28} height={28} strokeWidth={2} />
+              <Zap width={28} height={28} strokeWidth={2} />
             </g>
-            <text x="0" y="-48" className={`node-label ${animClass}`}>TEMİZ ODA</text>
+            <text x="0" y="-48" className={`node-label ${animClass}`}>ELEKTRİK</text>
           </g>
         </g>
       </Link>
