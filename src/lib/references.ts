@@ -9,7 +9,7 @@ export interface ReferenceItem {
 
 export const allReferences: ReferenceItem[] = [
   { name: 'DEVA Holding', imgUrl: '/references/1-deva.png', sectorTr: 'İlaç Sanayi', sectorEn: 'Pharmaceuticals', color: '#003050', tags: ['deva', 'ilaç', 'holding', 'pharmaceuticals'] },
-  { name: 'Aroma Meyve Suları', imgUrl: '/references/2-aroma.png', sectorTr: 'Gıda & İçecek', sectorEn: 'Food & Beverage', color: '#404040', tags: ['aroma', 'meyve', 'suyu', 'gıda', 'içecek', 'food', 'beverage'] },
+  { name: 'Aroma İlaç Sanayi', imgUrl: '/references/2-aroma.png', sectorTr: 'İlaç Sanayi', sectorEn: 'Pharmaceuticals', color: '#404040', tags: ['aroma', 'ilaç', 'sanayi', 'pharmaceuticals'] },
   { name: 'Alba Farma', imgUrl: '/references/3-albafarma.png', sectorTr: 'İlaç Sanayi', sectorEn: 'Pharmaceuticals', color: '#103080', tags: ['alba', 'farma', 'albafarma', 'ilaç'] },
   { name: 'Atabay Kimya', imgUrl: '/references/4-atabay.png', sectorTr: 'İlaç Sanayi', sectorEn: 'Pharmaceuticals', color: '#0050a0', tags: ['atabay', 'kimya', 'ilaç'] },
   { name: 'Farmatek İlaç', imgUrl: '/references/5-farmatek.png', sectorTr: 'İlaç Sanayi', sectorEn: 'Pharmaceuticals', color: '#20b070', tags: ['farmatek', 'ilaç', 'sağlık'] },
