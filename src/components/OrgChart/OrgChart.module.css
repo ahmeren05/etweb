@@ -163,7 +163,7 @@
 }
 
 /* TABLET (2x2 Grid) */
-@media (max-width: 1024px) and (min-width: 769px) {
+@media (max-width: 1024px) and (min-width: 601px) {
   .level2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -204,10 +204,13 @@
 }
 
 /* MOBILE (Vertical Tree) */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .orgChart {
     align-items: flex-start;
     padding: var(--space-4);
+    margin: 0 auto;
+    width: fit-content;
+    max-width: 100%;
   }
   
   .level1 {
