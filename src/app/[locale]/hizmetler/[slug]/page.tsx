@@ -128,7 +128,7 @@ function ServiceDetailContent({ discipline }: { discipline: NonNullable<ReturnTy
 
       {/* Other Disciplines */}
       <section className="section section-alt">
-        <div className="container">
+        <div className="container container-wide">
           <div className="section-header">
             <h2>
               <span className="sectionTitleLink">

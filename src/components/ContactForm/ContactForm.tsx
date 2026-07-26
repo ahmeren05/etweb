@@ -40,6 +40,7 @@ export default function ContactForm() {
     { value: 'automation', label: t('serviceOptions.automation') },
     { value: 'mechanical', label: t('serviceOptions.mechanical') },
     { value: 'construction', label: t('serviceOptions.construction') },
+    { value: 'cleanroom', label: t('serviceOptions.cleanroom') },
     { value: 'integrated', label: t('serviceOptions.integrated') },
     { value: 'other', label: t('serviceOptions.other') },
   ];
