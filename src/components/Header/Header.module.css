@@ -271,16 +271,12 @@
 }
 
 @media (max-width: 550px) {
-  .headerLangSwitcher {
-    display: none;
-  }
-
   .ctaButton {
     display: none !important;
   }
-
+  
   .ctaButtonMobile {
-    display: flex;
+    display: none !important;
   }
 }
 

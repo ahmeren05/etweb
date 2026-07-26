@@ -21,28 +21,28 @@ export const disciplines: Discipline[] = [
     serviceKeys: ['cleanRoomDesign', 'hvacValidation', 'particleMonitoring', 'gmpCompliance', 'pressureDifferential'],
   },
   {
-    slug: 'otomasyon',
-    translationKey: 'automation',
-    icon: 'Cpu',
-    serviceKeys: ['plc', 'scada', 'bms', 'industrial', 'processControl'],
-  },
-  {
     slug: 'mekanik',
     translationKey: 'mechanical',
     icon: 'Wrench',
     serviceKeys: ['hvac', 'fire', 'plumbing', 'gas', 'compressedAir'],
   },
   {
-    slug: 'insaat',
-    translationKey: 'construction',
-    icon: 'Building2',
-    serviceKeys: ['concrete', 'steel', 'infrastructure', 'industrial', 'management'],
-  },
-  {
     slug: 'elektrik',
     translationKey: 'electrical',
     icon: 'Zap',
     serviceKeys: ['lowVoltage', 'mediumVoltage', 'lighting', 'grounding', 'energyEfficiency'],
+  },
+  {
+    slug: 'otomasyon',
+    translationKey: 'automation',
+    icon: 'Cpu',
+    serviceKeys: ['plc', 'scada', 'bms', 'industrial', 'processControl'],
+  },
+  {
+    slug: 'insaat',
+    translationKey: 'construction',
+    icon: 'Building2',
+    serviceKeys: ['concrete', 'steel', 'infrastructure', 'industrial', 'management'],
   },
 ];
 

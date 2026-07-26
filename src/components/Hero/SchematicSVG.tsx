@@ -254,32 +254,32 @@ export default function SchematicSVG() {
         </g>
       </Link>
 
-      {/* Bottom-Right — OTOMASYON */}
-      <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'otomasyon' } }} className="node-link">
+      {/* Bottom-Right — İNŞAAT */}
+      <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'insaat' } }} className="node-link">
         <g transform="translate(311, 337) rotate(54)">
           <circle cx="0" cy="0" r="36" className={`node-bg ${animClass}`} />
           <path d="M -36 0 A 36 36 0 0 1 36 0" className={`node-outline-half ${animClass}`} />
           <path d="M -36 0 A 36 36 0 0 0 36 0" className={`node-outline-half ${animClass}`} />
           <g transform="rotate(-54)">
             <g transform="translate(-14, -14)" className={`node-icon ${animClass}`}>
-              <Cpu width={28} height={28} strokeWidth={2} />
+              <Building2 width={28} height={28} strokeWidth={2} />
             </g>
-            <text x="0" y="54" className={`node-label ${animClass}`}>OTOMASYON</text>
+            <text x="0" y="54" className={`node-label ${animClass}`}>İNŞAAT</text>
           </g>
         </g>
       </Link>
 
-      {/* Bottom-Left — İNŞAAT */}
-      <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'insaat' } }} className="node-link">
+      {/* Bottom-Left — OTOMASYON */}
+      <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'otomasyon' } }} className="node-link">
         <g transform="translate(169, 337) rotate(126)">
           <circle cx="0" cy="0" r="36" className={`node-bg ${animClass}`} />
           <path d="M -36 0 A 36 36 0 0 1 36 0" className={`node-outline-half ${animClass}`} />
           <path d="M -36 0 A 36 36 0 0 0 36 0" className={`node-outline-half ${animClass}`} />
           <g transform="rotate(-126)">
             <g transform="translate(-14, -14)" className={`node-icon ${animClass}`}>
-              <Building2 width={28} height={28} strokeWidth={2} />
+              <Cpu width={28} height={28} strokeWidth={2} />
             </g>
-            <text x="0" y="54" className={`node-label ${animClass}`}>İNŞAAT</text>
+            <text x="0" y="54" className={`node-label ${animClass}`}>OTOMASYON</text>
           </g>
         </g>
       </Link>
