@@ -37,7 +37,7 @@ export default function HomePage() {
 
       {/* Disciplines Section */}
       <section className="section" id="disciplines">
-        <div className="container">
+        <div className="container container-wide">
           <div className="section-header">
             <h2>
               <Link href="/hizmetler" className="sectionTitleLink">

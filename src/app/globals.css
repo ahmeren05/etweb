@@ -228,6 +228,10 @@ p {
   padding-right: var(--container-padding);
 }
 
+.container-wide {
+  max-width: 1600px;
+}
+
 .section {
   padding-top: var(--space-20);
   padding-bottom: var(--space-20);
