@@ -34,7 +34,7 @@
 
 .siemensLogoWrapper {
   position: relative;
-  width: 140px;
+  width: 160px;
   height: 36px;
 }
 
@@ -42,7 +42,7 @@
   font-family: var(--font-sans);
   font-size: 10px;
   color: var(--color-slate);
-  margin-top: 4px;
+  margin-top: 0px;
 }
 
 /* Hero card */
@@ -379,7 +379,7 @@
     height: 52px;
   }
   .siemensLogoWrapper {
-    width: 110px;
+    width: 140px;
     height: 28px;
   }
   .siemensCustomTagline {
@@ -471,7 +471,7 @@
     height: 44px;
   }
   .siemensLogoWrapper {
-    width: 90px;
+    width: 120px;
     height: 24px;
   }
   .siemensCustomTagline {

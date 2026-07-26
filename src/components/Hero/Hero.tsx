@@ -28,7 +28,7 @@ export default function Hero() {
               src="/references/logo_1.png" 
               alt="Siemens" 
               fill
-              style={{ objectFit: 'contain' }}
+              style={{ objectFit: 'contain', objectPosition: 'left bottom' }}
             />
           </div>
           <div className={styles.siemensCustomTagline}>
