@@ -27,8 +27,9 @@ export default function OrgChart() {
             />
           </div>
           
-          <div className={styles.orgChart}>
-            <div className={styles.level1}>
+          <div className={styles.scrollArea}>
+            <div className={styles.orgChart}>
+              <div className={styles.level1}>
               <div className={`${styles.node} ${styles.primaryNode}`}>
                 <div className={styles.avatar}>
                   <UserRound size={32} />
