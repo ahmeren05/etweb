@@ -377,7 +377,7 @@ p {
 }
 
 /* --- Responsive --- */
-@media (max-width: 1024px) {
+@media (max-width: 1070px) {
   :root {
     --text-5xl: 2.5rem;
     --text-6xl: 3rem;
