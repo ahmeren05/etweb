@@ -414,6 +414,15 @@
   .cornerTop {
     display: none !important;
   }
+
+  .siemensEmblem {
+    top: auto;
+    bottom: 90px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%) scale(0.7);
+    transform-origin: center bottom;
+  }
 }
 
 /* Shrink under 500px so all 3 fit side-by-side down to 390px min width while remaining large and bold */
@@ -471,12 +480,6 @@
     line-height: 1.15;
   }
 
-  .siemensEmblem {
-    top: auto;
-    bottom: 32px;
-    left: 16px;
-    right: auto;
-  }
   .siemensGreyBoxWrapper {
     width: 44px;
     height: 44px;
