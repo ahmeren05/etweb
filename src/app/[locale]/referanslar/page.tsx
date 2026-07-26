@@ -10,6 +10,23 @@ import styles from './page.module.css';
 import Image from 'next/image';
 import { allReferences as clients } from '@/lib/references';
 
+const getSectorColor = (sectorTr: string) => {
+  switch (sectorTr) {
+    case 'Tekstil & Endüstriyel':
+    case 'Kimya':
+      return '#e00010'; // Red
+    case 'İlaç Sanayi':
+    case 'Kozmetik':
+      return '#20c0c0'; // Teal
+    case 'Gıda & İçecek':
+      return '#80c000'; // Green
+    case 'Sağlık / Hastane':
+    case 'Diğer':
+    default:
+      return '#00a0f0'; // Blue
+  }
+};
+
 export default function ReferencesPage() {
   const t = useTranslations('References');
   const locale = useLocale();
@@ -86,7 +103,11 @@ export default function ReferencesPage() {
           <div className={styles.referencesGrid}>
             {displayedClients.length > 0 ? (
               displayedClients.map((client) => (
-                <div key={client.name} className={styles.referenceCard}>
+                <div 
+                  key={client.name} 
+                  className={styles.referenceCard}
+                  style={{ '--hover-color': getSectorColor(client.sectorTr) } as React.CSSProperties}
+                >
                   <div className={styles.logoBadgeContainer}>
                     <Image 
                       src={client.imgUrl} 

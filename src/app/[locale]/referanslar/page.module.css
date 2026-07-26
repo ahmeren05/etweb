@@ -128,8 +128,8 @@
 
 .referenceCard:hover {
   transform: translateY(-5px);
-  border-color: var(--color-cyan, #00BCD4);
-  box-shadow: 0 20px 35px -10px rgba(0, 188, 212, 0.22);
+  border-color: var(--hover-color, var(--color-cyan));
+  box-shadow: 0 20px 35px -10px color-mix(in srgb, var(--hover-color, var(--color-cyan)) 22%, transparent);
   background-color: #FFFFFF;
 }
 
