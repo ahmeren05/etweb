@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { MapPin, Phone, Mail, ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -13,9 +14,13 @@ export default function Footer() {
           {/* Brand Column */}
           <div className={styles.footerBrand}>
             <Link href="/" className={styles.footerLogo}>
-              <div className={styles.footerLogoText}>
-                Eren <span>Teknik</span>
-              </div>
+              <Image 
+                src="/etlogo.png" 
+                alt="Eren Teknik Logo" 
+                width={220} 
+                height={45} 
+                style={{ objectFit: 'contain' }}
+              />
             </Link>
             <p className={styles.footerDescription}>
               {t('Footer.description')}
@@ -60,6 +65,9 @@ export default function Footer() {
               </Link>
               <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'insaat' }}} className={styles.footerLink}>
                 {t('Disciplines.construction.title')}
+              </Link>
+              <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'temizoda' }}} className={styles.footerLink}>
+                {t('Disciplines.cleanroom.title')}
               </Link>
             </div>
           </div>

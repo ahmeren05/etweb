@@ -40,8 +40,8 @@ export default function HomePage() {
         <div className="container">
           <div className="section-header">
             <h2>
-              <Link href="/hizmetler" className={styles.sectionTitleLink}>
-                <span className={styles.sectionTitleText}>
+              <Link href="/hizmetler" className="sectionTitleLink">
+                <span className="sectionTitleText">
                   {t('Disciplines.sectionTitle')}
                 </span>
               </Link>
@@ -68,8 +68,8 @@ export default function HomePage() {
                 <span className="eyebrow">{t('AboutPreview.eyebrow')}</span>
               </Link>
               <h2>
-                <Link href="/hakkimizda" className={styles.sectionTitleLink}>
-                  <span className={styles.sectionTitleText}>
+                <Link href="/hakkimizda" className="sectionTitleLink">
+                  <span className="sectionTitleText">
                     {t('AboutPreview.title')}
                   </span>
                 </Link>

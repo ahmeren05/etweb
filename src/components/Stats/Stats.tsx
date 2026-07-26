@@ -11,10 +11,10 @@ interface StatConfig {
 }
 
 const statsData: StatConfig[] = [
-  { value: 25, suffix: '+', labelKey: 'years' },
-  { value: 500, suffix: '+', labelKey: 'projects' },
+  { value: 30, suffix: '+', labelKey: 'years' },
+  { value: 120, suffix: '+', labelKey: 'projects' },
   { value: 100, suffix: '%', labelKey: 'turnkey' },
-  { value: 12, suffix: '+', labelKey: 'certifications' },
+  { value: 5, suffix: '', labelKey: 'certifications' },
 ];
 
 function useCountUp(target: number, duration: number = 2000, isVisible: boolean) {
@@ -55,6 +55,18 @@ function StatItem({ stat, isVisible }: { stat: StatConfig; isVisible: boolean })
         {stat.suffix && <span className={styles.statSuffix}>{stat.suffix}</span>}
       </div>
       <p className={styles.statLabel}>{t(stat.labelKey)}</p>
+      
+      {stat.labelKey === 'certifications' && (
+        <div className={styles.certTooltip}>
+          <ul>
+            <li>ISO 9001</li>
+            <li>ISO 14001</li>
+            <li>ISO 45001</li>
+            <li>TSE</li>
+            <li>CE</li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 }

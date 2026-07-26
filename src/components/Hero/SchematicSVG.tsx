@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { Link } from '@/i18n/navigation';
-import { Zap, Cpu, Wrench, Building2 } from 'lucide-react';
+import { Zap, Cpu, Wrench, Building2, Sparkles } from 'lucide-react';
 
 export default function SchematicSVG() {
   const [isVisible, setIsVisible] = useState(false);
@@ -62,20 +62,20 @@ export default function SchematicSVG() {
           fill: #00BCD4;
           opacity: 0;
           transform: scale(0);
-          transform-origin: 240px 250px;
+          transform-origin: 240px 240px;
         }
         .center-dot.visible {
           animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
           animation-delay: 1.5s; 
         }
 
-        /* 3. Outward Lines (Merkezden çıkan 4 çizgi) */
+        /* 3. Outward Lines (Merkezden çıkan çizgiler) */
         .outward-line {
           stroke: #00BCD4;
           stroke-width: 1.5;
           fill: none;
-          stroke-dasharray: 100;
-          stroke-dashoffset: 100;
+          stroke-dasharray: 85;
+          stroke-dashoffset: 85;
           opacity: 0.6;
         }
         .outward-line.visible {
@@ -88,12 +88,8 @@ export default function SchematicSVG() {
           fill: #FFFFFF;
           opacity: 0;
           transform: scale(0);
+          transform-origin: 0px 0px;
         }
-        /* Yeni X yapısına göre koordinatlar (dx=100, dy=100 from center 240,250) */
-        .bg-top-left { transform-origin: 140px 150px; }
-        .bg-top-right { transform-origin: 340px 150px; }
-        .bg-bottom-left { transform-origin: 140px 350px; }
-        .bg-bottom-right { transform-origin: 340px 350px; }
         
         .node-bg.visible {
           animation: scaleUp 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
@@ -144,8 +140,8 @@ export default function SchematicSVG() {
           stroke: #00BCD4;
           stroke-width: 2;
           fill: none;
-          stroke-dasharray: 100;
-          stroke-dashoffset: 100;
+          stroke-dasharray: 114;
+          stroke-dashoffset: 114;
         }
         .node-outline-half.visible {
           animation: drawLine 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
@@ -204,76 +200,95 @@ export default function SchematicSVG() {
 
       {/* 1. Snake Line */}
       <path 
-        d="M -800 350 C -600 350, -500 100, -350 100 C -200 100, -100 350, 50 350 C 150 350, 200 250, 240 250" 
+        d="M -800 350 C -600 350, -500 100, -350 100 C -200 100, -100 350, 50 350 C 150 350, 200 240, 240 240" 
         pathLength="100"
         className={`snake-line ${animClass}`} 
       />
 
-      {/* 2. Outward Lines (Merkezden X köşelerine giden çapraz çizgiler) */}
-      <line x1="240" y1="250" x2="165.45" y2="175.45" pathLength="100" className={`outward-line ${animClass}`} />
-      <line x1="240" y1="250" x2="314.55" y2="175.45" pathLength="100" className={`outward-line ${animClass}`} />
-      <line x1="240" y1="250" x2="165.45" y2="324.55" pathLength="100" className={`outward-line ${animClass}`} />
-      <line x1="240" y1="250" x2="314.55" y2="324.55" pathLength="100" className={`outward-line ${animClass}`} />
+      {/* 2. Outward Lines (Merkezden pentagon köşelerine giden çizgiler) */}
+      <line x1="240" y1="240" x2="240" y2="156" className={`outward-line ${animClass}`} />
+      <line x1="240" y1="240" x2="320" y2="214" className={`outward-line ${animClass}`} />
+      <line x1="240" y1="240" x2="290" y2="308" className={`outward-line ${animClass}`} />
+      <line x1="240" y1="240" x2="190" y2="308" className={`outward-line ${animClass}`} />
+      <line x1="240" y1="240" x2="160" y2="214" className={`outward-line ${animClass}`} />
 
       {/* 3. Center Dot */}
-      <circle cx="240" cy="250" r="6" className={`center-dot ${animClass}`} />
+      <circle cx="240" cy="240" r="6" className={`center-dot ${animClass}`} />
 
+      {/* 4. Disciplines (Pentagon Şeklinde Dizilim) */}
 
-      {/* 4. Disciplines (X Şeklinde Dizilim) */}
-
-      {/* Top-Left — ELEKTRİK */}
+      {/* Top — ELEKTRİK */}
       <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'elektrik' } }} className="node-link">
-        <g>
-          <circle cx="140" cy="150" r="36" className={`node-bg bg-top-left ${animClass}`} />
-          <path d="M 165.45 175.45 A 36 36 0 0 1 114.55 124.55" pathLength="100" className={`node-outline-half ${animClass}`} />
-          <path d="M 165.45 175.45 A 36 36 0 0 0 114.55 124.55" pathLength="100" className={`node-outline-half ${animClass}`} />
-          
-          <g transform="translate(126, 136)" className={`node-icon ${animClass}`}>
-            <Zap width={28} height={28} strokeWidth={2} />
+        <g transform="translate(240, 120) rotate(-90)">
+          <circle cx="0" cy="0" r="36" className={`node-bg ${animClass}`} />
+          <path d="M -36 0 A 36 36 0 0 1 36 0" className={`node-outline-half ${animClass}`} />
+          <path d="M -36 0 A 36 36 0 0 0 36 0" className={`node-outline-half ${animClass}`} />
+          <g transform="rotate(90)">
+            <g transform="translate(-14, -14)" className={`node-icon ${animClass}`}>
+              <Zap width={28} height={28} strokeWidth={2} />
+            </g>
+            <text x="0" y="-48" className={`node-label ${animClass}`}>ELEKTRİK</text>
           </g>
-          <text x="140" y="98" className={`node-label ${animClass}`}>ELEKTRİK</text>
         </g>
       </Link>
 
       {/* Top-Right — OTOMASYON */}
       <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'otomasyon' } }} className="node-link">
-        <g>
-          <circle cx="340" cy="150" r="36" className={`node-bg bg-top-right ${animClass}`} />
-          <path d="M 314.55 175.45 A 36 36 0 0 1 365.45 124.55" pathLength="100" className={`node-outline-half ${animClass}`} />
-          <path d="M 314.55 175.45 A 36 36 0 0 0 365.45 124.55" pathLength="100" className={`node-outline-half ${animClass}`} />
-
-          <g transform="translate(326, 136)" className={`node-icon ${animClass}`}>
-            <Cpu width={28} height={28} strokeWidth={2} />
+        <g transform="translate(354, 203) rotate(-18)">
+          <circle cx="0" cy="0" r="36" className={`node-bg ${animClass}`} />
+          <path d="M -36 0 A 36 36 0 0 1 36 0" className={`node-outline-half ${animClass}`} />
+          <path d="M -36 0 A 36 36 0 0 0 36 0" className={`node-outline-half ${animClass}`} />
+          <g transform="rotate(18)">
+            <g transform="translate(-14, -14)" className={`node-icon ${animClass}`}>
+              <Cpu width={28} height={28} strokeWidth={2} />
+            </g>
+            <text x="0" y="-48" className={`node-label ${animClass}`}>OTOMASYON</text>
           </g>
-          <text x="340" y="98" className={`node-label ${animClass}`}>OTOMASYON</text>
         </g>
       </Link>
 
       {/* Bottom-Right — İNŞAAT */}
       <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'insaat' } }} className="node-link">
-        <g>
-          <circle cx="340" cy="350" r="36" className={`node-bg bg-bottom-right ${animClass}`} />
-          <path d="M 314.55 324.55 A 36 36 0 0 1 365.45 375.45" pathLength="100" className={`node-outline-half ${animClass}`} />
-          <path d="M 314.55 324.55 A 36 36 0 0 0 365.45 375.45" pathLength="100" className={`node-outline-half ${animClass}`} />
-
-          <g transform="translate(326, 336)" className={`node-icon ${animClass}`}>
-            <Building2 width={28} height={28} strokeWidth={2} />
+        <g transform="translate(311, 337) rotate(54)">
+          <circle cx="0" cy="0" r="36" className={`node-bg ${animClass}`} />
+          <path d="M -36 0 A 36 36 0 0 1 36 0" className={`node-outline-half ${animClass}`} />
+          <path d="M -36 0 A 36 36 0 0 0 36 0" className={`node-outline-half ${animClass}`} />
+          <g transform="rotate(-54)">
+            <g transform="translate(-14, -14)" className={`node-icon ${animClass}`}>
+              <Building2 width={28} height={28} strokeWidth={2} />
+            </g>
+            <text x="0" y="54" className={`node-label ${animClass}`}>İNŞAAT</text>
           </g>
-          <text x="340" y="406" className={`node-label ${animClass}`}>İNŞAAT</text>
         </g>
       </Link>
 
       {/* Bottom-Left — MEKANİK */}
       <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'mekanik' } }} className="node-link">
-        <g>
-          <circle cx="140" cy="350" r="36" className={`node-bg bg-bottom-left ${animClass}`} />
-          <path d="M 165.45 324.55 A 36 36 0 0 1 114.55 375.45" pathLength="100" className={`node-outline-half ${animClass}`} />
-          <path d="M 165.45 324.55 A 36 36 0 0 0 114.55 375.45" pathLength="100" className={`node-outline-half ${animClass}`} />
-
-          <g transform="translate(126, 336)" className={`node-icon ${animClass}`}>
-            <Wrench width={28} height={28} strokeWidth={2} />
+        <g transform="translate(169, 337) rotate(126)">
+          <circle cx="0" cy="0" r="36" className={`node-bg ${animClass}`} />
+          <path d="M -36 0 A 36 36 0 0 1 36 0" className={`node-outline-half ${animClass}`} />
+          <path d="M -36 0 A 36 36 0 0 0 36 0" className={`node-outline-half ${animClass}`} />
+          <g transform="rotate(-126)">
+            <g transform="translate(-14, -14)" className={`node-icon ${animClass}`}>
+              <Wrench width={28} height={28} strokeWidth={2} />
+            </g>
+            <text x="0" y="54" className={`node-label ${animClass}`}>MEKANİK</text>
           </g>
-          <text x="140" y="406" className={`node-label ${animClass}`}>MEKANİK</text>
+        </g>
+      </Link>
+
+      {/* Top-Left — TEMİZ ODA */}
+      <Link href={{ pathname: '/hizmetler/[slug]', params: { slug: 'temizoda' } }} className="node-link">
+        <g transform="translate(126, 203) rotate(-162)">
+          <circle cx="0" cy="0" r="36" className={`node-bg ${animClass}`} />
+          <path d="M -36 0 A 36 36 0 0 1 36 0" className={`node-outline-half ${animClass}`} />
+          <path d="M -36 0 A 36 36 0 0 0 36 0" className={`node-outline-half ${animClass}`} />
+          <g transform="rotate(162)">
+            <g transform="translate(-14, -14)" className={`node-icon ${animClass}`}>
+              <Sparkles width={28} height={28} strokeWidth={2} />
+            </g>
+            <text x="0" y="-48" className={`node-label ${animClass}`}>TEMİZ ODA</text>
+          </g>
         </g>
       </Link>
 

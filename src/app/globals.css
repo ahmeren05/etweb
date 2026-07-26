@@ -266,6 +266,45 @@ p {
   font-size: var(--text-lg);
 }
 
+/* --- Animated Underline Title --- */
+.sectionTitleLink {
+  display: inline-block;
+  border-bottom: 3px solid var(--color-cyan-deep);
+  padding-bottom: 8px;
+  text-decoration: none;
+}
+
+.sectionTitleText {
+  color: var(--color-graphite);
+  background-image: linear-gradient(
+    90deg,
+    var(--color-graphite) 0%,
+    var(--color-graphite) 30%,
+    var(--color-cyan) 45%,
+    var(--color-cyan-deep) 50%,
+    var(--color-cyan) 55%,
+    var(--color-graphite) 70%,
+    var(--color-graphite) 100%
+  );
+  background-size: 300% 100%;
+  background-position: 100% 0%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sectionTitleLink:hover .sectionTitleText {
+  animation: gradientWipe 1.6s linear infinite;
+}
+
+@keyframes gradientWipe {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
 /* --- Button Styles --- */
 .btn {
   display: inline-flex;

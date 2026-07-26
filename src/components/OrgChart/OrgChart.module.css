@@ -1,0 +1,206 @@
+.chartWrapper {
+  position: relative;
+  padding: var(--space-12) 0;
+  overflow: hidden;
+  background-color: var(--color-cloud);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-silver);
+}
+
+.watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-display);
+  font-size: clamp(80px, 15vw, 200px);
+  font-weight: 800;
+  color: var(--color-silver-dark);
+  opacity: 0.15;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 0;
+  letter-spacing: -2px;
+}
+
+.watermark span {
+  color: var(--color-cyan);
+}
+
+.orgChart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.level1 {
+  display: flex;
+  justify-content: center;
+}
+
+.node {
+  background: white;
+  border: 2px solid var(--color-cyan);
+  padding: var(--space-6) var(--space-6);
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  color: var(--color-graphite);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 220px;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+}
+
+.avatar {
+  background-color: var(--color-cloud);
+  color: var(--color-cyan);
+  border-radius: 50%;
+  padding: var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-snow);
+  box-shadow: var(--shadow-sm);
+}
+
+.primaryNode .avatar {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--color-snow);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.node:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-cyan-deep);
+}
+
+.primaryNode {
+  background: linear-gradient(135deg, var(--color-cyan-deep), var(--color-cyan));
+  color: var(--color-snow);
+  border: none;
+  padding: var(--space-6) var(--space-10);
+  font-size: var(--text-lg);
+  min-height: 160px;
+}
+
+.primaryNode:hover {
+  border-color: transparent;
+}
+
+.mainConnection {
+  width: 2px;
+  height: 40px;
+  background-color: var(--color-cyan);
+}
+
+.level2 {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+}
+
+/* Horizontal line for branches */
+.level2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 12.5%;
+  right: 12.5%;
+  height: 2px;
+  background-color: var(--color-cyan);
+}
+
+.branch {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 40px;
+  padding-left: var(--space-2);
+  padding-right: var(--space-2);
+}
+
+/* Vertical line down to branch node */
+.branch::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 40px;
+  background-color: var(--color-cyan);
+}
+
+.subConnection {
+  width: 2px;
+  height: 24px;
+  background-color: rgba(0, 188, 212, 0.4);
+}
+
+.subNode {
+  background: var(--color-cyan-glow);
+  color: var(--color-cyan-deep);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  border: 1px solid rgba(0, 188, 212, 0.2);
+}
+
+@media (max-width: 768px) {
+  .level2 {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-8);
+  }
+  
+  .level2::before {
+    display: none; /* No horizontal line on mobile */
+  }
+  
+  .branch {
+    width: 100%;
+    padding-top: 0;
+  }
+  
+  .branch::before {
+    display: none; /* No vertical connecting lines from top on mobile */
+  }
+  
+  /* Create vertical connection between branches instead */
+  .branch:not(:first-child)::after {
+    content: "";
+    position: absolute;
+    top: calc(-1 * var(--space-8));
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: var(--space-8);
+    background-color: var(--color-cyan);
+  }
+  
+  /* Link first branch to the top node */
+  .branch:first-child::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(-1 * var(--space-8));
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: var(--space-8);
+    background-color: var(--color-cyan);
+  }
+}

@@ -84,7 +84,9 @@
   align-items: center;
   justify-content: center;
   min-height: 480px;
-  transform: translateY(-68px) scale(1.22);
+  /* Kendi yüksekliği bozulmasın diye padding yerine transform kullanıyoruz:
+     Kullanıcı isteği üzerine 10px yukarı kaydırıldı (eski değer -31px) */
+  transform: translateY(-41px) scale(1.22);
 }
 
 
@@ -279,6 +281,7 @@
     min-height: 360px;
     order: -1;
     transform: scale(1.22);
+    padding-bottom: 0; /* Reset for mobile where layout changes */
     display: flex;
     justify-content: center;
     align-items: center;

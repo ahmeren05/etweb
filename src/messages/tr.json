@@ -2,8 +2,8 @@
   "Metadata": {
     "title": "Eren Teknik Mühendislik A.Ş.",
     "titleTemplate": "{title} | Eren Teknik Mühendislik",
-    "description": "Elektrik, otomasyon, mekanik ve inşaat mühendisliği alanlarında 25 yılı aşkın deneyimle endüstriyel ve ticari projeler için entegre mühendislik çözümleri sunuyoruz.",
-    "keywords": "mühendislik, elektrik mühendisliği, otomasyon, mekanik tesisat, inşaat mühendisliği, endüstriyel projeler, Türkiye"
+    "description": "Elektrik, otomasyon, mekanik, inşaat ve temiz oda mühendisliği alanlarında 30 yılı aşkın deneyimle endüstriyel ve ticari projeler için entegre mühendislik çözümleri sunuyoruz.",
+    "keywords": "mühendislik, elektrik mühendisliği, otomasyon, mekanik tesisat, inşaat mühendisliği, temiz oda, endüstriyel projeler, Türkiye"
   },
   "Nav": {
     "home": "Ana Sayfa",
@@ -14,14 +14,14 @@
     "getInTouch": "Bize Ulaşın"
   },
   "Hero": {
-    "headline": "Dört Disiplin,\nBir Mühendislik Vizyonu",
-    "subheadline": "Elektrik, otomasyon, mekanik ve inşaat mühendisliğinde bütünleşik çözümler. Projenizin her aşamasında yanınızdayız.",
+    "headline": "Beş Disiplin,\nBir Mühendislik Vizyonu",
+    "subheadline": "Elektrik, otomasyon, mekanik, inşaat ve temiz oda disiplinlerinde entegre mühendislik çözümleri sunuyoruz. Yarım yüzyıla yakın tecrübemizle projenizin her aşamasında yanınızdayız.",
     "cta": "Hizmetlerimizi Keşfedin",
     "ctaSecondary": "Bize Ulaşın"
   },
   "Disciplines": {
     "sectionTitle": "Mühendislik Alanlarımız",
-    "sectionSubtitle": "Dört temel mühendislik disiplininde uzman ekibimizle projelerinize değer katıyoruz.",
+    "sectionSubtitle": "Endüstriyel ihtiyaçlarınıza özel, beş temel mühendislik disiplininde yenilikçi ve yüksek standartlı çözümler üretiyoruz.",
     "electrical": {
       "title": "Elektrik Mühendisliği",
       "description": "Alçak ve orta gerilim sistemlerinden enerji verimliliğine kadar kapsamlı elektrik mühendisliği hizmetleri.",
@@ -66,6 +66,17 @@
         "management": "Proje Yönetimi"
       }
     },
+    "cleanroom": {
+      "title": "Temiz Oda Mühendisliği",
+      "description": "GMP standartlarına uygun temiz oda tasarımı, validasyon ve partikül kontrol sistemleri.",
+      "services": {
+        "cleanRoomDesign": "Temiz Oda Tasarımı ve Projelendirme",
+        "hvacValidation": "HVAC Validasyonu (DQ/IQ/OQ/PQ)",
+        "particleMonitoring": "Partikül İzleme Sistemleri",
+        "gmpCompliance": "GMP Uyumluluk Danışmanlığı",
+        "pressureDifferential": "Basınç Farkı Kontrol Sistemleri"
+      }
+    },
     "viewAll": "Tüm Hizmetleri Görüntüle",
     "learnMore": "Detaylı Bilgi"
   },
@@ -78,16 +89,16 @@
   "AboutPreview": {
     "eyebrow": "Hakkımızda",
     "title": "Entegre Mühendislik Gücü",
-    "description": "Eren Teknik Mühendislik, 2000 yılından bu yana Türkiye'nin önde gelen sanayi kuruluşlarına entegre mühendislik hizmetleri sunmaktadır. Dört temel disiplinde uzmanlaşmış ekibimiz, projelerin tasarım aşamasından devreye almaya kadar her adımında kalite ve güvenilirlik sunar.",
+    "description": "Temelleri 1960'larda atılan Eren Teknik, yarım yüzyıla yakın kurumsal deneyimiyle temiz oda, mekanik ve elektrik mühendisliği alanlarında yenilikçi ve bütünleşik çözümler sunmaktadır.",
     "cta": "Daha Fazla Bilgi"
   },
   "ContactCTA": {
-    "title": "Projeniz İçin Doğru Mühendislik Ortağı",
-    "description": "Yeni bir projeye mi başlıyorsunuz? Mevcut sisteminizi mi geliştirmek istiyorsunuz? Size en uygun çözümü birlikte belirleyelim.",
+    "title": "Geleceğin Projeleri İçin Güvenilir Mühendislik Ortağınız",
+    "description": "Yeni bir tesis mi kuruyorsunuz, yoksa mevcut altyapınızı modernize mi etmek istiyorsunuz? Uzman mühendis kadromuzla size en uygun, verimli ve sürdürülebilir çözümü birlikte projelendirelim.",
     "cta": "İletişime Geçin"
   },
   "Footer": {
-    "description": "Elektrik, otomasyon, mekanik ve inşaat mühendisliğinde entegre çözümler sunan köklü bir mühendislik firması.",
+    "description": "Yarım yüzyıla yakın tecrübesiyle elektrik, otomasyon, mekanik, inşaat ve temiz oda disiplinlerinde entegre çözümler sunan köklü mühendislik markası.",
     "learnMore": "Daha Fazla Bilgi",
     "quickLinks": "Hızlı Bağlantılar",
     "services": "Hizmetlerimiz",
@@ -101,31 +112,32 @@
     "metaTitle": "Hakkımızda",
     "metaDescription": "Eren Teknik Mühendislik'in kuruluş hikayesi, misyonu, vizyonu ve mühendislik felsefesi hakkında bilgi edinin.",
     "heroTitle": "Mühendislikte\nGüvenin Adresi",
-    "heroSubtitle": "2000 yılından bu yana Türkiye'nin endüstriyel altyapısına değer katıyoruz.",
+    "heroSubtitle": "1960'lardan bu yana endüstriyel altyapıya değer katıyoruz.",
     "storyTitle": "Hikayemiz",
-    "storyP1": "Eren Teknik Mühendislik, 2000 yılında Ankara'da küçük bir elektrik tesisat firması olarak kuruldu. Kurucumuz, sektördeki parçalı hizmet anlayışına bir alternatif sunma vizyonuyla yola çıktı: dört temel mühendislik disiplinini tek çatı altında birleştiren, bütüncül bir yaklaşım.",
-    "storyP2": "İlk yıllarında elektrik tesisat projelerine odaklanan firma, müşterilerinin farklı disiplinlerde de güvenilir bir iş ortağına ihtiyaç duyduğunu fark ederek otomasyon, mekanik ve inşaat mühendisliği alanlarına da yatırım yaptı. Bu genişleme, bugün 200'den fazla endüstriyel projede kendini kanıtlayan çok disiplinli yapımızın temelini oluşturdu.",
+    "storyP1": "Temelleri 1960’lı yıllarda köklü bir aile şirketi olarak atılan Eren Teknik, yarım yüzyıla yakın süredir devam eden endüstriyel yolculuğunda kurumsal kimliği ve mühendislik tecrübesiyle sektörde güven inşa etmeye devam etmektedir.",
+    "storyP2": "Özellikle temiz oda (clean room) sektöründe uzmanlaşan firmamız; mekanik ve elektrik disiplinlerinde tüm altyapı ve üstyapı kurulum hizmetlerini tek çatı altında sunmaktadır. GMP, FDA ve diğer uluslararası kalite standartlarını tüm faaliyetlerinin merkezine alan Eren Teknik, bugüne dek çok sayıda yüksek hassasiyetli steril saha projesini başarıyla hayata geçirmiştir.",
+    "storyP3": "Müşteri memnuniyetini ve sürdürülebilir kaliteyi daima ön planda tutan Eren Teknik; sürekli gelişen güçlü mühendis kadrosu ve 'optimum çözüm' ilkesiyle geleceğe yön vermektedir. Sahip olduğu köklü tecrübeyi yeni nesil teknolojilerle harmanlayarak, sektöründe bilginin ve güvenin asıl kaynağı olma vizyonuyla emin adımlarla ilerlemektedir.",
     "missionTitle": "Misyonumuz",
-    "missionText": "Endüstriyel ve ticari projelerde, dört mühendislik disiplininin sinerjisinden doğan bütünleşik çözümlerle müşterilerimizin operasyonel verimliliğini artırmak ve projelerini zamanında, bütçe dahilinde teslim etmek.",
+    "missionText": "Farklı mühendislik disiplinlerini tek çatı altında buluşturan entegre yaklaşımımızla, iş ortaklarımızın operasyonel verimliliğini maksimize etmek; her projeyi yüksek kalite standartlarında, bütçe ve zaman planına sadık kalarak hayata geçirmektir.",
     "visionTitle": "Vizyonumuz",
-    "visionText": "Türkiye'nin entegre mühendislik hizmetlerinde referans noktası olmak. Teknolojiyi takip eden değil, uygulayan; standartları karşılayan değil, belirleyen bir firma olarak sektöre yön vermek.",
+    "visionText": "Mühendislik sektöründe yenilikçi teknolojileri uygulayan öncü bir marka olmak. Yalnızca standartları karşılayan değil, aynı zamanda sektörel kalite standartlarını belirleyen, güvenilir ve uluslararası düzeyde aranan bir çözüm ortağı haline gelmektir.",
     "valuesTitle": "Değerlerimiz",
     "values": {
       "precision": {
         "title": "Hassasiyet",
-        "description": "Her proje, milimetrik hesaplamalar ve titiz mühendislik analizleriyle şekillenir."
+        "description": "Her projeyi, sıfır hata prensibi ve titiz mühendislik analizleriyle tasarlıyor, süreçlerin tüm aşamalarında yüksek hassasiyet gösteriyoruz."
       },
       "integration": {
         "title": "Entegrasyon",
-        "description": "Dört disiplinin koordineli çalışması, projelerde zaman ve maliyet tasarrufu sağlar."
+        "description": "Farklı uzmanlık alanlarındaki güçlü koordinasyonumuz sayesinde projelerde zaman ve maliyet optimizasyonu sağlıyor, anahtar teslim çözümler üretiyoruz."
       },
       "reliability": {
         "title": "Güvenilirlik",
-        "description": "Taahhüt ettiğimiz süre ve bütçe dahilinde, kaliteden ödün vermeden teslim ederiz."
+        "description": "Şeffaflık ve dürüstlükten taviz vermeden; taahhüt ettiğimiz kalite, süre ve bütçe planlamalarına harfiyen uyarak sürdürülebilir güven inşa ediyoruz."
       },
       "innovation": {
         "title": "Yenilikçilik",
-        "description": "Güncel teknolojileri ve mühendislik standartlarını projelerimize entegre ederiz."
+        "description": "Sektörel gelişmeleri yakından takip ediyor, en güncel teknolojileri ve uluslararası standartları projelerimize anında entegre ediyoruz."
       }
     }
   },
@@ -133,7 +145,7 @@
     "metaTitle": "Hizmetlerimiz",
     "metaDescription": "Elektrik, otomasyon, mekanik ve inşaat mühendisliği alanlarındaki kapsamlı hizmet yelpazemizi keşfedin.",
     "heroTitle": "Hizmetlerimiz",
-    "heroSubtitle": "Dört mühendislik disiplininde, projenizin ihtiyaçlarına özel kapsamlı çözümler sunuyoruz.",
+    "heroSubtitle": "Beş temel mühendislik disiplininde, endüstriyel projelerinizin tüm ihtiyaçlarına özel yenilikçi ve entegre çözümler sunuyoruz.",
     "exploreServices": "Hizmetleri İnceleyin",
     "otherDisciplines": "Diğer Mühendislik Alanları",
     "backToServices": "Tüm Hizmetler",
@@ -251,6 +263,34 @@
           "description": "İnşaat projelerinin planlama, programlama, bütçeleme ve saha koordinasyonu. İlerleme takibi, kalite kontrolü ve iş güvenliği yönetimi."
         }
       }
+    },
+    "cleanroom": {
+      "metaTitle": "Temiz Oda Mühendisliği Hizmetleri",
+      "metaDescription": "GMP uyumlu temiz oda tasarımı, HVAC validasyonu ve partikül kontrol sistemleri.",
+      "heroTitle": "Temiz Oda\nMühendisliği",
+      "heroSubtitle": "İlaç, elektronik ve gıda endüstrileri için GMP standartlarında temiz oda çözümleri.",
+      "services": {
+        "cleanRoomDesign": {
+          "title": "Temiz Oda Tasarımı ve Projelendirme",
+          "description": "ISO 14644 standartlarına uygun temiz oda sınıflandırması, mimari tasarım, malzeme seçimi ve detay projelendirme. Class 1'den Class 9'a kadar tüm temizlik sınıfları."
+        },
+        "hvacValidation": {
+          "title": "HVAC Validasyonu (DQ/IQ/OQ/PQ)",
+          "description": "Temiz oda HVAC sistemlerinin tasarım, kurulum, operasyonel ve performans kalifikasyonu. HEPA filtre bütünlük testleri ve hava akış pattern analizleri."
+        },
+        "particleMonitoring": {
+          "title": "Partikül İzleme Sistemleri",
+          "description": "Sürekli partikül sayım sistemleri, çevresel izleme, veri loglama ve alarm yönetimi. FDA 21 CFR Part 11 uyumlu yazılım çözümleri."
+        },
+        "gmpCompliance": {
+          "title": "GMP Uyumluluk Danışmanlığı",
+          "description": "EU GMP Annex 1, FDA ve PIC/S kılavuzlarına uygunluk değerlendirmesi. Validasyon master planı hazırlama ve denetim desteği."
+        },
+        "pressureDifferential": {
+          "title": "Basınç Farkı Kontrol Sistemleri",
+          "description": "Temiz oda kaskad basınçlandırma tasarımı, basınç farkı izleme ve kontrol sistemleri. Çapraz kontaminasyon önleme stratejileri."
+        }
+      }
     }
   },
   "References": {
@@ -337,6 +377,7 @@
       "automation": "Otomasyon Mühendisliği",
       "mechanical": "Mekanik Mühendisliği",
       "construction": "İnşaat Mühendisliği",
+      "cleanroom": "Temiz Oda Mühendisliği",
       "integrated": "Entegre Proje (Çoklu Disiplin)",
       "other": "Diğer"
     }

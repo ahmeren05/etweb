@@ -1,3 +1,9 @@
+.refImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .marqueeContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -46,39 +52,23 @@
 }
 
 @keyframes scrollDown {
-  0% {
-    transform: translateY(-50%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
+  0% { transform: translateY(-50%); }
+  100% { transform: translateY(0%); }
 }
 
 @keyframes scrollUp {
-  0% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(-50%);
-  }
+  0% { transform: translateY(0%); }
+  100% { transform: translateY(-50%); }
 }
 
 @keyframes scrollLeft {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
 }
 
 @keyframes scrollRight {
-  0% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
 }
 
 /* Reference Card */
@@ -87,7 +77,7 @@
   border: 1px solid var(--color-silver);
   border-radius: var(--radius-lg);
   height: 72px;
-  padding: 0 var(--space-4);
+  padding: var(--space-2) var(--space-4);
   position: relative;
   overflow: hidden;
   display: flex;
@@ -110,7 +100,7 @@
 
 .iconContainer {
   position: absolute;
-  inset: 0;
+  inset: var(--space-2) var(--space-4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,68 +142,6 @@
   letter-spacing: -0.02em;
   white-space: nowrap;
   padding: 0 6px;
-}
-
-/* 
- * Switch to 3 Horizontal Rows when stacked/responsive (<= 1024px), 
- * where the middle row scrolls LEFT and the top/bottom rows scroll RIGHT!
- */
-@media (max-width: 1024px) {
-  .marqueeContainer {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-4);
-    height: auto;
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    overflow: hidden !important;
-    mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-    padding: var(--space-4) 0;
-  }
-
-  .column {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    overflow: hidden !important;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-  }
-
-  .column:nth-child(3) {
-    display: flex !important;
-  }
-
-  .track {
-    display: flex;
-    flex-direction: row !important;
-    width: max-content !important;
-    gap: var(--space-4);
-  }
-
-  /* Row 1: Scroll Right */
-  .column:nth-child(1) .track {
-    animation: scrollRight 30s linear infinite !important;
-  }
-
-  /* Row 2: Scroll Left */
-  .column:nth-child(2) .track {
-    animation: scrollLeft 30s linear infinite !important;
-  }
-
-  /* Row 3: Scroll Right */
-  .column:nth-child(3) .track {
-    animation: scrollRight 26s linear infinite !important;
-  }
-
-  .logoCard {
-    width: 220px;
-    height: 64px;
-    flex-shrink: 0;
-  }
 }
 
 @media (max-width: 480px) {

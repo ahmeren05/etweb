@@ -13,6 +13,7 @@
 
 .statItem {
   text-align: center;
+  position: relative;
 }
 
 .statNumber {
@@ -39,6 +40,57 @@
 
 .statDivider {
   display: none;
+}
+
+.certTooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background-color: var(--color-graphite);
+  color: var(--color-snow);
+  padding: var(--space-4) var(--space-6);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--duration-fast) var(--ease-out);
+  z-index: 10;
+  min-width: 150px;
+}
+
+.certTooltip::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent var(--color-graphite) transparent;
+}
+
+.statItem:hover .certTooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.certTooltip ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.certTooltip li {
+  font-size: var(--text-sm);
+  padding: var(--space-1) 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.certTooltip li:last-child {
+  border-bottom: none;
 }
 
 @media (max-width: 768px) {

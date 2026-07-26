@@ -52,7 +52,7 @@ export default function Hero() {
               </svg>
             </div>
             <div className={styles.certText}>
-              <span className={styles.certName}>ISO 9001</span>
+              <span className={styles.certName}>ISO</span>
               <span className={styles.certLabel}>Kalite Yönetimi</span>
             </div>
           </div>

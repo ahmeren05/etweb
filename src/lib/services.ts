@@ -1,9 +1,10 @@
 export type ServiceKey = 'lowVoltage' | 'mediumVoltage' | 'lighting' | 'grounding' | 'energyEfficiency' |
   'plc' | 'scada' | 'bms' | 'industrial' | 'processControl' |
   'hvac' | 'fire' | 'plumbing' | 'gas' | 'compressedAir' |
-  'concrete' | 'steel' | 'infrastructure' | 'management';
+  'concrete' | 'steel' | 'infrastructure' | 'management' |
+  'cleanRoomDesign' | 'hvacValidation' | 'particleMonitoring' | 'gmpCompliance' | 'pressureDifferential';
 
-export type DisciplineSlug = 'elektrik' | 'otomasyon' | 'mekanik' | 'insaat';
+export type DisciplineSlug = 'elektrik' | 'otomasyon' | 'mekanik' | 'insaat' | 'temizoda';
 
 export interface Discipline {
   slug: DisciplineSlug;
@@ -37,6 +38,12 @@ export const disciplines: Discipline[] = [
     icon: 'Building2',
     serviceKeys: ['concrete', 'steel', 'infrastructure', 'industrial', 'management'],
   },
+  {
+    slug: 'temizoda',
+    translationKey: 'cleanroom',
+    icon: 'Sparkles',
+    serviceKeys: ['cleanRoomDesign', 'hvacValidation', 'particleMonitoring', 'gmpCompliance', 'pressureDifferential'],
+  },
 ];
 
 export const disciplineSlugs = disciplines.map(d => d.slug);
@@ -52,6 +59,7 @@ export function getSlugForLocale(slug: DisciplineSlug, locale: string): string {
       otomasyon: 'automation',
       mekanik: 'mechanical',
       insaat: 'construction',
+      temizoda: 'cleanroom',
     };
     return map[slug];
   }
@@ -65,6 +73,7 @@ export function getSlugFromLocalized(localizedSlug: string, locale: string): Dis
       automation: 'otomasyon',
       mechanical: 'mekanik',
       construction: 'insaat',
+      cleanroom: 'temizoda',
     };
     return map[localizedSlug];
   }

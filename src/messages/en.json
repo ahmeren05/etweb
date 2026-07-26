@@ -2,8 +2,8 @@
   "Metadata": {
     "title": "Eren Teknik Engineering Inc.",
     "titleTemplate": "{title} | Eren Teknik Engineering",
-    "description": "Integrated engineering solutions for industrial and commercial projects with over 25 years of experience in electrical, automation, mechanical, and construction engineering.",
-    "keywords": "engineering, electrical engineering, automation, mechanical systems, construction engineering, industrial projects, Turkey"
+    "description": "Integrated engineering solutions for industrial and commercial projects with over 30 years of experience in electrical, automation, mechanical, construction, and clean room engineering.",
+    "keywords": "engineering, electrical engineering, automation, mechanical systems, construction engineering, clean room, industrial projects, Turkey"
   },
   "Nav": {
     "home": "Home",
@@ -14,14 +14,14 @@
     "getInTouch": "Get in Touch"
   },
   "Hero": {
-    "headline": "Four Disciplines,\nOne Engineering Vision",
-    "subheadline": "Integrated solutions in electrical, automation, mechanical, and construction engineering. We're with you at every stage of your project.",
+    "headline": "Five Disciplines,\nOne Engineering Vision",
+    "subheadline": "We offer integrated engineering solutions across electrical, automation, mechanical, construction, and clean room disciplines. With nearly half a century of experience, we stand by you at every stage of your project.",
     "cta": "Explore Our Services",
     "ctaSecondary": "Get in Touch"
   },
   "Disciplines": {
     "sectionTitle": "Our Engineering Disciplines",
-    "sectionSubtitle": "We add value to your projects with our expert team across four core engineering disciplines.",
+    "sectionSubtitle": "We produce innovative and high-standard solutions tailored to your industrial needs across five core engineering disciplines.",
     "electrical": {
       "title": "Electrical Engineering",
       "description": "Comprehensive electrical engineering services from low and medium voltage systems to energy efficiency consulting.",
@@ -66,6 +66,17 @@
         "management": "Project Management"
       }
     },
+    "cleanroom": {
+      "title": "Clean Room Engineering",
+      "description": "GMP-compliant clean room design, validation, and particle control systems.",
+      "services": {
+        "cleanRoomDesign": "Clean Room Design & Engineering",
+        "hvacValidation": "HVAC Validation (DQ/IQ/OQ/PQ)",
+        "particleMonitoring": "Particle Monitoring Systems",
+        "gmpCompliance": "GMP Compliance Consulting",
+        "pressureDifferential": "Pressure Differential Control Systems"
+      }
+    },
     "viewAll": "View All Services",
     "learnMore": "Learn More"
   },
@@ -78,16 +89,16 @@
   "AboutPreview": {
     "eyebrow": "About Us",
     "title": "Integrated Engineering Power",
-    "description": "Eren Teknik Engineering has been providing integrated engineering services to Turkey's leading industrial organizations since 2000. Our team, specialized in four core disciplines, delivers quality and reliability at every step — from design through to commissioning.",
+    "description": "Founded in the 1960s, Eren Teknik leverages nearly half a century of corporate experience to deliver innovative and integrated solutions in clean room, mechanical, and electrical engineering.",
     "cta": "Learn More"
   },
   "ContactCTA": {
-    "title": "The Right Engineering Partner for Your Project",
-    "description": "Starting a new project? Looking to upgrade existing systems? Let's determine the best solution together.",
+    "title": "Your Reliable Engineering Partner for Future Projects",
+    "description": "Are you building a new facility, or looking to modernize your existing infrastructure? Together with our expert engineering team, let's design the most suitable, efficient, and sustainable solution for you.",
     "cta": "Contact Us"
   },
   "Footer": {
-    "description": "An established engineering firm providing integrated solutions in electrical, automation, mechanical, and construction engineering.",
+    "description": "A well-established engineering brand offering integrated solutions in electrical, automation, mechanical, construction, and clean room disciplines with nearly half a century of experience.",
     "learnMore": "Learn More",
     "quickLinks": "Quick Links",
     "services": "Our Services",
@@ -101,31 +112,32 @@
     "metaTitle": "About Us",
     "metaDescription": "Learn about Eren Teknik Engineering's founding story, mission, vision, and engineering philosophy.",
     "heroTitle": "The Trusted Name\nin Engineering",
-    "heroSubtitle": "Adding value to Turkey's industrial infrastructure since 2000.",
+    "heroSubtitle": "Adding value to industrial infrastructure since the 1960s.",
     "storyTitle": "Our Story",
-    "storyP1": "Eren Teknik Engineering was founded in 2000 in Ankara as a small electrical installation firm. Our founder set out with a vision to offer an alternative to the fragmented service approach in the industry: a holistic approach that unifies four core engineering disciplines under one roof.",
-    "storyP2": "Initially focused on electrical installation projects, the firm recognized its clients' need for a reliable partner across different disciplines, investing in automation, mechanical, and construction engineering capabilities. This expansion laid the foundation for our multi-disciplinary structure, now proven across more than 200 industrial projects.",
+    "storyP1": "Founded in the 1960s as a well-established family enterprise, Eren Teknik continues to build trust in the industry with its corporate identity and engineering expertise on an industrial journey spanning nearly half a century.",
+    "storyP2": "Specializing particularly in the clean room sector, our firm provides comprehensive mechanical and electrical infrastructure and superstructure installation services under a single roof. Placing international quality standards such as GMP and FDA at the core of all its operations, Eren Teknik has successfully delivered numerous high-precision sterile field projects to date.",
+    "storyP3": "Always prioritizing customer satisfaction and sustainable quality, Eren Teknik shapes the future with its strong, continuously evolving engineering team and its principle of 'optimum solutions.' By blending its deep-rooted experience with next-generation technologies, the company takes firm steps forward with the vision of becoming the ultimate source of knowledge and trust in the industry.",
     "missionTitle": "Our Mission",
-    "missionText": "To enhance our clients' operational efficiency in industrial and commercial projects through integrated solutions born from the synergy of four engineering disciplines, delivering projects on time and within budget.",
+    "missionText": "To maximize the operational efficiency of our business partners through our integrated approach that unites different engineering disciplines under one roof; and to bring every project to life in accordance with high-quality standards, adhering strictly to budget and timeline plans.",
     "visionTitle": "Our Vision",
-    "visionText": "To become the reference point in Turkey's integrated engineering services. To lead the industry as a firm that applies — not just follows — technology, and sets — not just meets — standards.",
+    "visionText": "To be a pioneering brand that implements innovative technologies in the engineering sector. To become a reliable and internationally sought-after solution partner that not only meets standards but also sets the industry's quality benchmarks.",
     "valuesTitle": "Our Values",
     "values": {
       "precision": {
         "title": "Precision",
-        "description": "Every project is shaped by meticulous calculations and rigorous engineering analysis."
+        "description": "We design every project with a zero-defect principle and meticulous engineering analysis, demonstrating high precision at all stages of the process."
       },
       "integration": {
         "title": "Integration",
-        "description": "Coordinated work across four disciplines delivers time and cost savings on projects."
+        "description": "Thanks to our strong coordination across different areas of expertise, we provide time and cost optimization in projects and deliver turnkey solutions."
       },
       "reliability": {
         "title": "Reliability",
-        "description": "We deliver within committed timelines and budgets without compromising quality."
+        "description": "Without compromising on transparency and integrity, we build sustainable trust by strictly adhering to our committed quality, timeline, and budget plans."
       },
       "innovation": {
         "title": "Innovation",
-        "description": "We integrate current technologies and engineering standards into our projects."
+        "description": "We closely monitor industry developments and instantly integrate the latest technologies and international standards into our projects."
       }
     }
   },
@@ -133,7 +145,7 @@
     "metaTitle": "Our Services",
     "metaDescription": "Discover our comprehensive range of services in electrical, automation, mechanical, and construction engineering.",
     "heroTitle": "Our Services",
-    "heroSubtitle": "Comprehensive solutions tailored to your project's needs across four engineering disciplines.",
+    "heroSubtitle": "Across five core engineering disciplines, we provide innovative and integrated solutions tailored to the needs of your industrial projects.",
     "exploreServices": "Explore Services",
     "otherDisciplines": "Other Engineering Disciplines",
     "backToServices": "All Services",
@@ -251,6 +263,34 @@
           "description": "Construction project planning, scheduling, budgeting, and site coordination. Progress tracking, quality control, and occupational safety management."
         }
       }
+    },
+    "cleanroom": {
+      "metaTitle": "Clean Room Engineering Services",
+      "metaDescription": "GMP-compliant clean room design, HVAC validation, and particle control systems.",
+      "heroTitle": "Clean Room\nEngineering",
+      "heroSubtitle": "GMP-standard clean room solutions for pharmaceutical, electronics, and food industries.",
+      "services": {
+        "cleanRoomDesign": {
+          "title": "Clean Room Design & Engineering",
+          "description": "ISO 14644-compliant clean room classification, architectural design, material selection, and detailed engineering. All cleanliness classes from Class 1 to Class 9."
+        },
+        "hvacValidation": {
+          "title": "HVAC Validation (DQ/IQ/OQ/PQ)",
+          "description": "Design, installation, operational, and performance qualification of clean room HVAC systems. HEPA filter integrity testing and airflow pattern analysis."
+        },
+        "particleMonitoring": {
+          "title": "Particle Monitoring Systems",
+          "description": "Continuous particle counting systems, environmental monitoring, data logging, and alarm management. FDA 21 CFR Part 11 compliant software solutions."
+        },
+        "gmpCompliance": {
+          "title": "GMP Compliance Consulting",
+          "description": "EU GMP Annex 1, FDA, and PIC/S guideline compliance assessment. Validation master plan preparation and audit support."
+        },
+        "pressureDifferential": {
+          "title": "Pressure Differential Control Systems",
+          "description": "Clean room cascade pressurization design, pressure differential monitoring and control systems. Cross-contamination prevention strategies."
+        }
+      }
     }
   },
   "References": {
@@ -337,6 +377,7 @@
       "automation": "Automation Engineering",
       "mechanical": "Mechanical Engineering",
       "construction": "Construction Engineering",
+      "cleanroom": "Clean Room Engineering",
       "integrated": "Integrated Project (Multi-Discipline)",
       "other": "Other"
     }

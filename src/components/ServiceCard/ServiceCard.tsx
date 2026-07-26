@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
-import { Zap, Cpu, Wrench, Building2, ArrowRight } from 'lucide-react';
+import { Zap, Cpu, Wrench, Building2, Sparkles, ArrowRight } from 'lucide-react';
 import type { Discipline } from '@/lib/services';
 import styles from './ServiceCard.module.css';
 
@@ -9,13 +9,15 @@ const iconMap: Record<string, React.ComponentType<{ size?: number }>> = {
   Cpu,
   Wrench,
   Building2,
+  Sparkles,
 };
 
 const imageMap: Record<string, string> = {
-  elektrik: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80',
-  otomasyon: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
-  mekanik: 'https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80',
-  insaat: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80',
+  elektrik: '/services/electric/electric1.jpeg',
+  otomasyon: '/services/automation/automation1.jpeg',
+  mekanik: '/services/mechanical/mechanical1.jpeg',
+  insaat: '/services/building/building1.jpeg',
+  temizoda: '/services/clean%20room/cleanroom1.jpeg',
 };
 
 interface ServiceCardProps {

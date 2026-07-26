@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { Zap, Cpu, Wrench, Building2, ArrowLeft, ArrowRight } from 'lucide-react';
+import { Zap, Cpu, Wrench, Building2, Sparkles, ArrowLeft, ArrowRight } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
 import JsonLd from '@/components/JsonLd';
 import ServiceCard from '@/components/ServiceCard/ServiceCard';
@@ -12,7 +12,7 @@ import { generateServiceSchema, generateBreadcrumbSchema } from '@/lib/structure
 import styles from './page.module.css';
 
 const iconMap: Record<string, React.ComponentType<{ size?: number }>> = {
-  Zap, Cpu, Wrench, Building2,
+  Zap, Cpu, Wrench, Building2, Sparkles,
 };
 
 export function generateStaticParams() {
@@ -130,7 +130,11 @@ function ServiceDetailContent({ discipline }: { discipline: NonNullable<ReturnTy
       <section className="section section-alt">
         <div className="container">
           <div className="section-header">
-            <h2>{tServices('otherDisciplines')}</h2>
+            <h2>
+              <span className="sectionTitleLink">
+                <span className="sectionTitleText">{tServices('otherDisciplines')}</span>
+              </span>
+            </h2>
           </div>
           <div className={styles.otherDisciplines}>
             {otherDisciplines.map((d) => (

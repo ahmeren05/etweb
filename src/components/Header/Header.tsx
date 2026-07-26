@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 import { Link, usePathname } from '@/i18n/navigation';
 import { Menu, X, Send } from 'lucide-react';
 import LanguageSwitcher from '@/components/LanguageSwitcher/LanguageSwitcher';
+import Image from 'next/image';
 import styles from './Header.module.css';
 
 export default function Header() {
@@ -90,9 +91,13 @@ export default function Header() {
     >
       <div className={`container ${styles.headerInner}`}>
         <Link href="/" className={styles.logo}>
-          <div className={styles.logoText}>
-            Eren <span>Teknik</span>
-          </div>
+          <Image 
+            src="/etlogo.png" 
+            alt="Eren Teknik Logo" 
+            width={200} 
+            height={40} 
+            style={{ objectFit: 'contain' }}
+          />
         </Link>
 
         <nav

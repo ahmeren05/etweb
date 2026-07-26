@@ -3,6 +3,8 @@ import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { Crosshair, Layers, ShieldCheck, Lightbulb } from 'lucide-react';
 import JsonLd from '@/components/JsonLd';
+import Stats from '@/components/Stats/Stats';
+import OrgChart from '@/components/OrgChart/OrgChart';
 import { generateWebPageSchema, generateBreadcrumbSchema } from '@/lib/structured-data';
 import styles from './page.module.css';
 
@@ -56,9 +58,14 @@ export default function AboutPage() {
         <div className="container">
           <div className={styles.story}>
             <div className={styles.storyContent}>
-              <h2>{t('storyTitle')}</h2>
+              <h2>
+                <span className="sectionTitleLink">
+                  <span className="sectionTitleText">{t('storyTitle')}</span>
+                </span>
+              </h2>
               <p>{t('storyP1')}</p>
               <p>{t('storyP2')}</p>
+              <p>{t('storyP3')}</p>
             </div>
             <div className={styles.missionVision}>
               <div className={styles.mvCard}>
@@ -74,11 +81,21 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Stats Section */}
+      <Stats />
+
+      {/* Org Chart */}
+      <OrgChart />
+
       {/* Values */}
       <section className="section section-alt">
         <div className="container">
           <div className="section-header">
-            <h2>{t('valuesTitle')}</h2>
+            <h2>
+              <span className="sectionTitleLink">
+                <span className="sectionTitleText">{t('valuesTitle')}</span>
+              </span>
+            </h2>
           </div>
           <div className={styles.valuesGrid}>
             {values.map(({ key, Icon }) => (

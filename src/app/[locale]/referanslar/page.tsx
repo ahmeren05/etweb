@@ -7,32 +7,8 @@ import JsonLd from '@/components/JsonLd';
 import { generateWebPageSchema } from '@/lib/structured-data';
 import styles from './page.module.css';
 
-interface ClientItem {
-  name: string;
-  badge: string;
-  color: string;
-  sectorTr: string;
-  sectorEn: string;
-}
-
-const clients: ClientItem[] = [
-  { name: 'Aselsan', badge: 'AS', color: '#2563EB', sectorTr: 'Savunma Sanayi', sectorEn: 'Defense Electronics' },
-  { name: 'TÜPRAŞ', badge: 'TP', color: '#F97316', sectorTr: 'Enerji & Rafineri', sectorEn: 'Energy & Refining' },
-  { name: 'Arçelik', badge: 'AR', color: '#10B981', sectorTr: 'Endüstriyel Üretim', sectorEn: 'Industrial Manufacturing' },
-  { name: 'THY Teknik', badge: 'TT', color: '#EF4444', sectorTr: 'Havacılık & Bakım', sectorEn: 'Aviation & Maintenance' },
-  { name: 'Roketsan', badge: 'RO', color: '#6366F1', sectorTr: 'Savunma Sanayi', sectorEn: 'Defense & Aerospace' },
-  { name: 'Siemens', badge: 'SI', color: '#0EA5E9', sectorTr: 'Elektrik & Otomasyon', sectorEn: 'Power & Automation' },
-  { name: 'Schneider Electric', badge: 'SE', color: '#22C55E', sectorTr: 'Enerji Yönetimi', sectorEn: 'Energy Management' },
-  { name: 'Şişecam', badge: 'ŞC', color: '#06B6D4', sectorTr: 'Endüstriyel Cam', sectorEn: 'Industrial Glass' },
-  { name: 'Ford Otosan', badge: 'FO', color: '#3B82F6', sectorTr: 'Otomotiv Üretim', sectorEn: 'Automotive Mfg.' },
-  { name: 'Petkim', badge: 'PK', color: '#F59E0B', sectorTr: 'Petrokimya Tesisleri', sectorEn: 'Petrochemicals' },
-  { name: 'ABB Turkey', badge: 'AB', color: '#E11D48', sectorTr: 'Güç & Robotik', sectorEn: 'Power & Robotics' },
-  { name: 'ASO 1. OSB', badge: 'AO', color: '#14B8A6', sectorTr: 'Sanayi Altyapısı', sectorEn: 'Industrial Zone' },
-  { name: 'Erdemir', badge: 'ER', color: '#64748B', sectorTr: 'Demir & Çelik', sectorEn: 'Iron & Steel' },
-  { name: 'Vestel', badge: 'VE', color: '#84CC16', sectorTr: 'Elektronik & Teknoloji', sectorEn: 'Electronics Tech' },
-  { name: 'TUSAŞ / TAI', badge: 'TS', color: '#0284C7', sectorTr: 'Havacılık & Uzay', sectorEn: 'Aerospace & Defense' },
-  { name: 'MTA Genel Müd.', badge: 'MT', color: '#D97706', sectorTr: 'Enerji Altyapısı', sectorEn: 'Energy Infrastructure' },
-];
+import Image from 'next/image';
+import { allReferences as clients } from '@/lib/references';
 
 export default function ReferencesPage() {
   const t = useTranslations('References');
@@ -46,7 +22,8 @@ export default function ReferencesPage() {
     return (
       client.name.toLowerCase().includes(query) ||
       client.sectorTr.toLowerCase().includes(query) ||
-      client.sectorEn.toLowerCase().includes(query)
+      client.sectorEn.toLowerCase().includes(query) ||
+      (client.tags && client.tags.some(tag => tag.toLowerCase().includes(query)))
     );
   });
 
@@ -101,11 +78,13 @@ export default function ReferencesPage() {
             {displayedClients.length > 0 ? (
               displayedClients.map((client) => (
                 <div key={client.name} className={styles.referenceCard}>
-                  <div
-                    className={styles.logoBadge}
-                    style={{ backgroundColor: client.color }}
-                  >
-                    {client.badge}
+                  <div className={styles.logoBadgeContainer}>
+                    <Image 
+                      src={client.imgUrl} 
+                      alt={client.name} 
+                      fill 
+                      style={{ objectFit: 'contain', padding: '8px' }} 
+                    />
                   </div>
                   <div className={styles.referenceName}>{client.name}</div>
                   <div className={styles.referenceSector}>
