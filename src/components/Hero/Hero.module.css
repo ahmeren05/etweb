@@ -10,13 +10,14 @@
 .siemensEmblem {
   position: absolute;
   top: auto;
-  bottom: 120px;
-  right: 24px;
+  bottom: 32px;
+  left: 40px;
+  right: auto;
   display: flex;
   gap: 4px; /* 1.2mm scaled */
   z-index: 10;
   transform: scale(0.7);
-  transform-origin: bottom right;
+  transform-origin: bottom left;
 }
 
 .siemensGreyBoxWrapper {
@@ -72,6 +73,7 @@
 .heroContent {
   position: relative;
   z-index: 2;
+  margin-bottom: 48px; /* Push content up to make room for logo */
 }
 
 .heroEyebrow {
@@ -377,8 +379,9 @@
 
   .siemensEmblem {
     top: auto;
-    bottom: 120px;
-    right: 32px;
+    bottom: 32px;
+    left: 32px;
+    right: auto;
   }
   .siemensGreyBoxWrapper {
     width: 52px;
@@ -470,8 +473,9 @@
 
   .siemensEmblem {
     top: auto;
-    bottom: 95px;
-    right: 16px;
+    bottom: 32px;
+    left: 16px;
+    right: auto;
   }
   .siemensGreyBoxWrapper {
     width: 44px;
