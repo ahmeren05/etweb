@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useEffect, useRef, useState } from 'react';
-import { Check } from 'lucide-react';
+import { CheckCheck } from 'lucide-react';
 import styles from './Stats.module.css';
 
 interface StatConfig {
@@ -56,7 +56,7 @@ function StatItem({ stat, isVisible }: { stat: StatConfig; isVisible: boolean })
         style={stat.labelKey === 'validation' ? { display: 'flex', alignItems: 'center', justifyContent: 'center', height: '1em' } : {}}
       >
         {stat.labelKey === 'validation' ? (
-          <Check size={56} strokeWidth={4} className={styles.statIcon} style={{ transform: 'translateY(-2px)' }} />
+          <CheckCheck size={56} strokeWidth={4} className={styles.statIcon} style={{ transform: 'translateY(-2px)' }} />
         ) : (
           <>
             {count}
