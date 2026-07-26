@@ -162,7 +162,24 @@
   border: 1px solid rgba(0, 188, 212, 0.2);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
+  .node {
+    min-width: 160px;
+    padding: var(--space-4) var(--space-2);
+    font-size: var(--text-sm);
+  }
+  
+  .avatar {
+    padding: var(--space-2);
+  }
+  
+  .primaryNode {
+    min-width: 260px;
+    min-height: 120px;
+  }
+}
+
+@media (max-width: 768px) {
   .orgChart {
     align-items: flex-start;
     padding: var(--space-6);
