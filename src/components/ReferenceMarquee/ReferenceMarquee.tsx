@@ -6,10 +6,10 @@ import { Link } from '@/i18n/navigation';
 import { allReferences, ReferenceItem } from '@/lib/references';
 import styles from './ReferenceMarquee.module.css';
 
-// Divide the 26 references into 3 columns/rows of 9, 9, 8
-const col1Items = allReferences.slice(0, 9);
-const col2Items = allReferences.slice(9, 18);
-const col3Items = allReferences.slice(18, 26);
+// Divide the 32 references into 3 columns/rows of 11, 11, 10
+const col1Items = allReferences.slice(0, 11);
+const col2Items = allReferences.slice(11, 22);
+const col3Items = allReferences.slice(22, 32);
 
 export default function ReferenceMarquee() {
   const renderColumn = (items: ReferenceItem[], animationClass: string) => {

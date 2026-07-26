@@ -38,5 +38,6 @@ export const allReferences: ReferenceItem[] = [
   { name: 'Moltek', imgUrl: '/references/28-moltek.png', sectorTr: 'Sağlık Sanayi', sectorEn: 'Healthcare', color: '#00BCD4', tags: ['moltek', 'sağlık', 'ilaç'] },
   { name: 'Novartis', imgUrl: '/references/29-novartis.png', sectorTr: 'İlaç Sanayi', sectorEn: 'Pharmaceuticals', color: '#F44336', tags: ['novartis', 'ilaç', 'pharmaceuticals'] },
   { name: 'Danone', imgUrl: '/references/30-danone.png', sectorTr: 'Gıda & İçecek', sectorEn: 'Food & Beverage', color: '#0277BD', tags: ['danone', 'gıda', 'içecek', 'süt'] },
-  { name: 'Godiva', imgUrl: '/references/31-godiva.png', sectorTr: 'Gıda & İçecek', sectorEn: 'Food & Beverage', color: '#D4AF37', tags: ['godiva', 'çikolata', 'gıda'] }
+  { name: 'Godiva', imgUrl: '/references/31-godiva.png', sectorTr: 'Gıda & İçecek', sectorEn: 'Food & Beverage', color: '#D4AF37', tags: ['godiva', 'çikolata', 'gıda'] },
+  { name: 'MGT Filtre', imgUrl: '/references/32-mgt.png', sectorTr: 'İklimlendirme & Filtre', sectorEn: 'HVAC & Filtration', color: '#1E88E5', tags: ['mgt', 'filtre', 'hvac', 'iklimlendirme'] }
 ];
