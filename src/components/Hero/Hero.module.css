@@ -17,11 +17,11 @@
 }
 
 .emblemTextSquare {
-  width: 90px;
-  height: 90px;
+  width: 56px;
+  height: 56px;
   box-sizing: border-box;
   background-color: #8A9BA8;
-  padding: 10px;
+  padding: 6px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -393,8 +393,8 @@
     right: 32px;
   }
   .emblemTextSquare {
-    width: 70px;
-    height: 70px;
+    width: 52px;
+    height: 52px;
   }
   .emblemCategory, .emblemDescriptor {
     font-size: 9px;
@@ -488,8 +488,8 @@
     right: 16px;
   }
   .emblemTextSquare {
-    width: 60px;
-    height: 60px;
+    width: 44px;
+    height: 44px;
   }
   .emblemCategory, .emblemDescriptor {
     font-size: 8px;
