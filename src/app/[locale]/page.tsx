@@ -108,8 +108,8 @@ export default function HomePage() {
             <div className={styles.staggeredLine3Wrapper}>
               <span className={styles.staggeredText}>{t('ContactCTA.line3')}</span>
             </div>
-            <Link href="/iletisim" className={`${styles.staggeredButton} btn btn-primary btn-lg`}>
-              {t('ContactCTA.cta')} <ArrowRight size={18} />
+            <Link href="/iletisim" className={styles.staggeredArrowLink} aria-label={t('ContactCTA.cta')}>
+              <ArrowRight size={44} strokeWidth={2.5} />
             </Link>
           </div>
         </div>
