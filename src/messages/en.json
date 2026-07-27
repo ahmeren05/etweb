@@ -61,10 +61,10 @@
       "services": {
         "concrete": "Reinforced Concrete Design",
         "steel": "Steel Structures",
+        "modular": "Modular and Prefabricated Building Solutions",
         "infrastructure": "Infrastructure Projects",
         "industrial": "Industrial Facility Construction",
-        "management": "Project Management",
-        "modular": "Modular and Prefabricated Building Solutions"
+        "management": "Project Management"
       }
     },
     "cleanroom": {

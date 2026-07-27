@@ -61,10 +61,10 @@
       "services": {
         "concrete": "Betonarme Yapı Tasarımı",
         "steel": "Çelik Yapılar",
+        "modular": "Modüler ve Prefabrik Yapı Çözümleri",
         "infrastructure": "Altyapı Projeleri",
         "industrial": "Endüstriyel Tesis İnşaatı",
-        "management": "Proje Yönetimi",
-        "modular": "Modüler ve Prefabrik Yapı Çözümleri"
+        "management": "Proje Yönetimi"
       }
     },
     "cleanroom": {

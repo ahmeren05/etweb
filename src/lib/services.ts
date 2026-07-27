@@ -42,7 +42,7 @@ export const disciplines: Discipline[] = [
     slug: 'insaat',
     translationKey: 'construction',
     icon: 'Building2',
-    serviceKeys: ['concrete', 'steel', 'infrastructure', 'industrial', 'management', 'modular'],
+    serviceKeys: ['concrete', 'steel', 'modular', 'infrastructure', 'industrial', 'management'],
   },
 ];
 
