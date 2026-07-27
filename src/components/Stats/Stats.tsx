@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useEffect, useRef, useState } from 'react';
-import { CheckCheck, Key } from 'lucide-react';
+import { CheckCheck, Handshake } from 'lucide-react';
 import styles from './Stats.module.css';
 
 interface StatConfig {
@@ -58,7 +58,7 @@ function StatItem({ stat, isVisible }: { stat: StatConfig; isVisible: boolean })
         {stat.labelKey === 'validation' ? (
           <CheckCheck size={56} strokeWidth={4} className={styles.statIcon} style={{ transform: 'translateY(-2px)' }} />
         ) : stat.labelKey === 'turnkey' ? (
-          <Key size={56} strokeWidth={4} className={styles.statIcon} style={{ transform: 'translateY(-2px)' }} />
+          <Handshake size={56} strokeWidth={4} className={styles.statIcon} style={{ transform: 'translateY(-2px)' }} />
         ) : (
           <>
             {count}
