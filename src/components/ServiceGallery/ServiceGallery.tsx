@@ -8,17 +8,16 @@ import styles from './ServiceGallery.module.css';
 
 const galleryMap: Record<string, string[]> = {
   elektrik: [
+    '/services/electric/electric1.jpeg',
     '/services/electric/electric2.jpeg',
     '/services/electric/electric3.jpeg',
     '/services/electric/electric4.jpeg',
     '/services/electric/electric5.jpeg',
     '/services/electric/electric6.jpeg',
     '/services/electric/electric7.jpeg',
-    '/services/electric/electric8.jpeg',
-    '/services/electric/electric9.jpeg',
-    '/services/electric/electric1.jpeg',
   ],
   otomasyon: [
+    '/services/automation/automation1.jpeg',
     '/services/automation/automation2.jpeg',
     '/services/automation/automation3.jpeg',
     '/services/automation/automation4.jpeg',
@@ -27,9 +26,10 @@ const galleryMap: Record<string, string[]> = {
     '/services/automation/automation7.jpeg',
     '/services/automation/automation8.jpeg',
     '/services/automation/automation9.jpeg',
-    '/services/automation/automation1.jpeg',
+    '/services/automation/automation11.jpeg',
   ],
   mekanik: [
+    '/services/mechanical/mechanical1.jpeg',
     '/services/mechanical/mechanical2.jpeg',
     '/services/mechanical/mechanical3.jpeg',
     '/services/mechanical/mechanical4.jpeg',
@@ -38,9 +38,9 @@ const galleryMap: Record<string, string[]> = {
     '/services/mechanical/mechanical7.jpeg',
     '/services/mechanical/mechanical8.jpeg',
     '/services/mechanical/mechanical9.jpeg',
-    '/services/mechanical/mechanical1.jpeg',
   ],
   insaat: [
+    '/services/building/building1.png',
     '/services/building/building2.jpeg',
     '/services/building/building3.jpeg',
     '/services/building/building4.jpeg',
@@ -49,9 +49,10 @@ const galleryMap: Record<string, string[]> = {
     '/services/building/building7.jpeg',
     '/services/building/building8.jpeg',
     '/services/building/building9.jpeg',
-    '/services/building/building1.jpeg',
+    '/services/building/building10.jpeg',
   ],
   temizoda: [
+    '/services/clean%20room/cleanroom1.jpeg',
     '/services/clean%20room/cleanroom2.jpeg',
     '/services/clean%20room/cleanroom3.jpeg',
     '/services/clean%20room/cleanroom4.jpeg',
@@ -60,7 +61,6 @@ const galleryMap: Record<string, string[]> = {
     '/services/clean%20room/cleanroom7.jpeg',
     '/services/clean%20room/cleanroom8.jpeg',
     '/services/clean%20room/cleanroom9.jpeg',
-    '/services/clean%20room/cleanroom1.jpeg',
   ],
 };
 

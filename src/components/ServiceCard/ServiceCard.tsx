@@ -16,7 +16,7 @@ const imageMap: Record<string, string> = {
   elektrik: '/services/electric/electric1.jpeg',
   otomasyon: '/services/automation/automation1.jpeg',
   mekanik: '/services/mechanical/mechanical1.jpeg',
-  insaat: '/services/building/building1.jpeg',
+  insaat: '/services/building/building1.png',
   temizoda: '/services/clean%20room/cleanroom1.jpeg',
 };
 
