@@ -94,7 +94,7 @@
   align-items: center;
   justify-content: center;
   margin-left: var(--space-4);
-  margin-bottom: 9px; /* align exactly with 3 dots baseline */
+  margin-bottom: 7px; /* align exactly with 3 dots baseline */
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
