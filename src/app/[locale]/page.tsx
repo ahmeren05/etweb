@@ -100,7 +100,6 @@ export default function HomePage() {
         <div className="container">
           <div className={styles.ctaInner}>
             <h2>{t('ContactCTA.title')}</h2>
-            <p>{t('ContactCTA.description')}</p>
             <Link href="/iletisim" className="btn btn-primary btn-lg">
               {t('ContactCTA.cta')} <ArrowRight size={18} />
             </Link>
