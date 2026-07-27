@@ -1,7 +1,7 @@
 export type ServiceKey = 'lowVoltage' | 'mediumVoltage' | 'lighting' | 'grounding' | 'energyEfficiency' |
   'plc' | 'scada' | 'bms' | 'industrial' | 'processControl' |
   'hvac' | 'fire' | 'plumbing' | 'gas' | 'compressedAir' |
-  'concrete' | 'steel' | 'infrastructure' | 'management' |
+  'concrete' | 'steel' | 'infrastructure' | 'management' | 'modular' |
   'cleanRoomDesign' | 'hvacValidation' | 'particleMonitoring' | 'gmpCompliance' | 'pressureDifferential';
 
 export type DisciplineSlug = 'elektrik' | 'otomasyon' | 'mekanik' | 'insaat' | 'temizoda';
@@ -42,7 +42,7 @@ export const disciplines: Discipline[] = [
     slug: 'insaat',
     translationKey: 'construction',
     icon: 'Building2',
-    serviceKeys: ['concrete', 'steel', 'infrastructure', 'industrial', 'management'],
+    serviceKeys: ['concrete', 'steel', 'infrastructure', 'industrial', 'management', 'modular'],
   },
 ];
 

@@ -63,7 +63,8 @@
         "steel": "Steel Structures",
         "infrastructure": "Infrastructure Projects",
         "industrial": "Industrial Facility Construction",
-        "management": "Project Management"
+        "management": "Project Management",
+        "modular": "Modular and Prefabricated Building Solutions"
       }
     },
     "cleanroom": {
@@ -262,6 +263,10 @@
         "management": {
           "title": "Project Management",
           "description": "Construction project planning, scheduling, budgeting, and site coordination. Progress tracking, quality control, and occupational safety management."
+        },
+        "modular": {
+          "title": "Modular and Prefabricated Building Solutions",
+          "description": "Portable and flexible prefabricated structures offering fast deployment capabilities for industrial facilities."
         }
       }
     },

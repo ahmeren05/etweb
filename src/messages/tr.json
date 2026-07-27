@@ -14,67 +14,68 @@
     "getInTouch": "Bize Ulaşın"
   },
   "Hero": {
-    "headline": "Beş Disiplin,\nBir Mühendislik Vizyonu",
-    "subheadline": "Elektrik, otomasyon, mekanik, inşaat ve temiz oda disiplinlerinde entegre mühendislik çözümleri sunuyoruz. Yarım yüzyıla yakın tecrübemizle projenizin her aşamasında yanınızdayız.",
+    "headline": "Beş Disiplin,\nTek Mühendislik Vizyonu",
+    "subheadline": "Temiz oda, mekanik, elektrik, otomasyon ve inşaat uzmanlıklarını bir araya getiren entegre mühendislik altyapısı ve yarım asırlık deneyimle, projelerin her adımında stratejik çözüm ortaklığı.",
     "cta": "Hizmetlerimizi Keşfedin",
     "ctaSecondary": "Bize Ulaşın"
   },
   "Disciplines": {
     "sectionTitle": "Mühendislik Alanlarımız",
-    "sectionSubtitle": "Endüstriyel ihtiyaçlarınıza özel, beş temel mühendislik disiplininde yenilikçi ve yüksek standartlı çözümler üretiyoruz.",
+    "sectionSubtitle": "Beş temel mühendislik disiplininde; endüstriyel gereksinimlere özel, yenilikçi ve yüksek standartlı çözümler.",
     "electrical": {
       "title": "Elektrik Mühendisliği",
-      "description": "Alçak ve orta gerilim sistemlerinden enerji verimliliğine kadar kapsamlı elektrik mühendisliği hizmetleri.",
+      "description": "Güvenli ve kesintisiz enerji akışı için; Alçak ve orta gerilim güç dağıtımından enerji optimizasyonuna kadar elektrik altyapı çözümleri.",
       "services": {
-        "lowVoltage": "Alçak Gerilim Tesisatları",
-        "mediumVoltage": "Orta Gerilim Sistemleri",
-        "lighting": "Aydınlatma Projeleri",
-        "grounding": "Topraklama ve Yıldırımdan Korunma",
-        "energyEfficiency": "Enerji Verimliliği Danışmanlığı"
+        "lowVoltage":"Alçak ve Orta Gerilim Güç Sistemleri",
+        "mediumVoltage": "Aydınlatma Tasarımı ve Otomasyonu",
+        "lighting": "Topraklama ve Yıldırımdan Korunma",
+         "grounding": "CCTV Sistemleri",
+        "energyEfficiency": "Enerji Verimliliği ve Danışmanlığı"
       }
     },
     "automation": {
       "title": "Otomasyon Mühendisliği",
-      "description": "Endüstriyel süreçlerinizi optimize eden akıllı otomasyon ve kontrol sistemleri.",
+      "description": "Endüstriyel operasyonları optimize eden, yüksek verimlilik odaklı akıllı otomasyon ve kontrol sistemleri.",
       "services": {
-        "plc": "PLC Programlama ve Entegrasyon",
+        "plc": "PLC Programlama ve Entegrasyonu",
         "scada": "SCADA Sistemleri",
-        "bms": "Bina Otomasyon Sistemleri (BMS)",
-        "industrial": "Endüstriyel Otomasyon",
+        "bms": "Bina Yönetim Sistemleri (BMS)",
+        "industrial": "Enerji İzleme Otomasyonu",
         "processControl": "Proses Kontrol Sistemleri"
       }
     },
     "mechanical": {
       "title": "Mekanik Mühendisliği",
-      "description": "HVAC'den yangın güvenliğine, konforlu ve güvenli mekanik tesisat çözümleri.",
+      "description": "HVAC, yangın ve endüstriyel tesisat süreçlerinde; uluslararası standartlara uygun mekanik çözümler.",
       "services": {
         "hvac": "HVAC Sistemleri",
         "fire": "Yangın Algılama ve Söndürme",
-        "plumbing": "Sıhhi Tesisat",
-        "gas": "Doğalgaz Tesisatı",
+        "plumbing": "Sıhhi Tesisat Altyapısı",
+        "gas": "Doğalgaz ve Enerji Hatları",
         "compressedAir": "Basınçlı Hava Sistemleri"
       }
     },
     "construction": {
       "title": "İnşaat Mühendisliği",
-      "description": "Betonarme ve çelik yapılardan altyapı projelerine, sağlam temeller üzerine inşa ediyoruz.",
+      "description": "Betonarme, çelik ve prefabrik yapı teknolojileriyle şekillenen; güvenilir ve nitelikli altyapı projeleri.",
       "services": {
         "concrete": "Betonarme Yapı Tasarımı",
         "steel": "Çelik Yapılar",
         "infrastructure": "Altyapı Projeleri",
         "industrial": "Endüstriyel Tesis İnşaatı",
-        "management": "Proje Yönetimi"
+        "management": "Proje Yönetimi",
+        "modular": "Modüler ve Prefabrik Yapı Çözümleri"
       }
     },
     "cleanroom": {
       "title": "Temiz Oda Sistemleri",
-      "description": "GMP standartlarına uygun temiz oda tasarımı, validasyon ve partikül kontrol sistemleri.",
+      "description": "Hassa sıcaklık, basınç, nem ve partikül kontrollü; GMP uyumlu temiz oda tasarımı ve kalifikasyonu.",
       "services": {
         "cleanRoomDesign": "Temiz Oda Tasarımı ve Projelendirme",
-        "hvacValidation": "HVAC Validasyonu (DQ/IQ/OQ/PQ)",
-        "particleMonitoring": "Partikül İzleme Sistemleri",
-        "gmpCompliance": "GMP Uyumluluk Danışmanlığı",
-        "pressureDifferential": "Basınç Farkı Kontrol Sistemleri"
+        "hvacValidation": "Kapsamlı HVAC Kalifikasyonu",
+        "particleMonitoring": "VAV / CAV Kontrol Çözümleri",
+        "gmpCompliance": "GMP Regülasyon ve Kalite Danışmanlığı",
+        "pressureDifferential": "Sıcaklık, Nem ve Basınç Optimizasyonu"
       }
     },
     "viewAll": "Tüm Hizmetleri Görüntüle",
@@ -262,6 +263,10 @@
         "management": {
           "title": "Proje Yönetimi",
           "description": "İnşaat projelerinin planlama, programlama, bütçeleme ve saha koordinasyonu. İlerleme takibi, kalite kontrolü ve iş güvenliği yönetimi."
+        },
+        "modular": {
+          "title": "Modüler ve Prefabrik Yapı Çözümleri",
+          "description": "Endüstriyel tesisler için hızlı kurulum imkanı sunan, taşınabilir ve esnek prefabrik yapılar."
         }
       }
     },
