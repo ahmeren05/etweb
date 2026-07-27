@@ -106,13 +106,11 @@ export default function HomePage() {
               <span className={styles.staggeredText}>{t('ContactCTA.line2')}</span>
             </div>
             <div className={styles.staggeredLine3Wrapper}>
-              <div className={styles.staggeredLine3}>
-                <span className={styles.staggeredText}>{t('ContactCTA.line3')}</span>
-              </div>
-              <Link href="/iletisim" className="btn btn-primary btn-lg">
-                {t('ContactCTA.cta')} <ArrowRight size={18} />
-              </Link>
+              <span className={styles.staggeredText}>{t('ContactCTA.line3')}</span>
             </div>
+            <Link href="/iletisim" className="btn btn-primary btn-lg">
+              {t('ContactCTA.cta')} <ArrowRight size={18} />
+            </Link>
           </div>
         </div>
       </section>

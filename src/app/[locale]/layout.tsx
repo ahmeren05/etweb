@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { Space_Grotesk, Inter, IBM_Plex_Mono } from 'next/font/google';
+import { Space_Grotesk, Inter, IBM_Plex_Mono, Caveat } from 'next/font/google';
 import { routing } from '@/i18n/routing';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
@@ -30,6 +30,13 @@ const ibmPlexMono = IBM_Plex_Mono({
   variable: '--font-mono',
   display: 'swap',
   weight: ['400', '500'],
+});
+
+const caveat = Caveat({
+  subsets: ['latin', 'latin-ext'],
+  variable: '--font-handwriting',
+  display: 'swap',
+  weight: ['400', '700'],
 });
 
 type Props = {
@@ -98,7 +105,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html
       lang={locale}
-      className={`${spaceGrotesk.variable} ${inter.variable} ${ibmPlexMono.variable}`}
+      className={`${spaceGrotesk.variable} ${inter.variable} ${ibmPlexMono.variable} ${caveat.variable}`}
       suppressHydrationWarning
     >
       <body suppressHydrationWarning>

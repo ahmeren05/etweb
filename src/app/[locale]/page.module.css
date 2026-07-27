@@ -43,53 +43,54 @@
 /* Contact CTA */
 .contactCTA {
   background: linear-gradient(135deg, var(--color-cyan-deep), var(--color-cyan));
-  padding: var(--space-20) 0;
-}
-
 .staggeredContainer {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-4);
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  align-items: end;
+  row-gap: var(--space-2);
+  column-gap: var(--space-4);
   max-width: 900px;
   margin: 0 auto;
 }
 
 .staggeredText {
   color: var(--color-snow);
-  font-size: var(--text-4xl);
+  font-family: var(--font-handwriting);
+  font-size: 3rem;
   font-weight: 700;
   display: inline-block;
   border-bottom: 2px solid var(--color-snow);
-  padding-bottom: 4px;
+  padding-bottom: 2px;
+  line-height: 1;
 }
 
 .staggeredLine1 {
-  align-self: flex-start;
+  grid-column: 1 / 2;
+  grid-row: 1;
 }
 
 .staggeredLine2 {
-  align-self: center;
+  grid-column: 2 / 3;
+  grid-row: 2;
 }
 
 .staggeredLine3Wrapper {
-  align-self: flex-end;
-  display: flex;
-  align-items: flex-end;
-  gap: var(--space-8);
-  flex-wrap: wrap;
+  grid-column: 3 / 4;
+  grid-row: 3;
 }
 
-.staggeredLine3 {
-  /* Line 3 container */
-}
-
-.staggeredLine3Wrapper .btn-primary {
+/* We style the button directly to place it in the 4th column */
+.staggeredContainer .btn-primary {
+  grid-column: 4 / 5;
+  grid-row: 3;
   background-color: var(--color-snow);
   color: var(--color-cyan-deep);
-  margin-bottom: 4px;
+  margin-bottom: 4px; /* Align slightly with the text underline */
 }
 
-.staggeredLine3Wrapper .btn-primary:hover {
+.staggeredContainer .btn-primary:hover {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
