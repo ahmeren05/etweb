@@ -86,16 +86,16 @@
 }
 
 /* We style the button directly to place it in the 4th column */
-.staggeredContainer .btn-primary {
+.staggeredButton {
   grid-column: 4 / 5;
   grid-row: 3;
-  background-color: var(--color-snow);
-  color: var(--color-cyan-deep);
+  background-color: var(--color-snow) !important;
+  color: var(--color-cyan-deep) !important;
   margin-bottom: 4px; /* Align slightly with the text underline */
 }
 
-.staggeredContainer .btn-primary:hover {
-  background-color: rgba(255, 255, 255, 0.9);
+.staggeredButton:hover {
+  background-color: rgba(255, 255, 255, 0.9) !important;
 }
 
 /* Eyebrow Link */
