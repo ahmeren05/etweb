@@ -19,7 +19,7 @@
 .statNumber {
   font-family: var(--font-mono);
   font-size: var(--text-5xl);
-  font-weight: 700;
+  font-weight: 500;
   color: var(--color-cyan);
   line-height: 1;
   margin-bottom: var(--space-2);
