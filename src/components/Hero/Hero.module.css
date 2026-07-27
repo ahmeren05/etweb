@@ -95,7 +95,7 @@
   display: flex;
   gap: 6px;
   align-items: center;
-  margin-bottom: var(--space-6);
+  margin-top: var(--space-8);
 }
 
 .siemensGreyBoxInline {

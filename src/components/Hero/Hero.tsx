@@ -19,6 +19,19 @@ export default function Hero() {
               Eren Teknik Mühendislik A.Ş.
             </div>
 
+
+
+            <h1 className={styles.heroTitle}>{t('headline')}</h1>
+            <p className={styles.heroSubtitle}>{t('subheadline')}</p>
+            <div className={styles.heroCTAs}>
+              <Link href="/hizmetler" className="btn btn-primary btn-lg">
+                {t('cta')}
+              </Link>
+              <Link href="/iletisim" className="btn btn-outline btn-lg">
+                {t('ctaSecondary')}
+              </Link>
+            </div>
+
             <div className={styles.siemensEmblemInline}>
               <div className={styles.siemensGreyBoxInline}>
                 <Image 
@@ -42,17 +55,6 @@ export default function Hero() {
                   Solution Partner - Building Technologies
                 </div>
               </div>
-            </div>
-
-            <h1 className={styles.heroTitle}>{t('headline')}</h1>
-            <p className={styles.heroSubtitle}>{t('subheadline')}</p>
-            <div className={styles.heroCTAs}>
-              <Link href="/hizmetler" className="btn btn-primary btn-lg">
-                {t('cta')}
-              </Link>
-              <Link href="/iletisim" className="btn btn-outline btn-lg">
-                {t('ctaSecondary')}
-              </Link>
             </div>
           </div>
           <div className={styles.heroVisual}>
