@@ -98,11 +98,21 @@ export default function HomePage() {
       {/* Contact CTA */}
       <section className={styles.contactCTA} id="contact-cta">
         <div className="container">
-          <div className={styles.ctaInner}>
-            <h2>{t('ContactCTA.title')}</h2>
-            <Link href="/iletisim" className="btn btn-primary btn-lg">
-              {t('ContactCTA.cta')} <ArrowRight size={18} />
-            </Link>
+          <div className={styles.staggeredContainer}>
+            <div className={styles.staggeredLine1}>
+              <span className={styles.staggeredText}>{t('ContactCTA.line1')}</span>
+            </div>
+            <div className={styles.staggeredLine2}>
+              <span className={styles.staggeredText}>{t('ContactCTA.line2')}</span>
+            </div>
+            <div className={styles.staggeredLine3Wrapper}>
+              <div className={styles.staggeredLine3}>
+                <span className={styles.staggeredText}>{t('ContactCTA.line3')}</span>
+              </div>
+              <Link href="/iletisim" className="btn btn-primary btn-lg">
+                {t('ContactCTA.cta')} <ArrowRight size={18} />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

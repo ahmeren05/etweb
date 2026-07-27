@@ -46,29 +46,50 @@
   padding: var(--space-20) 0;
 }
 
-.ctaInner {
-  text-align: center;
-  max-width: 600px;
+.staggeredContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 900px;
   margin: 0 auto;
 }
 
-.ctaInner h2 {
+.staggeredText {
   color: var(--color-snow);
-  margin-bottom: var(--space-4);
+  font-size: var(--text-4xl);
+  font-weight: 700;
+  display: inline-block;
+  border-bottom: 2px solid var(--color-snow);
+  padding-bottom: 4px;
 }
 
-.ctaInner p {
-  color: rgba(255, 255, 255, 0.85);
-  font-size: var(--text-lg);
-  margin-bottom: var(--space-8);
+.staggeredLine1 {
+  align-self: flex-start;
 }
 
-.ctaInner .btn-primary {
+.staggeredLine2 {
+  align-self: center;
+}
+
+.staggeredLine3Wrapper {
+  align-self: flex-end;
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-8);
+  flex-wrap: wrap;
+}
+
+.staggeredLine3 {
+  /* Line 3 container */
+}
+
+.staggeredLine3Wrapper .btn-primary {
   background-color: var(--color-snow);
   color: var(--color-cyan-deep);
+  margin-bottom: 4px;
 }
 
-.ctaInner .btn-primary:hover {
+.staggeredLine3Wrapper .btn-primary:hover {
   background-color: rgba(255, 255, 255, 0.9);
 }
 

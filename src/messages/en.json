@@ -95,7 +95,9 @@
     "cta": "Learn More"
   },
   "ContactCTA": {
-    "title": "The starting point where qualified ideas turn into strong projects.",
+    "line1": "The starting point where",
+    "line2": "qualified ideas turn into",
+    "line3": "strong projects.",
     "cta": "Contact Us"
   },
   "Footer": {

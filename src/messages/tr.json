@@ -95,7 +95,9 @@
     "cta": "Daha Fazla Bilgi"
   },
   "ContactCTA": {
-    "title": "Nitelikli fikirlerin, güçlü projelere dönüştüğü başlangıç noktası.",
+    "line1": "Nitelikli fikirlerin,",
+    "line2": "güçlü projelere dönüştüğü",
+    "line3": "başlangıç noktası.",
     "cta": "İletişime Geçin"
   },
   "Footer": {
