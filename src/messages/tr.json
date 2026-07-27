@@ -89,9 +89,9 @@
     "validation": "Kalifikasyon ve Validasyon"
   },
   "AboutPreview": {
-    "eyebrow": "Hakkımızda",
-    "title": "Entegre Mühendislik Gücü",
-    "description": "Temelleri 1960'larda atılan Eren Teknik, yarım yüzyıla yakın kurumsal deneyimiyle temiz oda, mekanik ve elektrik mühendisliği alanlarında yenilikçi ve bütünleşik çözümler sunmaktadır.",
+    "title": "Hakkımızda",
+    "subtitle": "Entegre Mühendislik Gücü",
+    "description": "Temelleri 1960'lı yıllarda atılan Eren Teknik, yarım asrı aşan tecrübesini modern mühendislik yaklaşımlarıyla birleştirerek nitelikli altyapı ve üstyapı çözümleri geliştirmektedir.",
     "cta": "Daha Fazla Bilgi"
   },
   "ContactCTA": {
@@ -116,9 +116,10 @@
     "heroTitle": "Mühendislikte\nGüvenin Adresi",
     "heroSubtitle": "1960'lardan bu yana endüstriyel altyapıya değer katıyoruz.",
     "storyTitle": "Hikayemiz",
-    "storyP1": "Temelleri 1960’lı yıllarda köklü bir aile şirketi olarak atılan Eren Teknik, yarım yüzyıla yakın süredir devam eden endüstriyel yolculuğunda kurumsal kimliği ve mühendislik tecrübesiyle sektörde güven inşa etmeye devam etmektedir.",
-    "storyP2": "Özellikle temiz oda (clean room) sektöründe uzmanlaşan firmamız; mekanik ve elektrik disiplinlerinde tüm altyapı ve üstyapı kurulum hizmetlerini tek çatı altında sunmaktadır. GMP, FDA ve diğer uluslararası kalite standartlarını tüm faaliyetlerinin merkezine alan Eren Teknik, bugüne dek çok sayıda yüksek hassasiyetli steril saha projesini başarıyla hayata geçirmiştir.",
-    "storyP3": "Müşteri memnuniyetini ve sürdürülebilir kaliteyi daima ön planda tutan Eren Teknik; sürekli gelişen güçlü mühendis kadrosu ve 'optimum çözüm' ilkesiyle geleceğe yön vermektedir. Sahip olduğu köklü tecrübeyi yeni nesil teknolojilerle harmanlayarak, sektöründe bilginin ve güvenin asıl kaynağı olma vizyonuyla emin adımlarla ilerlemektedir.",
+    "storyP1": "Temelleri 1960'lı yıllarda atılan Eren Teknik, yarım asrı aşan tecrübesini modern mühendislik yaklaşımlarıyla birleştirerek nitelikli altyapı ve üstyapı çözümleri geliştirmektedir.",
+    "storyP2": "Özellikle temiz oda mühendisliğinde uzmanlaşan yapısıyla; elektrik ve mekanik disiplinlerindeki tüm süreçler tek çatı altında ve tam entegrasyonla yönetilmektedir. Faaliyetlerin merkezinde yer alan GMP ve FDA standartları titizlikle gözetilmekte; yüksek hassasiyet gerektiren steril saha projeleri başarıyla hayata geçirilmektedir.",
+    "storyP3": "Gelişen teknolojinin getirdiği yeni dinamiklerle birlikte artan otomasyon sistemleri ihtiyacına hızla adapte olan Eren Teknik, bu alandaki mühendislik kapasitesini Siemens ile imza attığı stratejik çözüm ortaklığıyla küresel standartlara taşımıştır. Bütünleşik proje yönetimi vizyonunun bir gereği olarak zaman içinde inşaat disiplinini de bünyesine katan firma; böylece mekanik, elektrik, otomasyon ve inşaat süreçlerinin tamamını tek elden yürütebilen kapsamlı bir mühendislik yapısına kavuşmuştur.",
+    "storyP4": "Sürdürülebilir kalite ve 'optimum çözüm' ilkelerini benimseyen Eren Teknik, sektördeki asırlık bilgi birikimini ve güven inşasını sadece teknolojiyle değil, kendi yetiştirdiği uzman kadrolarla da desteklemektedir. Köklerinden aldığı güçle kurumsal hafızasını yeni nesillere aktararak, mühendislik sektörünün bilgi ve güven kaynağı olmaya devam etmektedir.",
     "missionTitle": "Misyonumuz",
     "missionText": "Farklı mühendislik disiplinlerini tek çatı altında buluşturan entegre yaklaşımımızla, iş ortaklarımızın operasyonel verimliliğini maksimize etmek; her projeyi yüksek kalite standartlarında, bütçe ve zaman planına sadık kalarak hayata geçirmektir.",
     "visionTitle": "Vizyonumuz",

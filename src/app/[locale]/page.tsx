@@ -64,9 +64,6 @@ export default function HomePage() {
         <div className="container">
           <div className={styles.aboutPreview}>
             <div className={styles.aboutContent}>
-              <Link href="/hakkimizda" className={styles.eyebrowLink}>
-                <span className="eyebrow">{t('AboutPreview.eyebrow')}</span>
-              </Link>
               <h2>
                 <Link href="/hakkimizda" className="sectionTitleLink">
                   <span className="sectionTitleText">
@@ -74,6 +71,18 @@ export default function HomePage() {
                   </span>
                 </Link>
               </h2>
+              <h3 
+                className={styles.aboutSubtitle} 
+                style={{ 
+                  fontStyle: 'italic', 
+                  fontWeight: 'normal', 
+                  marginTop: '-10px', 
+                  marginBottom: '20px', 
+                  color: 'var(--color-slate)' 
+                }}
+              >
+                {t('AboutPreview.subtitle')}
+              </h3>
               <p className={styles.aboutText}>{t('AboutPreview.description')}</p>
               <Link href="/hakkimizda" className="btn btn-outline">
                 {t('AboutPreview.cta')} <ArrowRight size={16} />

@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useEffect, useRef, useState } from 'react';
-import { CheckCheck } from 'lucide-react';
+import { CheckCheck, Key } from 'lucide-react';
 import styles from './Stats.module.css';
 
 interface StatConfig {
@@ -14,7 +14,7 @@ interface StatConfig {
 const statsData: StatConfig[] = [
   { value: 30, suffix: '+', labelKey: 'years' },
   { value: 100, suffix: '+', labelKey: 'projects' },
-  { value: 100, suffix: '%', labelKey: 'turnkey' },
+  { value: 0, suffix: '', labelKey: 'turnkey' },
   { value: 0, suffix: '', labelKey: 'validation' },
 ];
 
@@ -53,14 +53,16 @@ function StatItem({ stat, isVisible }: { stat: StatConfig; isVisible: boolean })
     <div className={styles.statItem}>
       <div 
         className={styles.statNumber}
-        style={stat.labelKey === 'validation' ? { display: 'flex', alignItems: 'center', justifyContent: 'center', height: '1em' } : {}}
+        style={(stat.labelKey === 'validation' || stat.labelKey === 'turnkey') ? { display: 'flex', alignItems: 'center', justifyContent: 'center', height: '1em' } : {}}
       >
         {stat.labelKey === 'validation' ? (
           <CheckCheck size={56} strokeWidth={4} className={styles.statIcon} style={{ transform: 'translateY(-2px)' }} />
+        ) : stat.labelKey === 'turnkey' ? (
+          <Key size={56} strokeWidth={4} className={styles.statIcon} style={{ transform: 'translateY(-2px)' }} />
         ) : (
           <>
             {count}
-            {stat.suffix && <span className={styles.statSuffix}>{stat.suffix}</span>}
+            <span className={styles.statSuffix}>{stat.suffix}</span>
           </>
         )}
       </div>

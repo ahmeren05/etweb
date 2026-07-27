@@ -66,6 +66,7 @@ export default function AboutPage() {
               <p>{t('storyP1')}</p>
               <p>{t('storyP2')}</p>
               <p>{t('storyP3')}</p>
+              <p>{t('storyP4')}</p>
             </div>
             <div className={styles.missionVision}>
               <div className={styles.mvCard}>

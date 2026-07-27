@@ -89,9 +89,9 @@
     "validation": "Qualification and Validation"
   },
   "AboutPreview": {
-    "eyebrow": "About Us",
-    "title": "Integrated Engineering Power",
-    "description": "Founded in the 1960s, Eren Teknik leverages nearly half a century of corporate experience to deliver innovative and integrated solutions in clean room, mechanical, and electrical engineering.",
+    "title": "About Us",
+    "subtitle": "Integrated Engineering Power",
+    "description": "Eren Teknik, founded in the 1960s, combines over half a century of experience with modern engineering approaches to develop qualified infrastructure and superstructure solutions.",
     "cta": "Learn More"
   },
   "ContactCTA": {
@@ -116,9 +116,10 @@
     "heroTitle": "The Trusted Name\nin Engineering",
     "heroSubtitle": "Adding value to industrial infrastructure since the 1960s.",
     "storyTitle": "Our Story",
-    "storyP1": "Founded in the 1960s as a well-established family enterprise, Eren Teknik continues to build trust in the industry with its corporate identity and engineering expertise on an industrial journey spanning nearly half a century.",
-    "storyP2": "Specializing particularly in the clean room sector, our firm provides comprehensive mechanical and electrical infrastructure and superstructure installation services under a single roof. Placing international quality standards such as GMP and FDA at the core of all its operations, Eren Teknik has successfully delivered numerous high-precision sterile field projects to date.",
-    "storyP3": "Always prioritizing customer satisfaction and sustainable quality, Eren Teknik shapes the future with its strong, continuously evolving engineering team and its principle of 'optimum solutions.' By blending its deep-rooted experience with next-generation technologies, the company takes firm steps forward with the vision of becoming the ultimate source of knowledge and trust in the industry.",
+    "storyP1": "Eren Teknik, founded in the 1960s, combines over half a century of experience with modern engineering approaches to develop qualified infrastructure and superstructure solutions.",
+    "storyP2": "Specializing particularly in clean room engineering, all processes in electrical and mechanical disciplines are managed under a single roof with full integration. GMP and FDA standards, which are at the center of the activities, are meticulously observed; sterile field projects requiring high precision are successfully implemented.",
+    "storyP3": "Quickly adapting to the increasing need for automation systems with the new dynamics brought by developing technology, Eren Teknik has carried its engineering capacity in this field to global standards with the strategic solution partnership it signed with Siemens. As a requirement of its integrated project management vision, the company incorporated the construction discipline over time; thus, it achieved a comprehensive engineering structure capable of managing all mechanical, electrical, automation, and construction processes from a single source.",
+    "storyP4": "Adopting the principles of sustainable quality and 'optimum solution', Eren Teknik supports its century-old knowledge and trust building in the sector not only with technology but also with its own expert staff. By transferring its corporate memory to new generations with the strength it draws from its roots, it continues to be the source of knowledge and trust in the engineering sector.",
     "missionTitle": "Our Mission",
     "missionText": "To maximize the operational efficiency of our business partners through our integrated approach that unites different engineering disciplines under one roof; and to bring every project to life in accordance with high-quality standards, adhering strictly to budget and timeline plans.",
     "visionTitle": "Our Vision",
