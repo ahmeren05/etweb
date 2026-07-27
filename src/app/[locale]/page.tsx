@@ -109,7 +109,9 @@ export default function HomePage() {
               <span className={styles.staggeredText}>{t('ContactCTA.line3')}</span>
             </div>
             <Link href="/iletisim" className={styles.staggeredArrowLink} aria-label={t('ContactCTA.cta')}>
-              <ArrowRight size={44} strokeWidth={2.5} />
+              <svg width="72" height="28" viewBox="0 0 72 28" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M0 14H70M58 4l12 10-12 10"/>
+              </svg>
             </Link>
           </div>
         </div>
