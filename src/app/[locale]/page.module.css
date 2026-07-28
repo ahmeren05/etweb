@@ -1,7 +1,14 @@
 .disciplinesGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: var(--space-6);
+}
+
+.disciplinesGrid > * {
+  /* 5-0 layout by default (5 items per row) */
+  flex: 0 0 calc(20% - 19.2px); /* 4 gaps of 24px = 96px, 96 / 5 = 19.2px */
+  max-width: calc(20% - 19.2px);
 }
 
 /* About Preview */
@@ -109,6 +116,14 @@
 
 
 
+@media (max-width: 1300px) {
+  .disciplinesGrid > * {
+    /* 3-2 layout */
+    flex: 0 0 calc(33.333% - 16px);
+    max-width: calc(33.333% - 16px);
+  }
+}
+
 @media (max-width: 1024px) {
   .aboutPreview {
     grid-template-columns: 1fr;
@@ -116,10 +131,26 @@
   }
 }
 
+@media (max-width: 900px) {
+  .disciplinesGrid > * {
+    /* 2-2-1 layout */
+    flex: 0 0 calc(50% - 12px);
+    max-width: calc(50% - 12px);
+  }
+}
+
 @media (max-width: 768px) {
   .aboutPreview {
     grid-template-columns: 1fr;
     gap: var(--space-8);
+  }
+}
+
+@media (max-width: 600px) {
+  .disciplinesGrid > * {
+    /* 1-1-1-1-1 layout */
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
