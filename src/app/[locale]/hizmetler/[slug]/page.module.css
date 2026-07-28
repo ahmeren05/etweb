@@ -111,9 +111,9 @@
   min-width: 300px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1350px) {
   .otherDisciplines > * {
-    /* 2-2 layout */
+    /* 2-2 layout (prevents 3-1) */
     flex: 0 0 calc(50% - 12px);
     max-width: calc(50% - 12px);
     min-width: 300px;
