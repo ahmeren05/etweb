@@ -179,11 +179,14 @@
     width: max-content;
     gap: var(--space-4);
   }
-  .scrollDown, .scrollDownSlow {
-    animation: scrollRight 22s linear infinite;
+  .scrollDown {
+    animation: scrollRight 60s linear infinite;
+  }
+  .scrollDownSlow {
+    animation: scrollRight 70s linear infinite;
   }
   .scrollUp {
-    animation: scrollLeft 26s linear infinite;
+    animation: scrollLeft 75s linear infinite;
   }
 }
 
