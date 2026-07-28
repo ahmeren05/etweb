@@ -9,7 +9,7 @@
   /* 5-0 layout by default (5 items per row) */
   flex: 0 0 calc(20% - 19.2px); /* 4 gaps of 24px = 96px, 96 / 5 = 19.2px */
   max-width: calc(20% - 19.2px);
-  min-width: 210px; /* Prevents shrinking too much, but allows 5 to fit in 1200px container */
+  min-width: 300px;
 }
 
 /* About Preview */
