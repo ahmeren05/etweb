@@ -106,16 +106,16 @@
 
 .otherDisciplines > * {
   /* 4-0 layout */
-  flex: 0 0 calc(25% - 18px);
-  max-width: calc(25% - 18px);
+  flex: 1 1 calc(25% - 18px);
+  max-width: 450px;
   min-width: 300px;
 }
 
 @media (max-width: 1350px) {
   .otherDisciplines > * {
     /* 2-2 layout (prevents 3-1) */
-    flex: 0 0 calc(50% - 12px);
-    max-width: calc(50% - 12px);
+    flex: 1 1 calc(50% - 12px);
+    max-width: 450px;
     min-width: 300px;
   }
 }
@@ -123,9 +123,9 @@
 @media (max-width: 600px) {
   .otherDisciplines > * {
     /* 1-1-1-1 layout */
-    flex: 0 0 100%;
-    max-width: 100%;
-    min-width: 100%;
+    flex: 1 1 100%;
+    max-width: 450px;
+    min-width: 300px;
   }
 }
 

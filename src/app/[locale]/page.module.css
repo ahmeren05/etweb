@@ -7,8 +7,8 @@
 
 .disciplinesGrid > * {
   /* 5-0 layout by default (5 items per row) */
-  flex: 0 0 calc(20% - 19.2px); /* 4 gaps of 24px = 96px, 96 / 5 = 19.2px */
-  max-width: calc(20% - 19.2px);
+  flex: 1 1 calc(20% - 19.2px); /* 4 gaps of 24px = 96px, 96 / 5 = 19.2px */
+  max-width: 450px;
   min-width: 300px;
 }
 
@@ -120,8 +120,8 @@
 @media (max-width: 1650px) {
   .disciplinesGrid > * {
     /* 3-2 layout (prevents 4-1) */
-    flex: 0 0 calc(33.333% - 16px);
-    max-width: calc(33.333% - 16px);
+    flex: 1 1 calc(33.333% - 16px);
+    max-width: 450px;
     min-width: 300px;
   }
 }
@@ -136,8 +136,8 @@
 @media (max-width: 900px) {
   .disciplinesGrid > * {
     /* 2-2-1 layout */
-    flex: 0 0 calc(50% - 12px);
-    max-width: calc(50% - 12px);
+    flex: 1 1 calc(50% - 12px);
+    max-width: 450px;
     min-width: 300px;
   }
 }
@@ -152,9 +152,9 @@
 @media (max-width: 600px) {
   .disciplinesGrid > * {
     /* 1-1-1-1-1 layout */
-    flex: 0 0 100%;
-    max-width: 100%;
-    min-width: 100%;
+    flex: 1 1 100%;
+    max-width: 450px;
+    min-width: 300px;
   }
 }
 
