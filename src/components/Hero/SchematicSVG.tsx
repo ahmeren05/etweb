@@ -110,7 +110,6 @@ export default function SchematicSVG() {
         /* 5. Icons and Labels (İkonlar ve Yazılar) */
         .node-icon, .node-label {
           opacity: 0;
-          transition: opacity 0.4s ease;
         }
         .node-icon { stroke: #0097A7; color: #0097A7; }
         .node-label {
@@ -122,8 +121,8 @@ export default function SchematicSVG() {
           text-anchor: middle;
         }
         .node-icon.visible, .node-label.visible {
-          opacity: 1;
-          transition-delay: 1.9s; 
+          animation: fadeIn 0.4s ease forwards;
+          animation-delay: 1.9s; 
         }
 
         /* Hover Effect for Links */
@@ -179,6 +178,9 @@ export default function SchematicSVG() {
         }
         @keyframes drawLine {
           to { stroke-dashoffset: 0; }
+        }
+        @keyframes fadeIn {
+          to { opacity: 1; }
         }
 
         /* Reduced Motion */
