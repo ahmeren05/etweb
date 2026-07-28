@@ -69,7 +69,7 @@
     },
     "cleanroom": {
       "title": "Temiz Oda Sistemleri",
-      "description": "Hassa sıcaklık, basınç, nem ve partikül kontrollü; GMP uyumlu temiz oda tasarımı ve kalifikasyonu.",
+      "description": "Hassas sıcaklık, basınç, nem ve partikül kontrollü; GMP uyumlu temiz oda tasarımı ve kalifikasyonu.",
       "services": {
         "cleanRoomDesign": "Temiz Oda Tasarımı ve Projelendirme",
         "hvacValidation": "Kapsamlı HVAC Kalifikasyonu",
@@ -276,7 +276,7 @@
       "metaTitle": "Temiz Oda Sistemleri Hizmetleri",
       "metaDescription": "GMP uyumlu temiz oda tasarımı, HVAC validasyonu ve partikül kontrol sistemleri.",
       "heroTitle": "Temiz Oda\nSistemleri",
-      "heroSubtitle": "İlaç, elektronik ve gıda endüstrileri için GMP standartlarında temiz oda çözümleri.",
+      "heroSubtitle": "GMP standartlarına uygun; hassas sıcaklık, nem, basınç ve partikül izleme sistemleriyle tam şartlandırılmış temiz oda tasarımı ve kalifikasyonu.",
       "services": {
         "cleanRoomDesign": {
           "title": "Temiz Oda Tasarımı ve Projelendirme",
