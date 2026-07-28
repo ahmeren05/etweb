@@ -156,10 +156,16 @@
 }
 
 @media (max-width: 768px) {
+  .logoCard {
+    width: 240px;
+    height: 72px;
+    flex-shrink: 0;
+  }
   .marqueeContainer {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    height: 220px;
+    height: 240px;
+    gap: var(--space-4);
     mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
     -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
   }
@@ -171,12 +177,13 @@
   .track {
     flex-direction: row;
     width: max-content;
+    gap: var(--space-4);
   }
   .scrollDown, .scrollDownSlow {
-    animation: scrollLeft 22s linear infinite;
+    animation: scrollRight 22s linear infinite;
   }
   .scrollUp {
-    animation: scrollRight 26s linear infinite;
+    animation: scrollLeft 26s linear infinite;
   }
 }
 
