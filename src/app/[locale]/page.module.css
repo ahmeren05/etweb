@@ -9,6 +9,7 @@
   /* 5-0 layout by default (5 items per row) */
   flex: 0 0 calc(20% - 19.2px); /* 4 gaps of 24px = 96px, 96 / 5 = 19.2px */
   max-width: calc(20% - 19.2px);
+  min-width: 210px; /* Prevents shrinking too much, but allows 5 to fit in 1200px container */
 }
 
 /* About Preview */
@@ -121,6 +122,7 @@
     /* 3-2 layout */
     flex: 0 0 calc(33.333% - 16px);
     max-width: calc(33.333% - 16px);
+    min-width: 300px;
   }
 }
 
@@ -136,6 +138,7 @@
     /* 2-2-1 layout */
     flex: 0 0 calc(50% - 12px);
     max-width: calc(50% - 12px);
+    min-width: 300px;
   }
 }
 
@@ -151,6 +154,7 @@
     /* 1-1-1-1-1 layout */
     flex: 0 0 100%;
     max-width: 100%;
+    min-width: 100%;
   }
 }
 

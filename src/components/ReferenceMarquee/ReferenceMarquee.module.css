@@ -154,3 +154,38 @@
     font-size: 13px;
   }
 }
+
+@media (max-width: 768px) {
+  .marqueeContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    height: 220px;
+    mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  }
+  .column {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+  }
+  .track {
+    flex-direction: row;
+    width: max-content;
+  }
+  .scrollDown, .scrollDownSlow {
+    animation: scrollLeft 22s linear infinite;
+  }
+  .scrollUp {
+    animation: scrollRight 26s linear infinite;
+  }
+}
+
+@keyframes scrollLeft {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scrollRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}

@@ -108,6 +108,7 @@
   /* 4-0 layout */
   flex: 0 0 calc(25% - 18px);
   max-width: calc(25% - 18px);
+  min-width: 250px; /* enough to fit 4 in 1200px container */
 }
 
 @media (max-width: 1024px) {
@@ -115,6 +116,7 @@
     /* 2-2 layout */
     flex: 0 0 calc(50% - 12px);
     max-width: calc(50% - 12px);
+    min-width: 300px;
   }
 }
 
@@ -123,6 +125,7 @@
     /* 1-1-1-1 layout */
     flex: 0 0 100%;
     max-width: 100%;
+    min-width: 100%;
   }
 }
 
