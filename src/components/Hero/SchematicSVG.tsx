@@ -10,12 +10,17 @@ export default function SchematicSVG() {
   const svgRef = useRef<SVGSVGElement>(null);
 
   useEffect(() => {
+    let timeoutId: NodeJS.Timeout;
+    
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          setTimeout(() => setIsInteractive(true), 2700);
-          observer.disconnect();
+          timeoutId = setTimeout(() => setIsInteractive(true), 2700);
+        } else {
+          setIsVisible(false);
+          setIsInteractive(false);
+          clearTimeout(timeoutId);
         }
       },
       { threshold: 0.3 }
@@ -25,7 +30,10 @@ export default function SchematicSVG() {
       observer.observe(svgRef.current);
     }
 
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      clearTimeout(timeoutId);
+    };
   }, []);
 
   const reducedMotion = typeof window !== 'undefined'
