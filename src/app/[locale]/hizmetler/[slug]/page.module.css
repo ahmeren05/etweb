@@ -98,33 +98,11 @@
 
 /* Other disciplines */
 .otherDisciplines {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--space-6);
 }
 
-.otherDisciplines > * {
-  /* 4-0 layout */
-  flex: 0 0 calc(25% - 18px);
-  max-width: calc(25% - 18px);
-}
-
-@media (max-width: 1024px) {
-  .otherDisciplines > * {
-    /* 2-2 layout */
-    flex: 0 0 calc(50% - 12px);
-    max-width: calc(50% - 12px);
-  }
-}
-
-@media (max-width: 600px) {
-  .otherDisciplines > * {
-    /* 1-1-1-1 layout */
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
 
 /* CTA */
 .serviceCTA {
