@@ -142,10 +142,8 @@ export default function ServiceGallery({ discipline }: ServiceGalleryProps) {
             className={styles.galleryOverlay}
             onClick={() => openLightbox(0)}
           >
+            <span className={styles.overlayDisciplineTitle}>{disciplineTitle}</span>
             <h3 className={styles.overlayTitle}>Saha ve Proje Uygulamalarımız</h3>
-            <p className={styles.overlayDesc}>
-              {disciplineTitle} alanındaki teknik çözümlerimizden, saha çalışmalarımızdan ve projelendirme aşamalarımızdan görseller.
-            </p>
             <button
               type="button"
               className={styles.galleryBtn}
