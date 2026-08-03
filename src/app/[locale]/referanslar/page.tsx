@@ -74,7 +74,7 @@ export default function ReferencesPage() {
           <div className={styles.pageHeroInner}>
             <span className="eyebrow">{t('metaTitle')}</span>
             <h1>{t('heroTitle')}</h1>
-            <p>{t('heroSubtitle')}</p>
+            {t('heroSubtitle') && <p>{t('heroSubtitle')}</p>}
           </div>
         </div>
       </section>

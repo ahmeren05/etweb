@@ -7,15 +7,16 @@ import styles from './Stats.module.css';
 
 interface StatConfig {
   value: number;
-  suffix: string;
+  suffix?: string;
+  prefix?: string;
   labelKey: string;
 }
 
 const statsData: StatConfig[] = [
-  { value: 30, suffix: '+', labelKey: 'years' },
+  { value: 30, prefix: '+', labelKey: 'years' },
   { value: 100, suffix: '+', labelKey: 'projects' },
-  { value: 0, suffix: '', labelKey: 'turnkey' },
-  { value: 0, suffix: '', labelKey: 'validation' },
+  { value: 0, labelKey: 'turnkey' },
+  { value: 0, labelKey: 'validation' },
 ];
 
 function useCountUp(target: number, duration: number = 2000, isVisible: boolean) {
@@ -58,11 +59,12 @@ function StatItem({ stat, isVisible }: { stat: StatConfig; isVisible: boolean })
         {stat.labelKey === 'validation' ? (
           <CheckCheck size={56} strokeWidth={2} className={styles.statIcon} style={{ transform: 'translateY(-2px)' }} />
         ) : stat.labelKey === 'turnkey' ? (
-          <Handshake size={56} strokeWidth={2} className={styles.statIcon} style={{ transform: 'translateY(-2px)' }} />
+          <Handshake size={56} strokeWidth={1} className={styles.statIcon} style={{ transform: 'translateY(-2px)' }} />
         ) : (
           <>
+            {stat.prefix && <span className={styles.statSuffix}>{stat.prefix}</span>}
             {count}
-            <span className={styles.statSuffix}>{stat.suffix}</span>
+            {stat.suffix && <span className={styles.statSuffix}>{stat.suffix}</span>}
           </>
         )}
       </div>

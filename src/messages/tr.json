@@ -114,7 +114,7 @@
   "About": {
     "metaTitle": "Hakkımızda",
     "metaDescription": "Eren Teknik Mühendislik'in kuruluş hikayesi, misyonu, vizyonu ve mühendislik felsefesi hakkında bilgi edinin.",
-    "heroTitle": "Mühendislikte\nGüvenin Adresi",
+    "heroTitle": "",
     "heroSubtitle": "1960'lardan bu yana endüstriyel altyapıya değer katıyoruz.",
     "storyTitle": "Hikayemiz",
     "storyP1": "Temelleri 1960'lı yıllarda atılan Eren Teknik, yarım asra yakın tecrübesini modern mühendislik yaklaşımlarıyla birleştirerek nitelikli altyapı ve üstyapı çözümleri geliştirmektedir.",
@@ -137,7 +137,7 @@
       },
       "reliability": {
         "title": "Güvenilirlik",
-        "description": "Şeffaflık ve dürüstlükten taviz vermeden; taahhüt ettiğimiz kalite, süre ve bütçe planlamalarına harfiyen uyarak sürdürülebilir güven inşa ediyoruz."
+        "description": "Şeffaflık ve dürüstlük ilkelerimiz doğrultusunda taahhüt ettiğimiz kalite, süre ve bütçe planlamalarına tam uyum sağlıyor, sürdürülebilir bir güven inşa ediyoruz."
       },
       "innovation": {
         "title": "Yenilikçilik",
@@ -148,7 +148,7 @@
   "Services": {
     "metaTitle": "Hizmetlerimiz",
     "metaDescription": "Elektrik, otomasyon, mekanik ve inşaat mühendisliği alanlarındaki kapsamlı hizmet yelpazemizi keşfedin.",
-    "heroTitle": "Hizmetlerimiz",
+    "heroTitle": "",
     "heroSubtitle": "Beş temel mühendislik disiplininde, endüstriyel projelerinizin tüm ihtiyaçlarına özel yenilikçi ve entegre çözümler sunuyoruz.",
     "exploreServices": "Hizmetleri İnceleyin",
     "otherDisciplines": "Diğer Mühendislik Alanları",
@@ -305,7 +305,7 @@
     "metaTitle": "Referanslar",
     "metaDescription": "Eren Teknik Mühendislik'in başarıyla tamamladığı projeler ve iş ortaklıkları.",
     "heroTitle": "Referanslarımız",
-    "heroSubtitle": "Güvenilir iş ortaklıklarımız ve başarıyla tamamladığımız projeler.",
+    "heroSubtitle": "",
     "sectors": {
       "all": "Tümü",
       "energy": "Enerji",
@@ -361,18 +361,18 @@
     "metaTitle": "İletişim",
     "metaDescription": "Eren Teknik Mühendislik ile iletişime geçin. Projeleriniz için ücretsiz ön değerlendirme.",
     "heroTitle": "İletişime Geçin",
-    "heroSubtitle": "Projeniz hakkında konuşalım. Size en uygun mühendislik çözümünü birlikte belirleyelim.",
+    "heroSubtitle": "",
     "formTitle": "Bize Yazın",
     "nameLabel": "Adınız Soyadınız",
-    "namePlaceholder": "Ahmet Yılmaz",
+    "namePlaceholder": "",
     "emailLabel": "E-posta Adresiniz",
-    "emailPlaceholder": "ahmet@firma.com",
+    "emailPlaceholder": "",
     "phoneLabel": "Telefon Numaranız",
-    "phonePlaceholder": "+90 5XX XXX XX XX",
+    "phonePlaceholder": "",
     "serviceLabel": "İlgilendiğiniz Hizmet Alanı",
     "servicePlaceholder": "Seçiniz",
     "messageLabel": "Mesajınız",
-    "messagePlaceholder": "Projeniz hakkında kısaca bilgi verin...",
+    "messagePlaceholder": "",
     "submitButton": "Mesajı Gönder",
     "sending": "Gönderiliyor...",
     "successTitle": "Mesajınız İletildi",

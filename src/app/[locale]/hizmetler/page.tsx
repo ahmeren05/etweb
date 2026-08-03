@@ -37,9 +37,10 @@ export default function ServicesPage() {
       <section className={styles.pageHero}>
         <div className="container">
           <div className={styles.pageHeroInner}>
-            <span className="eyebrow">{t('metaTitle')}</span>
-            <h1>{t('heroTitle')}</h1>
-            <p>{t('heroSubtitle')}</p>
+            <h1 className="eyebrow" style={{ fontSize: 'var(--text-4xl)', textTransform: 'none', marginBottom: 'var(--space-4)' }}>
+              {t('metaTitle')}
+            </h1>
+            {t('heroSubtitle') && <p>{t('heroSubtitle')}</p>}
           </div>
         </div>
       </section>
