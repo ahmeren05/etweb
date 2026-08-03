@@ -38,17 +38,8 @@ export default function ReferencesPage() {
   const isEn = locale === 'en';
   const [searchQuery, setSearchQuery] = useState('');
 
-  const [shuffledClients, setShuffledClients] = useState(clients);
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    const shuffled = [...clients].sort(() => Math.random() - 0.5);
-    setShuffledClients(shuffled);
-    setIsMounted(true);
-  }, []);
-
   const isSearching = searchQuery.trim() !== '';
-  const filteredClients = shuffledClients.filter((client) => {
+  const filteredClients = clients.filter((client) => {
     const query = searchQuery.toLocaleLowerCase('tr-TR').trim();
     return (
       client.name.toLocaleLowerCase('tr-TR').includes(query) ||
@@ -59,7 +50,7 @@ export default function ReferencesPage() {
   });
 
   // Render all clients in the grid so Row 2 starts right below Row 1 just below the fold
-  const displayedClients = isSearching ? filteredClients : shuffledClients;
+  const displayedClients = isSearching ? filteredClients : clients;
 
   return (
     <>
