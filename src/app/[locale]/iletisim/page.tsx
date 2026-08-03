@@ -38,9 +38,8 @@ export default function ContactPage() {
       <section className={styles.pageHero}>
         <div className="container">
           <div className={styles.pageHeroInner}>
-            <h1 className="eyebrow" style={{ fontSize: 'var(--text-4xl)', textTransform: 'none', marginBottom: 'var(--space-4)' }}>
-              {t('metaTitle')}
-            </h1>
+            <span className="eyebrow">{t('metaTitle')}</span>
+            <h1>{t('heroTitle')}</h1>
             {t('heroSubtitle') && <p>{t('heroSubtitle')}</p>}
           </div>
         </div>

@@ -13,7 +13,7 @@ interface StatConfig {
 }
 
 const statsData: StatConfig[] = [
-  { value: 30, prefix: '+', labelKey: 'years' },
+  { value: 30, suffix: '+', labelKey: 'years' },
   { value: 100, suffix: '+', labelKey: 'projects' },
   { value: 0, labelKey: 'turnkey' },
   { value: 0, labelKey: 'validation' },
@@ -57,7 +57,7 @@ function StatItem({ stat, isVisible }: { stat: StatConfig; isVisible: boolean })
         style={(stat.labelKey === 'validation' || stat.labelKey === 'turnkey') ? { display: 'flex', alignItems: 'center', justifyContent: 'center', height: '1em' } : {}}
       >
         {stat.labelKey === 'validation' ? (
-          <CheckCheck size={56} strokeWidth={2} className={styles.statIcon} style={{ transform: 'translateY(-2px)' }} />
+          <CheckCheck size={56} strokeWidth={1} className={styles.statIcon} style={{ transform: 'translateY(-2px)' }} />
         ) : stat.labelKey === 'turnkey' ? (
           <Handshake size={56} strokeWidth={1} className={styles.statIcon} style={{ transform: 'translateY(-2px)' }} />
         ) : (
