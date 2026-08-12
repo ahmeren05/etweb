@@ -166,19 +166,9 @@
   gap: var(--space-3);
 }
 
-@media (max-width: 1400px) {
-  .cardBgImage {
-    width: 25%;
-  }
-}
-
 @media (max-width: 1024px) {
   .cardGrid {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .cardBgImage {
-    width: 28%;
   }
 }
 
