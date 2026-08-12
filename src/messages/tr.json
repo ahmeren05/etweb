@@ -40,7 +40,7 @@
         "plc": "PLC Programlama ve Entegrasyonu",
         "scada": "SCADA Sistemleri",
         "bms": "Bina Yönetim Sistemleri (BMS)",
-        "industrial": "Enerji İzleme Otomasyonu",
+        "energyMonitoring": "Enerji İzleme Otomasyonu",
         "processControl": "Proses Kontrol Sistemleri"
       }
     },
@@ -204,11 +204,11 @@
         },
         "energyMonitoring": {
           "title": "Enerji İzleme Otomasyonu",
-          "description": "Tesislerin enerji tüketimini anlık olarak izleyerek analiz eden, kayıp/kaçak noktalarını tespit edip verimliliği en üst düzeye çıkaran akıllı enerji yönetim ve raporlama sistemleri."
+          "description": "Tesis içerisindeki enerji tüketimlerinin anlık olarak izlenmesi, toplanan verilerin analiz edilmesi ve detaylı şekilde raporlandırılması."
         },
         "processControl": {
           "title": "Proses Kontrol Sistemleri",
-          "description": "DCS ve hibrit kontrol sistemleri, enstrümantasyon, proses optimizasyonu ve ileri kontrol algoritmaları."
+          "description": "Kazan ve Chiller Proses Kontrol ve Otomasyon Çözümleri."
         }
       }
     },
@@ -244,7 +244,7 @@
       "metaTitle": "İnşaat Mühendisliği Hizmetleri",
       "metaDescription": "Betonarme yapı tasarımından proje yönetimine, endüstriyel ve ticari inşaat mühendisliği çözümleri.",
       "heroTitle": "İnşaat\nMühendisliği",
-      "heroSubtitle": "Sağlam temeller, dayanıklı yapılar. Projenizin fiziksel altyapısını inşa ediyoruz.",
+      "heroSubtitle": "Sağlam temeller, dayanıklı yapılar.",
       "services": {
         "concrete": {
           "title": "Betonarme Yapı Tasarımı",

@@ -40,7 +40,7 @@
         "plc": "PLC Programming & Integration",
         "scada": "SCADA Systems",
         "bms": "Building Management Systems (BMS)",
-        "industrial": "Industrial Automation",
+        "energyMonitoring": "Energy Monitoring Automation",
         "processControl": "Process Control Systems"
       }
     },
