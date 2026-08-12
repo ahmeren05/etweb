@@ -11,10 +11,6 @@ const galleryMap: Record<string, string[]> = {
     '/services/electric/electric1.jpeg',
     '/services/electric/electric2.jpeg',
     '/services/electric/electric3.jpeg',
-    '/services/electric/electric4.jpeg',
-    '/services/electric/electric5.jpeg',
-    '/services/electric/electric6.jpeg',
-    '/services/electric/electric7.jpeg',
   ],
   otomasyon: [
     '/services/automation/automation1.jpeg',
@@ -26,6 +22,7 @@ const galleryMap: Record<string, string[]> = {
     '/services/automation/automation7.jpeg',
     '/services/automation/automation8.jpeg',
     '/services/automation/automation9.jpeg',
+    '/services/automation/automation10.jpeg',
     '/services/automation/automation11.jpeg',
   ],
   mekanik: [
@@ -38,6 +35,10 @@ const galleryMap: Record<string, string[]> = {
     '/services/mechanical/mechanical7.jpeg',
     '/services/mechanical/mechanical8.jpeg',
     '/services/mechanical/mechanical9.jpeg',
+    '/services/mechanical/mechanical10.jpeg',
+    '/services/mechanical/mechanical11.jpeg',
+    '/services/mechanical/mechanical12.jpeg',
+    '/services/mechanical/mechanical13.jpeg',
   ],
   insaat: [
     '/services/building/building1.png',
