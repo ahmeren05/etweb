@@ -163,7 +163,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: var(--space-6);
+  /* Horizontal padding = button width (56px) + button offset (40px) + gap (16px) = 112px */
+  padding: var(--space-6) 112px;
   animation: fadeIn var(--duration-fast) var(--ease-out);
 }
 
@@ -178,7 +179,7 @@
 
 .lightboxContent {
   position: relative;
-  max-width: 85vw;
+  max-width: 100%;
   max-height: 85vh;
   display: flex;
   align-items: center;
@@ -186,7 +187,7 @@
 }
 
 .lightboxImg {
-  max-width: 85vw;
+  max-width: 100%;
   max-height: 82vh;
   object-fit: contain;
   border-radius: var(--radius-md);
@@ -275,6 +276,10 @@
   .galleryOverlay {
     padding: var(--space-6);
     margin: 0 var(--space-4);
+  }
+  /* Reduce padding for smaller buttons on mobile */
+  .lightboxModal {
+    padding: var(--space-4) 70px;
   }
   .prevBtn {
     left: 15px;
