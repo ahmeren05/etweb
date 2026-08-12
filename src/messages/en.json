@@ -202,9 +202,9 @@
           "title": "Building Management Systems (BMS)",
           "description": "Smart building management systems for unified control of HVAC, lighting, access control, and energy management from a single platform."
         },
-        "industrial": {
-          "title": "Industrial Automation",
-          "description": "Production lines, conveyor systems, robot integration, and industrial process automation. Industry 4.0 compatible solutions."
+        "energyMonitoring": {
+          "title": "Energy Monitoring Automation",
+          "description": "Smart energy management and reporting systems that monitor facility energy consumption in real-time, detect loss/leakage points, and maximize energy efficiency."
         },
         "processControl": {
           "title": "Process Control Systems",

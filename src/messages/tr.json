@@ -160,15 +160,15 @@
       "metaTitle": "Elektrik Mühendisliği Hizmetleri",
       "metaDescription": "Alçak gerilim tesisatlarından enerji verimliliği danışmanlığına kadar kapsamlı elektrik mühendisliği hizmetleri.",
       "heroTitle": "Elektrik\nMühendisliği",
-      "heroSubtitle": "Güvenli, verimli ve standartlara uygun elektrik sistemleri tasarlıyor ve uyguluyoruz.",
+      "heroSubtitle": "Güvenli, verimli ve standartlara uygun elektrik sistemleri",
       "services": {
         "lowVoltage": {
           "title": "Alçak Gerilim Tesisatları",
-          "description": "Endüstriyel ve ticari tesislerde 1000V altı güç dağıtım sistemlerinin projelendirilmesi, kurulumu ve devreye alınması. Pano tasarımı, kablolama ve koruma sistemleri dahil."
+          "description": "Endüstriyel tesislerde 1000V altı güç dağıtım sistemlerinin projelendirilmesi, kurulumu ve devreye alınması, pano tasarımı ve saha uygulamaları."
         },
         "mediumVoltage": {
           "title": "Orta Gerilim Sistemleri",
-          "description": "1-36 kV aralığındaki orta gerilim hücreleri, trafo merkezleri ve dağıtım sistemlerinin tasarımı ve uygulaması. TEDAŞ standartlarına tam uyumluluk."
+          "description": "1-36 kV aralığındaki orta gerilim hücreleri, trafo merkezleri ve dağıtım sistemlerinin tasarımı ve uygulaması. Uluslararası standartlara tam uyumluluk."
         },
         "lighting": {
           "title": "Aydınlatma Projeleri",
@@ -176,7 +176,7 @@
         },
         "grounding": {
           "title": "Topraklama ve Yıldırımdan Korunma",
-          "description": "Topraklama ölçümleri, topraklama ızgara tasarımı, yıldırımdan korunma sistemleri (LPS) ve aşırı gerilim koruma çözümleri."
+          "description": "Uluslararası standartlarda topraklama ölçümleri, yıldırımdan korunma ve aşırı gerilim koruma çözümleri."
         },
         "energyEfficiency": {
           "title": "Enerji Verimliliği Danışmanlığı",
@@ -192,7 +192,7 @@
       "services": {
         "plc": {
           "title": "PLC Programlama ve Entegrasyon",
-          "description": "Siemens, ABB, Schneider ve Allen-Bradley PLC sistemlerinin programlanması, konfigürasyonu ve mevcut sistemlere entegrasyonu. Ladder, FBD ve SCL dillerinde uzman kadro."
+          "description": "Siemens, Honeywell PLC sistemlerinin programlanması, konfigürasyonu ve mevcut sistemlere entegrasyonu."
         },
         "scada": {
           "title": "SCADA Sistemleri",
@@ -200,11 +200,11 @@
         },
         "bms": {
           "title": "Bina Otomasyon Sistemleri (BMS)",
-          "description": "Akıllı bina yönetim sistemleri ile HVAC, aydınlatma, erişim kontrolü ve enerji yönetiminin tek platformdan kontrolü."
+          "description": "Tüm tesis altyapısını tek merkezden optimize eden akıllı Bina Yönetim Sistemleri."
         },
-        "industrial": {
-          "title": "Endüstriyel Otomasyon",
-          "description": "Üretim hatları, konveyör sistemleri, robot entegrasyonu ve endüstriyel proses otomasyonu. Endüstri 4.0 uyumlu çözümler."
+        "energyMonitoring": {
+          "title": "Enerji İzleme Otomasyonu",
+          "description": "Tesislerin enerji tüketimini anlık olarak izleyerek analiz eden, kayıp/kaçak noktalarını tespit edip verimliliği en üst düzeye çıkaran akıllı enerji yönetim ve raporlama sistemleri."
         },
         "processControl": {
           "title": "Proses Kontrol Sistemleri",
@@ -228,11 +228,11 @@
         },
         "plumbing": {
           "title": "Sıhhi Tesisat",
-          "description": "Temiz su, atık su ve yağmur suyu sistemlerinin projelendirilmesi. Pompa istasyonları, arıtma ön hazırlığı ve sıhhi tesisat altyapısı."
+          "description": "Temiz su, atık su, kimyasal atık sıvılar ve yağmur suyu sistemlerinin projelendirilmesi ve uygulaması. Pompa istasyonları, arıtma ön hazırlığı ve sıhhi tesisat altyapısı."
         },
         "gas": {
           "title": "Doğalgaz Tesisatı",
-          "description": "Endüstriyel ve ticari doğalgaz iç tesisat projeleri, basınç düşürme istasyonları ve gaz algılama sistemleri. İGDAŞ/EGO onay süreçleri dahil."
+          "description": "Onay süreçleri dahil; doğalgaz iç tesisat projeleri, basınç düşürme istasyonları ve gaz algılama sistemleri."
         },
         "compressedAir": {
           "title": "Basınçlı Hava Sistemleri",

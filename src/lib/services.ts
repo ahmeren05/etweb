@@ -1,5 +1,5 @@
 export type ServiceKey = 'lowVoltage' | 'mediumVoltage' | 'lighting' | 'grounding' | 'energyEfficiency' |
-  'plc' | 'scada' | 'bms' | 'industrial' | 'processControl' |
+  'plc' | 'scada' | 'bms' | 'energyMonitoring' | 'processControl' |
   'hvac' | 'fire' | 'plumbing' | 'gas' | 'compressedAir' |
   'concrete' | 'steel' | 'infrastructure' | 'management' | 'modular' |
   'cleanRoomDesign' | 'hvacValidation' | 'particleMonitoring' | 'gmpCompliance' | 'pressureDifferential';
@@ -36,7 +36,7 @@ export const disciplines: Discipline[] = [
     slug: 'otomasyon',
     translationKey: 'automation',
     icon: 'Cpu',
-    serviceKeys: ['plc', 'scada', 'bms', 'industrial', 'processControl'],
+    serviceKeys: ['plc', 'scada', 'bms', 'energyMonitoring', 'processControl'],
   },
   {
     slug: 'insaat',
