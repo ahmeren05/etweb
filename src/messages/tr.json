@@ -252,23 +252,23 @@
         },
         "steel": {
           "title": "Çelik Yapılar",
-          "description": "Prefabrik çelik yapılar, çelik çatı sistemleri, mezzanine katlar ve endüstriyel çelik konstrüksiyon projeleri. Hesap, detay ve imalat çizimleri."
+          "description": "Prefabrik çelik yapılar, çelik çatı sistemleri ve endüstriyel çelik konstrüksiyon projeleri."
         },
         "infrastructure": {
           "title": "Altyapı Projeleri",
-          "description": "Yol, kanalizasyon, içme suyu hatları, drenaj sistemleri ve saha düzenleme projeleri. Organize sanayi bölgeleri ve endüstriyel siteler için altyapı çözümleri."
+          "description": "Yol, kanalizasyon, içme suyu hatları, drenaj sistemleri ve saha düzenleme projeleri."
         },
         "industrial": {
           "title": "Endüstriyel Tesis İnşaatı",
-          "description": "Anahtar teslimi endüstriyel tesis inşaatı. Temel kazıdan çatı kaplamaya, tüm mühendislik disiplinlerinin koordineli yürütülmesi."
+          "description": "Mühendislik disiplinlerinin koordineli yürütülmesiyle anahtar teslim endüstriyel tesis inşaatı."
         },
         "management": {
           "title": "Proje Yönetimi",
-          "description": "İnşaat projelerinin planlama, programlama, bütçeleme ve saha koordinasyonu. İlerleme takibi, kalite kontrolü ve iş güvenliği yönetimi."
+          "description": "İnşaat projelerinin planlama, programlama, bütçeleme ve saha koordinasyonu. Kalite kontrolü ve iş güvenliği yönetimi."
         },
         "modular": {
           "title": "Modüler ve Prefabrik Yapı Çözümleri",
-          "description": "Endüstriyel tesisler için hızlı kurulum imkanı sunan, taşınabilir ve esnek prefabrik yapılar."
+          "description": "Endüstriyel tesisler için hızlı kurulabilen, taşınabilir ve esnek prefabrik yapılar."
         }
       }
     },
