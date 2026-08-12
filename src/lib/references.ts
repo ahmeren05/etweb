@@ -27,8 +27,7 @@ export const allReferences: ReferenceItem[] = [
   { name: 'Farmatek İlaç', imgUrl: '/references/5-farmatek.png', sectorTr: 'İlaç Sanayi', sectorEn: 'Pharmaceuticals', color: '#20b070', tags: ['farmatek', 'ilaç', 'sağlık'] },
   // Fixed randomized rest
   { name: 'Embil İlaç', imgUrl: '/references/17-embil.png', sectorTr: 'İlaç Sanayi', sectorEn: 'Pharmaceuticals', color: '#0090d0', tags: ['embil', 'ilaç', 'sağlık'] },
-  { name: 'Topektaş Et Entegre', imgUrl: '/references/14-topek.png', sectorTr: 'Et Entegre', sectorEn: 'Meat Integrated', color: '#4080c0', tags: ['topek', 'topektaş', 'et', 'entegre', 'gıda'] },
-  { name: 'Stembio', imgUrl: '/references/26-stembio.png', sectorTr: 'Biyoteknoloji', sectorEn: 'Biotechnology', color: '#602080', tags: ['stembio', 'kök', 'hücre', 'biyoteknoloji'] },
+  { name: 'StemBio', imgUrl: '/references/26-stembio.png', sectorTr: 'Biyoteknoloji', sectorEn: 'Biotechnology', color: '#602080', tags: ['stembio', 'kök', 'hücre', 'biyoteknoloji'] },
   { name: 'Biem İlaç', imgUrl: '/references/6-biem.png', sectorTr: 'İlaç Sanayi', sectorEn: 'Pharmaceuticals', color: '#004090', tags: ['biem', 'ilaç', 'sanayi'] },
   { name: 'Tuzla Belediyesi', imgUrl: '/references/12-tuzla belediyesi.png', sectorTr: 'Kamu / Belediye', sectorEn: 'Public / Municipality', color: '#50c0f0', tags: ['tuzla', 'belediye', 'kamu', 'municipality'] },
   { name: 'Aslanoba Gıda', imgUrl: '/references/16-aslonoba.png', sectorTr: 'Gıda & İçecek', sectorEn: 'Food & Beverage', color: '#0090b0', tags: ['aslonoba', 'aslanoba', 'gıda', 'capital'] },
@@ -38,8 +37,11 @@ export const allReferences: ReferenceItem[] = [
   { name: 'Tümekip İlaç', imgUrl: '/references/23-tümekip.png', sectorTr: 'İlaç Sanayi', sectorEn: 'Pharmaceuticals', color: '#0070c0', tags: ['tümekip', 'tumekip', 'ilaç', 'sağlık'] },
   { name: 'MGT Filtre', imgUrl: '/references/32-mgt.png', sectorTr: 'İklimlendirme & Filtre', sectorEn: 'HVAC & Filtration', color: '#707060', tags: ['mgt', 'filtre', 'hvac', 'iklimlendirme'] },
   { name: 'Askapak', imgUrl: '/references/13-askapak.png', sectorTr: 'Ambalaj Sanayi', sectorEn: 'Packaging', color: '#4070f0', tags: ['askapak', 'as', 'kapak', 'ambalaj'] },
-  { name: 'ALBAFARMA', imgUrl: '/references/3-albafarma.png', sectorTr: 'İlaç Sanayi', sectorEn: 'Pharmaceuticals', color: '#103080', tags: ['alba', 'farma', 'albafarma', 'ilaç'] },
+  { name: 'AlbaFarma', imgUrl: '/references/3-albafarma.png', sectorTr: 'İlaç Sanayi', sectorEn: 'Pharmaceuticals', color: '#103080', tags: ['alba', 'farma', 'albafarma', 'ilaç'] },
   { name: 'Gaziantep Üniv.\nProton Hızlandırma', imgUrl: '/references/11- gaziantep üniversitesi proton hızlandırma.png', sectorTr: 'Kamu / Eğitim', sectorEn: 'Public / Education', color: '#103060', tags: ['gaziantep', 'üniversitesi', 'proton', 'hızlandırma', 'kamu', 'eğitim'] },
   { name: 'Türkiye Jokey Kulübü', imgUrl: '/references/8-jtk.png', sectorTr: 'Kamu / Kurum', sectorEn: 'Public Institution', color: '#e01020', tags: ['tjk', 'jtk', 'türkiye', 'jokey', 'kulübü', 'kamu'] },
-  { name: 'Biyoteknik', imgUrl: '/references/19-biyoteknik.png', sectorTr: 'Veteriner & Hayvan Sağlığı', sectorEn: 'Veterinary & Animal Health', color: '#1070a0', tags: ['biyoteknik', 'veteriner', 'hayvan', 'sağlığı'] }
+  { name: 'Biyoteknik', imgUrl: '/references/19-biyoteknik.png', sectorTr: 'İlaç Sanayi', sectorEn: 'Pharmaceuticals', color: '#1070a0', tags: ['biyoteknik', 'ilaç', 'sanayi'] },
+  { name: 'Arion İlaç', imgUrl: '/references/33-arion.png', sectorTr: 'İlaç Sanayi', sectorEn: 'Pharmaceuticals', color: '#206090', tags: ['arion', 'ilaç', 'pharmaceuticals'] },
+  { name: 'Nobel İlaç', imgUrl: '/references/34- nboel ilaç.png', sectorTr: 'İlaç Sanayi', sectorEn: 'Pharmaceuticals', color: '#1030a0', tags: ['nobel', 'ilaç', 'pharmaceuticals'] },
+  { name: 'Topek A.Ş.', imgUrl: '/references/14-topek.png', sectorTr: 'Gıda Sanayi', sectorEn: 'Food Industry', color: '#4080c0', tags: ['topek', 'et', 'gıda'] }
 ];
