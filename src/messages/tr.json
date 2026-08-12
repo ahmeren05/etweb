@@ -72,9 +72,9 @@
       "description": "Hassas sıcaklık, basınç, nem ve partikül kontrollü; GMP uyumlu temiz oda tasarımı ve kalifikasyonu.",
       "services": {
         "cleanRoomDesign": "Temiz Oda Tasarımı ve Projelendirme",
-        "hvacValidation": "Kapsamlı HVAC Kalifikasyonu",
+        "hvacValidation": "HVAC Kalifikasyonu",
         "particleMonitoring": "VAV / CAV Kontrol Çözümleri",
-        "gmpCompliance": "GMP Regülasyon ve Kalite Danışmanlığı",
+        "gmpCompliance": "FDA, GMP Regülasyon ve Danışmanlığı",
         "pressureDifferential": "Sıcaklık, Nem ve Basınç Optimizasyonu"
       }
     },
@@ -280,23 +280,23 @@
       "services": {
         "cleanRoomDesign": {
           "title": "Temiz Oda Tasarımı ve Projelendirme",
-          "description": "ISO 14644 standartlarına uygun temiz oda sınıflandırması, mimari tasarım, malzeme seçimi ve detay projelendirme. Class 1'den Class 9'a kadar tüm temizlik sınıfları."
+          "description": "FDA, GMP ve ISO standartlarına uygun temiz oda sınıflandırması, mimari tasarım, malzeme seçimi ve detay projelendirme."
         },
         "hvacValidation": {
-          "title": "HVAC Validasyonu (DQ/IQ/OQ/PQ)",
-          "description": "Temiz oda HVAC sistemlerinin tasarım, kurulum, operasyonel ve performans kalifikasyonu. HEPA filtre bütünlük testleri ve hava akış pattern analizleri."
+          "title": "HVAC Kalifikasyonu (DQ/IQ/OQ)",
+          "description": "Temiz oda HVAC sistemlerinin dizayn, kurulum ve operasyonel kalifikasyonu."
         },
         "particleMonitoring": {
           "title": "Partikül İzleme Sistemleri",
           "description": "Sürekli partikül sayım sistemleri, çevresel izleme, veri loglama ve alarm yönetimi. FDA 21 CFR Part 11 uyumlu yazılım çözümleri."
         },
         "gmpCompliance": {
-          "title": "GMP Uyumluluk Danışmanlığı",
-          "description": "EU GMP Annex 1, FDA ve PIC/S kılavuzlarına uygunluk değerlendirmesi. Validasyon master planı hazırlama ve denetim desteği."
+          "title": "GMP Danışmanlığı",
+          "description": "FDA ve GMP kılavuzlarına uygunluk değerlendirmesi. Validasyon master planı hazırlama ve denetim desteği."
         },
         "pressureDifferential": {
-          "title": "Basınç Farkı Kontrol Sistemleri",
-          "description": "Temiz oda kaskad basınçlandırma tasarımı, basınç farkı izleme ve kontrol sistemleri. Çapraz kontaminasyon önleme stratejileri."
+          "title": "VAV-CAV ve Basınç Farkı Kontrol Sistemleri",
+          "description": "Temiz oda debi ve kaskad basınçlandırma tasarımı ve kontrolü. Çapraz kontaminasyon önleme stratejileri."
         }
       }
     }

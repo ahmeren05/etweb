@@ -113,18 +113,7 @@ function ServiceDetailContent({ discipline }: { discipline: NonNullable<ReturnTy
       {/* Gallery */}
       <ServiceGallery discipline={discipline} />
 
-      {/* CTA */}
-      <section className="section">
-        <div className="container">
-          <div className={styles.serviceCTA}>
-            <h3>{tServices('contactForService')}</h3>
-            <p>{tDisciplines(`${discipline.translationKey}.description`)}</p>
-            <Link href="/iletisim" className="btn btn-primary">
-              {tNav('contact')} <ArrowRight size={16} />
-            </Link>
-          </div>
-        </div>
-      </section>
+
 
       {/* Other Disciplines */}
       <section className="section section-alt">
