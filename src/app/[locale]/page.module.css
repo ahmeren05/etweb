@@ -41,67 +41,90 @@
   overflow: hidden;
 }
 
-/* Contact CTA */
-.contactCTA {
+/* Banner CTA */
+.bannerCTA {
   background: linear-gradient(135deg, var(--color-cyan-deep), var(--color-cyan));
-  padding: var(--space-20) 0;
+  padding: var(--space-16) 0;
+  position: relative;
+  overflow: hidden;
 }
 
-.staggeredContainer {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto;
-  justify-content: center;
-  align-items: end;
-  row-gap: var(--space-2);
-  column-gap: var(--space-4);
-  margin: 0 auto;
-  padding: 0 var(--space-4);
+.bannerCTA::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -10%;
+  width: 50%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.03);
+  transform: rotate(15deg);
+  pointer-events: none;
 }
 
-.staggeredText {
-  color: var(--color-snow);
-  font-family: var(--font-handwriting);
-  font-size: 3rem;
-  font-weight: 700;
-  display: inline-block;
-  border-bottom: 2px solid var(--color-snow);
-  padding-bottom: 2px;
-  line-height: 1;
-  white-space: nowrap;
+.bannerCTA::after {
+  content: '';
+  position: absolute;
+  top: -20%;
+  right: -5%;
+  width: 30%;
+  height: 150%;
+  background: rgba(255, 255, 255, 0.05);
+  transform: rotate(-15deg);
+  pointer-events: none;
 }
 
-.staggeredLine1 {
-  grid-column: 1 / 2;
-  grid-row: 1;
-}
-
-.staggeredLine2 {
-  grid-column: 2 / 3;
-  grid-row: 2;
-}
-
-.staggeredLine3Wrapper {
-  grid-column: 3 / 4;
-  grid-row: 3;
-}
-
-/* Arrow Link Replacement for Button */
-.staggeredArrowLink {
-  grid-column: 4 / 5;
-  grid-row: 3;
-  color: var(--color-snow);
+.bannerContent {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-left: var(--space-4);
-  margin-bottom: 7px; /* align exactly with 3 dots baseline */
-  transition: transform 0.3s ease, color 0.3s ease;
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
-.staggeredArrowLink:hover {
-  color: rgba(255, 255, 255, 0.8);
-  transform: translateX(12px);
+.bannerTitle {
+  color: var(--color-snow);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: var(--space-4);
+  line-height: 1.2;
+}
+
+.bannerSubtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto var(--space-8) auto;
+  line-height: 1.6;
+}
+
+.bannerButton {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background-color: var(--color-snow);
+  color: var(--color-cyan-deep);
+  font-weight: 600;
+  font-size: 1.125rem;
+  padding: var(--space-4) var(--space-8);
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+}
+
+.bannerButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+  color: var(--color-cyan-deep);
+}
+
+.bannerButton svg {
+  transition: transform 0.3s ease;
+}
+
+.bannerButton:hover svg {
+  transform: translateX(4px);
 }
 
 /* Eyebrow Link */

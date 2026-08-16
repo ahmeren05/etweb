@@ -397,5 +397,10 @@
     "loading": "Loading...",
     "companyName": "Eren Teknik Engineering Inc.",
     "companyShort": "Eren Teknik"
+  },
+  "BannerCTA": {
+    "title": "Professional Solutions for Your Projects",
+    "subtitle": "We are with you for your engineering, automation, mechanical, construction, and clean room needs.",
+    "button": "Contact Us Now"
   }
 }

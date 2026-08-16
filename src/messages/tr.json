@@ -26,10 +26,10 @@
       "title": "Elektrik Mühendisliği",
       "description": "Güvenli ve kesintisiz enerji akışı için; Alçak ve orta gerilim güç dağıtımından enerji optimizasyonuna kadar elektrik altyapı çözümleri.",
       "services": {
-        "lowVoltage":"Alçak ve Orta Gerilim Güç Sistemleri",
+        "lowVoltage": "Alçak ve Orta Gerilim Güç Sistemleri",
         "mediumVoltage": "Aydınlatma Tasarımı ve Otomasyonu",
         "lighting": "Topraklama ve Yıldırımdan Korunma",
-         "grounding": "CCTV Sistemleri",
+        "grounding": "CCTV Sistemleri",
         "energyEfficiency": "Enerji Verimliliği ve Danışmanlığı"
       }
     },
@@ -397,5 +397,10 @@
     "loading": "Yükleniyor...",
     "companyName": "Eren Teknik Mühendislik A.Ş.",
     "companyShort": "Eren Teknik"
+  },
+  "BannerCTA": {
+    "title": "Projeleriniz İçin Profesyonel Çözümler",
+    "subtitle": "Mühendislik, otomasyon, mekanik, inşaat ve temiz oda ihtiyaçlarınızda yanınızdayız.",
+    "button": "Hemen İletişime Geçin"
   }
 }

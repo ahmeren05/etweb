@@ -95,23 +95,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Contact CTA */}
-      <section className={styles.contactCTA} id="contact-cta">
+      {/* Banner CTA */}
+      <section className={styles.bannerCTA} id="contact-cta">
         <div className="container">
-          <div className={styles.staggeredContainer}>
-            <div className={styles.staggeredLine1}>
-              <span className={styles.staggeredText}>{t('ContactCTA.line1')}</span>
-            </div>
-            <div className={styles.staggeredLine2}>
-              <span className={styles.staggeredText}>{t('ContactCTA.line2')}</span>
-            </div>
-            <div className={styles.staggeredLine3Wrapper}>
-              <span className={styles.staggeredText}>{t('ContactCTA.line3')}</span>
-            </div>
-            <Link href="/iletisim" className={styles.staggeredArrowLink} aria-label={t('ContactCTA.cta')}>
-              <svg width="72" height="28" viewBox="0 0 72 28" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M0 14H70M58 4l12 10-12 10"/>
-              </svg>
+          <div className={styles.bannerContent}>
+            <h2 className={styles.bannerTitle}>{t('BannerCTA.title')}</h2>
+            <p className={styles.bannerSubtitle}>{t('BannerCTA.subtitle')}</p>
+            <Link href="/iletisim" className={styles.bannerButton} aria-label={t('BannerCTA.button')}>
+              {t('BannerCTA.button')}
+              <ArrowRight size={20} />
             </Link>
           </div>
         </div>
