@@ -402,5 +402,25 @@
     "title": "Professional Solutions for Your Projects",
     "subtitle": "We are by your side for your engineering, automation, mechanical, construction, and clean room needs.",
     "button": "Contact Us Now"
+  },
+  "OrgChart": {
+    "title": "Our Team Organization",
+    "chairman": "Chairman of the Board",
+    "electrical": "Electrical & Automation Manager",
+    "mechanical": "Mechanical Manager",
+    "project": "Project Manager",
+    "construction": "Construction Manager",
+    "personnel": "+{count} Personnel"
+  },
+  "ServiceGallery": {
+    "title": "Field and Project Applications",
+    "viewGallery": "View Gallery"
+  },
+  "SchematicSVG": {
+    "temizoda": "CLEAN ROOM",
+    "elektrik": "ELECTRICAL",
+    "insaat": "CONSTRUCTION",
+    "otomasyon": "AUTOMATION",
+    "mekanik": "MECHANICAL"
   }
 }

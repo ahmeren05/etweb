@@ -1,17 +1,20 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { UserRound } from 'lucide-react';
 import Image from 'next/image';
 import styles from './OrgChart.module.css';
 
 export default function OrgChart() {
+  const t = useTranslations('OrgChart');
+
   return (
     <section className="section">
       <div className="container">
         <div className="section-header">
           <h2>
             <span className="sectionTitleLink">
-              <span className="sectionTitleText">Ekip Organizasyonumuz</span>
+              <span className="sectionTitleText">{t('title')}</span>
             </span>
           </h2>
         </div>
@@ -34,7 +37,7 @@ export default function OrgChart() {
                 <div className={styles.avatar}>
                   <UserRound size={32} />
                 </div>
-                <span>Yönetim Kurulu Başkanı</span>
+                <span>{t('chairman')}</span>
               </div>
             </div>
             
@@ -46,11 +49,11 @@ export default function OrgChart() {
                   <div className={styles.avatar}>
                     <UserRound size={24} />
                   </div>
-                  <span>Elektrik ve Otomasyon<br/>Sorumlusu</span>
+                  <span>{t('electrical').split(' ').slice(0, -1).join(' ')}<br/>{t('electrical').split(' ').slice(-1)}</span>
                 </div>
                 <div className={styles.subConnection}></div>
                 <div className={styles.subNode}>
-                  +5 Personel
+                  {t('personnel', { count: 5 })}
                 </div>
               </div>
 
@@ -59,11 +62,11 @@ export default function OrgChart() {
                   <div className={styles.avatar}>
                     <UserRound size={24} />
                   </div>
-                  <span>Mekanik<br/>Sorumlusu</span>
+                  <span>{t('mechanical').split(' ').slice(0, -1).join(' ')}<br/>{t('mechanical').split(' ').slice(-1)}</span>
                 </div>
                 <div className={styles.subConnection}></div>
                 <div className={styles.subNode}>
-                  +15 Personel
+                  {t('personnel', { count: 15 })}
                 </div>
               </div>
 
@@ -72,11 +75,11 @@ export default function OrgChart() {
                   <div className={styles.avatar}>
                     <UserRound size={24} />
                   </div>
-                  <span>Proje<br/>Sorumlusu</span>
+                  <span>{t('project').split(' ').slice(0, -1).join(' ')}<br/>{t('project').split(' ').slice(-1)}</span>
                 </div>
                 <div className={styles.subConnection}></div>
                 <div className={styles.subNode}>
-                  +4 Personel
+                  {t('personnel', { count: 4 })}
                 </div>
               </div>
 
@@ -85,18 +88,17 @@ export default function OrgChart() {
                   <div className={styles.avatar}>
                     <UserRound size={24} />
                   </div>
-                  <span>İnşaat<br/>Sorumlusu</span>
+                  <span>{t('construction').split(' ').slice(0, -1).join(' ')}<br/>{t('construction').split(' ').slice(-1)}</span>
                 </div>
                 <div className={styles.subConnection}></div>
                 <div className={styles.subNode}>
-                  +15 Personel
+                  {t('personnel', { count: 15 })}
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
   );
 }

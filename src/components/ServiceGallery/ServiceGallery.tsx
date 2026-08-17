@@ -188,7 +188,7 @@ export default function ServiceGallery({ discipline }: ServiceGalleryProps) {
             onClick={() => openLightbox(0)}
           >
             <span className={styles.overlayDisciplineTitle}>{disciplineTitle}</span>
-            <h3 className={styles.overlayTitle}>Saha ve Proje Uygulamalarımız</h3>
+            <h3 className={styles.overlayTitle}>{useTranslations('ServiceGallery')('title')}</h3>
             <button
               type="button"
               className={styles.galleryBtn}
@@ -198,7 +198,7 @@ export default function ServiceGallery({ discipline }: ServiceGalleryProps) {
               }}
             >
               <ImageIcon size={18} />
-              <span>Galeriyi Görüntüle</span>
+              <span>{useTranslations('ServiceGallery')('viewGallery')}</span>
             </button>
           </div>
         </div>

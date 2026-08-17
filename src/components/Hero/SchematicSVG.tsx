@@ -3,8 +3,10 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link } from '@/i18n/navigation';
 import { Zap, Cpu, Wrench, Building2, Sparkles } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 export default function SchematicSVG() {
+  const t = useTranslations('SchematicSVG');
   const [isVisible, setIsVisible] = useState(false);
   const [isInteractive, setIsInteractive] = useState(false);
   const svgRef = useRef<SVGSVGElement>(null);
@@ -244,7 +246,7 @@ export default function SchematicSVG() {
             <g transform="translate(-14, -14)" className={`node-icon ${animClass}`}>
               <Sparkles width={28} height={28} strokeWidth={2} />
             </g>
-            <text x="0" y="-48" className={`node-label ${animClass}`}>TEMİZ ODA</text>
+            <text x="0" y="-48" className={`node-label ${animClass}`}>{t('temizoda')}</text>
           </g>
         </g>
       </Link>
@@ -259,7 +261,7 @@ export default function SchematicSVG() {
             <g transform="translate(-14, -14)" className={`node-icon ${animClass}`}>
               <Zap width={28} height={28} strokeWidth={2} />
             </g>
-            <text x="0" y="-48" className={`node-label ${animClass}`}>ELEKTRİK</text>
+            <text x="0" y="-48" className={`node-label ${animClass}`}>{t('elektrik')}</text>
           </g>
         </g>
       </Link>
@@ -274,7 +276,7 @@ export default function SchematicSVG() {
             <g transform="translate(-14, -14)" className={`node-icon ${animClass}`}>
               <Building2 width={28} height={28} strokeWidth={2} />
             </g>
-            <text x="0" y="54" className={`node-label ${animClass}`}>İNŞAAT</text>
+            <text x="0" y="54" className={`node-label ${animClass}`}>{t('insaat')}</text>
           </g>
         </g>
       </Link>
@@ -289,7 +291,7 @@ export default function SchematicSVG() {
             <g transform="translate(-14, -14)" className={`node-icon ${animClass}`}>
               <Cpu width={28} height={28} strokeWidth={2} />
             </g>
-            <text x="0" y="54" className={`node-label ${animClass}`}>OTOMASYON</text>
+            <text x="0" y="54" className={`node-label ${animClass}`}>{t('otomasyon')}</text>
           </g>
         </g>
       </Link>
@@ -304,7 +306,7 @@ export default function SchematicSVG() {
             <g transform="translate(-14, -14)" className={`node-icon ${animClass}`}>
               <Wrench width={28} height={28} strokeWidth={2} />
             </g>
-            <text x="0" y="-48" className={`node-label ${animClass}`}>MEKANİK</text>
+            <text x="0" y="-48" className={`node-label ${animClass}`}>{t('mekanik')}</text>
           </g>
         </g>
       </Link>
