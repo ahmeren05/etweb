@@ -20,7 +20,7 @@ export default function OrgChart() {
 
         <div className={styles.chartWrapper} style={{ display: 'flex', justifyContent: 'center', padding: '2rem 0', background: 'transparent', boxShadow: 'none' }}>
           <Image 
-            src="/org-chart.png" 
+            src="/org-chart.jpg" 
             alt="Eren Teknik Organization Chart" 
             width={1200} 
             height={850} 
