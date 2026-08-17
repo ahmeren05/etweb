@@ -100,5 +100,6 @@ export default function OrgChart() {
         </div>
       </div>
     </section>
+      </div>
   );
 }
