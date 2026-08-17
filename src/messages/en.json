@@ -2,7 +2,7 @@
   "Metadata": {
     "title": "Eren Teknik Engineering Inc.",
     "titleTemplate": "{title} | Eren Teknik Engineering",
-    "description": "Integrated engineering solutions for industrial and commercial projects with over 30 years of experience in electrical, automation, mechanical, construction, and clean room systems.",
+    "description": "We provide integrated engineering solutions for industrial and commercial projects with over 30 years of experience in electrical, automation, mechanical, construction, and clean room systems.",
     "keywords": "engineering, electrical engineering, automation, mechanical systems, construction engineering, clean room, industrial projects, Turkey"
   },
   "Nav": {
@@ -15,29 +15,29 @@
   },
   "Hero": {
     "headline": "Five Disciplines,\nOne Engineering Vision",
-    "subheadline": "We offer integrated engineering solutions across electrical, automation, mechanical, construction, and clean room disciplines. With nearly half a century of experience, we stand by you at every stage of your project.",
+    "subheadline": "With an integrated engineering infrastructure uniting clean room, mechanical, electrical, automation, and construction expertise, and half a century of experience — a strategic solution partnership at every step of your projects.",
     "cta": "Explore Our Services",
     "ctaSecondary": "Get in Touch"
   },
   "Disciplines": {
     "sectionTitle": "Our Engineering Disciplines",
-    "sectionSubtitle": "We produce innovative and high-standard solutions tailored to your industrial needs across five core engineering disciplines.",
+    "sectionSubtitle": "Innovative and high-standard solutions tailored to industrial requirements across five core engineering disciplines.",
     "electrical": {
       "title": "Electrical Engineering",
-      "description": "Comprehensive electrical engineering services from low and medium voltage systems to energy efficiency consulting.",
+      "description": "Electrical infrastructure solutions for safe and uninterrupted energy flow — from low and medium voltage power distribution to energy optimization.",
       "services": {
-        "lowVoltage": "Low Voltage Installations",
-        "mediumVoltage": "Medium Voltage Systems",
-        "lighting": "Lighting Design",
-        "grounding": "Grounding & Lightning Protection",
-        "energyEfficiency": "Energy Efficiency Consulting"
+        "lowVoltage": "Low and Medium Voltage Power Systems",
+        "mediumVoltage": "Lighting Design and Automation",
+        "lighting": "Grounding and Lightning Protection",
+        "grounding": "CCTV Systems",
+        "energyEfficiency": "Energy Efficiency and Consulting"
       }
     },
     "automation": {
       "title": "Automation Engineering",
-      "description": "Smart automation and control systems that optimize your industrial processes.",
+      "description": "High-efficiency focused smart automation and control systems that optimize industrial operations.",
       "services": {
-        "plc": "PLC Programming & Integration",
+        "plc": "PLC Programming and Integration",
         "scada": "SCADA Systems",
         "bms": "Building Management Systems (BMS)",
         "energyMonitoring": "Energy Monitoring Automation",
@@ -46,18 +46,18 @@
     },
     "mechanical": {
       "title": "Mechanical Engineering",
-      "description": "Comfortable and safe mechanical installation solutions from HVAC to fire safety.",
+      "description": "Mechanical solutions compliant with international standards in HVAC, fire protection, and industrial plumbing processes.",
       "services": {
         "hvac": "HVAC Systems",
         "fire": "Fire Detection & Suppression",
-        "plumbing": "Plumbing Systems",
-        "gas": "Natural Gas Installation",
+        "plumbing": "Plumbing Infrastructure",
+        "gas": "Natural Gas and Energy Lines",
         "compressedAir": "Compressed Air Systems"
       }
     },
     "construction": {
       "title": "Construction Engineering",
-      "description": "Building on solid foundations — from reinforced concrete and steel structures to infrastructure projects.",
+      "description": "Reliable and high-quality infrastructure projects shaped by reinforced concrete, steel, and prefabricated building technologies.",
       "services": {
         "concrete": "Reinforced Concrete Design",
         "steel": "Steel Structures",
@@ -69,20 +69,20 @@
     },
     "cleanroom": {
       "title": "Clean Room Systems",
-      "description": "GMP-compliant clean room design, validation, and particle control systems.",
+      "description": "GMP-compliant clean room design and qualification with precise temperature, pressure, humidity, and particle control.",
       "services": {
         "cleanRoomDesign": "Clean Room Design & Engineering",
-        "hvacValidation": "HVAC Validation (DQ/IQ/OQ/PQ)",
-        "particleMonitoring": "Particle Monitoring Systems",
-        "gmpCompliance": "GMP Compliance Consulting",
-        "pressureDifferential": "Pressure Differential Control Systems"
+        "hvacValidation": "HVAC Qualification",
+        "particleMonitoring": "VAV / CAV Control Solutions",
+        "gmpCompliance": "FDA, GMP Regulation and Consulting",
+        "pressureDifferential": "Temperature, Humidity, and Pressure Optimization"
       }
     },
     "viewAll": "View All Services",
     "learnMore": "Learn More"
   },
   "Stats": {
-    "years": "Years of Experience",
+    "years": "Years of Corporate Identity",
     "projects": "Completed Projects",
     "turnkey": "Turnkey Solutions",
     "certifications": "Certifications",
@@ -91,7 +91,7 @@
   "AboutPreview": {
     "title": "About Us",
     "subtitle": "Integrated Engineering Power",
-    "description": "Eren Teknik, founded in the 1960s, combines nearly half a century of experience with modern engineering approaches to develop qualified infrastructure and superstructure solutions.",
+    "description": "Founded in the 1960s, Eren Teknik combines nearly half a century of experience with modern engineering approaches to develop qualified infrastructure and superstructure solutions.",
     "cta": "Learn More"
   },
   "ContactCTA": {
@@ -114,42 +114,42 @@
   "About": {
     "metaTitle": "About Us",
     "metaDescription": "Learn about Eren Teknik Engineering's founding story, mission, vision, and engineering philosophy.",
-    "heroTitle": "The Trusted Name\nin Engineering",
+    "heroTitle": "",
     "heroSubtitle": "Adding value to industrial infrastructure since the 1960s.",
     "storyTitle": "Our Story",
-    "storyP1": "Eren Teknik, founded in the 1960s, combines nearly half a century of experience with modern engineering approaches to develop qualified infrastructure and superstructure solutions.",
-    "storyP2": "Specializing particularly in clean room engineering, all processes in mechanical and electrical disciplines are managed under a single roof with full integration. GMP and FDA standards, which are at the center of the activities, are meticulously observed; sterile field projects requiring high precision are successfully implemented.",
-    "storyP3": "Quickly adapting to the increasing need for automation systems with the new dynamics brought by developing technology, Eren Teknik has carried its engineering capacity in this field to global standards with the strategic solution partnership it signed with Siemens. As a requirement of its integrated project management vision, the company incorporated the construction discipline over time; thus, it achieved a comprehensive engineering structure capable of managing all mechanical, electrical, automation, and construction processes from a single source.",
-    "storyP4": "Adopting the principles of sustainable quality and 'optimum solution', Eren Teknik supports its century-old knowledge and trust building in the sector not only with technology but also with its own expert staff. By transferring its corporate memory to new generations with the strength it draws from its roots, it continues to be the source of knowledge and trust in the engineering sector.",
+    "storyP1": "Founded in the 1960s, Eren Teknik combines nearly half a century of experience with modern engineering approaches to develop qualified infrastructure and superstructure solutions.",
+    "storyP2": "Specializing particularly in clean room engineering, all processes in mechanical and electrical disciplines are managed under a single roof with full integration. GMP and FDA standards, which are at the core of operations, are meticulously upheld; sterile field projects requiring high precision are successfully delivered.",
+    "storyP3": "Rapidly adapting to the growing need for automation systems driven by emerging technological dynamics, Eren Teknik elevated its engineering capacity in this field to global standards through a strategic solution partnership with Siemens. As a natural extension of its integrated project management vision, the company incorporated the construction discipline over time — thus achieving a comprehensive engineering structure capable of managing all mechanical, electrical, automation, and construction processes from a single source.",
+    "storyP4": "Committed to the principles of sustainable quality and 'optimum solutions,' Eren Teknik supports its decades-long knowledge base and trust-building in the sector not only through technology but also through the expert teams it has cultivated in-house. By transferring its corporate memory to new generations with the strength drawn from its roots, it continues to be a source of knowledge and trust in the engineering industry.",
     "missionTitle": "Our Mission",
-    "missionText": "To maximize the operational efficiency of our business partners through our integrated approach that unites different engineering disciplines under one roof; and to bring every project to life in accordance with high-quality standards, adhering strictly to budget and timeline plans.",
+    "missionText": "To maximize the operational efficiency of our business partners through our integrated approach that unites different engineering disciplines under one roof; and to bring every project to life at high-quality standards while adhering strictly to budget and timeline commitments.",
     "visionTitle": "Our Vision",
     "visionText": "To be a pioneering brand that implements innovative technologies in the engineering sector. To become a reliable and internationally sought-after solution partner that not only meets standards but also sets the industry's quality benchmarks.",
     "valuesTitle": "Our Values",
     "values": {
       "precision": {
         "title": "Precision",
-        "description": "We design every project with a zero-defect principle and meticulous engineering analysis, demonstrating high precision at all stages of the process."
+        "description": "We design every project with a zero-defect principle and meticulous engineering analysis, demonstrating the highest precision at every stage of the process."
       },
       "integration": {
         "title": "Integration",
-        "description": "Thanks to our strong coordination across different areas of expertise, we provide time and cost optimization in projects and deliver turnkey solutions."
+        "description": "Through strong coordination across different areas of expertise, we achieve time and cost optimization in projects and deliver turnkey solutions."
       },
       "reliability": {
         "title": "Reliability",
-        "description": "Without compromising on transparency and integrity, we build sustainable trust by strictly adhering to our committed quality, timeline, and budget plans."
+        "description": "In line with our principles of transparency and integrity, we fully adhere to committed quality, timeline, and budget plans, building sustainable trust."
       },
       "innovation": {
         "title": "Innovation",
-        "description": "We closely monitor industry developments and instantly integrate the latest technologies and international standards into our projects."
+        "description": "We closely follow industry developments and instantly integrate the latest technologies and international standards into our projects."
       }
     }
   },
   "Services": {
     "metaTitle": "Our Services",
     "metaDescription": "Discover our comprehensive range of services in electrical, automation, mechanical, and construction engineering.",
-    "heroTitle": "Our Services",
-    "heroSubtitle": "Across five core engineering disciplines, we provide innovative and integrated solutions tailored to the needs of your industrial projects.",
+    "heroTitle": "",
+    "heroSubtitle": "Across five core engineering disciplines, we provide innovative and integrated solutions tailored to all the needs of your industrial projects.",
     "exploreServices": "Explore Services",
     "otherDisciplines": "Other Engineering Disciplines",
     "backToServices": "All Services",
@@ -160,27 +160,27 @@
       "metaTitle": "Electrical Engineering Services",
       "metaDescription": "Comprehensive electrical engineering services from low voltage installations to energy efficiency consulting.",
       "heroTitle": "Electrical\nEngineering",
-      "heroSubtitle": "Designing and implementing safe, efficient, and standards-compliant electrical systems.",
+      "heroSubtitle": "Safe, efficient, and standards-compliant electrical systems",
       "services": {
         "lowVoltage": {
           "title": "Low Voltage Installations",
-          "description": "Design, installation, and commissioning of sub-1000V power distribution systems in industrial and commercial facilities. Including panel design, cabling, and protection systems."
+          "description": "Design, installation, and commissioning of sub-1000V power distribution systems in industrial facilities — including panel design and field applications."
         },
         "mediumVoltage": {
           "title": "Medium Voltage Systems",
-          "description": "Design and implementation of 1-36 kV medium voltage switchgear, transformer stations, and distribution systems. Full compliance with national grid standards."
+          "description": "Design and implementation of 1–36 kV medium voltage switchgear, transformer stations, and distribution systems. Full compliance with international standards."
         },
         "lighting": {
-          "title": "Lighting Design",
+          "title": "Lighting Projects",
           "description": "Interior and exterior lighting design, energy-efficient LED solutions, emergency lighting systems, and lighting automation integration."
         },
         "grounding": {
           "title": "Grounding & Lightning Protection",
-          "description": "Ground resistance measurements, grounding grid design, lightning protection systems (LPS), and surge protection solutions."
+          "description": "Grounding measurements to international standards, lightning protection, and surge protection solutions."
         },
         "energyEfficiency": {
           "title": "Energy Efficiency Consulting",
-          "description": "Energy audits, power quality analysis, compensation systems, and planning and implementation of energy saving projects."
+          "description": "Energy audits, power quality analyses, compensation systems, and planning and implementation of energy-saving projects."
         }
       }
     },
@@ -192,23 +192,23 @@
       "services": {
         "plc": {
           "title": "PLC Programming & Integration",
-          "description": "Programming, configuration, and integration of Siemens, ABB, Schneider, and Allen-Bradley PLC systems. Expert team in Ladder, FBD, and SCL languages."
+          "description": "Programming, configuration, and integration of Siemens and Honeywell PLC systems."
         },
         "scada": {
           "title": "SCADA Systems",
           "description": "Design, installation, and commissioning of centralized monitoring and control systems. Real-time data acquisition, alarm management, and reporting infrastructure."
         },
         "bms": {
-          "title": "Building Management Systems (BMS)",
-          "description": "Smart building management systems for unified control of HVAC, lighting, access control, and energy management from a single platform."
+          "title": "Building Automation Systems (BMS)",
+          "description": "Smart Building Management Systems that optimize the entire facility infrastructure from a single center."
         },
         "energyMonitoring": {
           "title": "Energy Monitoring Automation",
-          "description": "Smart energy management and reporting systems that monitor facility energy consumption in real-time, detect loss/leakage points, and maximize energy efficiency."
+          "description": "Real-time monitoring of energy consumption within the facility, analysis of collected data, and detailed reporting."
         },
         "processControl": {
           "title": "Process Control Systems",
-          "description": "DCS and hybrid control systems, instrumentation, process optimization, and advanced control algorithms."
+          "description": "Boiler and Chiller Process Control and Automation Solutions."
         }
       }
     },
@@ -228,11 +228,11 @@
         },
         "plumbing": {
           "title": "Plumbing Systems",
-          "description": "Design of clean water, waste water, and stormwater systems. Pump stations, pre-treatment preparation, and plumbing infrastructure."
+          "description": "Design and implementation of clean water, waste water, chemical waste liquid, and stormwater systems. Pump stations, pre-treatment preparation, and plumbing infrastructure."
         },
         "gas": {
           "title": "Natural Gas Installation",
-          "description": "Industrial and commercial natural gas internal installation projects, pressure reduction stations, and gas detection systems. Including utility approval processes."
+          "description": "Natural gas internal installation projects, pressure reduction stations, and gas detection systems — including approval processes."
         },
         "compressedAir": {
           "title": "Compressed Air Systems",
@@ -244,59 +244,59 @@
       "metaTitle": "Construction Engineering Services",
       "metaDescription": "From reinforced concrete design to project management, industrial and commercial construction engineering solutions.",
       "heroTitle": "Construction\nEngineering",
-      "heroSubtitle": "Strong foundations, durable structures. Building your project's physical infrastructure.",
+      "heroSubtitle": "Strong foundations, durable structures.",
       "services": {
         "concrete": {
           "title": "Reinforced Concrete Design",
-          "description": "Earthquake-resistant reinforced concrete structural design for industrial facilities, factory buildings, and commercial structures. Static and dynamic analyses, formwork and reinforcement projects."
+          "description": "Earthquake-resistant reinforced concrete structural design for industrial facilities, factory buildings, and commercial structures. Static and dynamic analyses, formwork, and reinforcement projects."
         },
         "steel": {
           "title": "Steel Structures",
-          "description": "Prefabricated steel structures, steel roof systems, mezzanine floors, and industrial steel construction projects. Calculation, detail, and fabrication drawings."
+          "description": "Prefabricated steel structures, steel roof systems, and industrial steel construction projects."
         },
         "infrastructure": {
           "title": "Infrastructure Projects",
-          "description": "Road, sewage, water supply, drainage systems, and site development projects. Infrastructure solutions for organized industrial zones and industrial sites."
+          "description": "Road, sewage, water supply, drainage systems, and site development projects."
         },
         "industrial": {
           "title": "Industrial Facility Construction",
-          "description": "Turnkey industrial facility construction. Coordinated execution of all engineering disciplines from foundation excavation to roof cladding."
+          "description": "Turnkey industrial facility construction through coordinated execution of engineering disciplines."
         },
         "management": {
           "title": "Project Management",
-          "description": "Construction project planning, scheduling, budgeting, and site coordination. Progress tracking, quality control, and occupational safety management."
+          "description": "Construction project planning, scheduling, budgeting, and site coordination. Quality control and occupational safety management."
         },
         "modular": {
           "title": "Modular and Prefabricated Building Solutions",
-          "description": "Portable and flexible prefabricated structures offering fast deployment capabilities for industrial facilities."
+          "description": "Rapidly deployable, portable, and flexible prefabricated structures for industrial facilities."
         }
       }
     },
     "cleanroom": {
       "metaTitle": "Clean Room Systems Services",
-      "metaDescription": "GMP-compliant clean room design, HVAC validation, and particle control systems.",
+      "metaDescription": "GMP-compliant clean room design, HVAC qualification, and particle control systems.",
       "heroTitle": "Clean Room\nSystems",
-      "heroSubtitle": "GMP-standard clean room solutions for pharmaceutical, electronics, and food industries.",
+      "heroSubtitle": "GMP-compliant clean room design and qualification with fully conditioned environments featuring precise temperature, humidity, pressure, and particle monitoring systems.",
       "services": {
         "cleanRoomDesign": {
           "title": "Clean Room Design & Engineering",
-          "description": "ISO 14644-compliant clean room classification, architectural design, material selection, and detailed engineering. All cleanliness classes from Class 1 to Class 9."
+          "description": "FDA, GMP, and ISO-compliant clean room classification, architectural design, material selection, and detailed engineering."
         },
         "hvacValidation": {
-          "title": "HVAC Validation (DQ/IQ/OQ/PQ)",
-          "description": "Design, installation, operational, and performance qualification of clean room HVAC systems. HEPA filter integrity testing and airflow pattern analysis."
+          "title": "HVAC Qualification (DQ/IQ/OQ)",
+          "description": "Design, installation, and operational qualification of clean room HVAC systems."
         },
         "particleMonitoring": {
           "title": "Particle Monitoring Systems",
           "description": "Continuous particle counting systems, environmental monitoring, data logging, and alarm management. FDA 21 CFR Part 11 compliant software solutions."
         },
         "gmpCompliance": {
-          "title": "GMP Compliance Consulting",
-          "description": "EU GMP Annex 1, FDA, and PIC/S guideline compliance assessment. Validation master plan preparation and audit support."
+          "title": "GMP Consulting",
+          "description": "FDA and GMP guideline compliance assessment. Validation master plan preparation and audit support."
         },
         "pressureDifferential": {
-          "title": "Pressure Differential Control Systems",
-          "description": "Clean room cascade pressurization design, pressure differential monitoring and control systems. Cross-contamination prevention strategies."
+          "title": "VAV-CAV and Pressure Differential Control Systems",
+          "description": "Clean room airflow and cascade pressurization design and control. Cross-contamination prevention strategies."
         }
       }
     }
@@ -305,7 +305,7 @@
     "metaTitle": "References",
     "metaDescription": "Projects successfully completed by Eren Teknik Engineering and our business partnerships.",
     "heroTitle": "Our References",
-    "heroSubtitle": "Our trusted partnerships and successfully completed projects.",
+    "heroSubtitle": "",
     "sectors": {
       "all": "All",
       "energy": "Energy",
@@ -361,22 +361,22 @@
     "metaTitle": "Contact",
     "metaDescription": "Get in touch with Eren Teknik Engineering. Free preliminary assessment for your projects.",
     "heroTitle": "Get in Touch",
-    "heroSubtitle": "Let's discuss your project. Together, we'll determine the best engineering solution for you.",
+    "heroSubtitle": "",
     "formTitle": "Write to Us",
     "nameLabel": "Full Name",
-    "namePlaceholder": "John Smith",
+    "namePlaceholder": "",
     "emailLabel": "Email Address",
-    "emailPlaceholder": "john@company.com",
+    "emailPlaceholder": "",
     "phoneLabel": "Phone Number",
-    "phonePlaceholder": "+90 5XX XXX XX XX",
+    "phonePlaceholder": "",
     "serviceLabel": "Service Area of Interest",
     "servicePlaceholder": "Select",
     "messageLabel": "Your Message",
-    "messagePlaceholder": "Briefly describe your project...",
+    "messagePlaceholder": "",
     "submitButton": "Send Message",
     "sending": "Sending...",
     "successTitle": "Message Sent",
-    "successMessage": "We'll get back to you as soon as possible.",
+    "successMessage": "We will get back to you as soon as possible.",
     "errorMessage": "An error occurred. Please try again.",
     "infoTitle": "Contact Information",
     "officeTitle": "Head Office",
@@ -400,7 +400,7 @@
   },
   "BannerCTA": {
     "title": "Professional Solutions for Your Projects",
-    "subtitle": "We are with you for your engineering, automation, mechanical, construction, and clean room needs.",
+    "subtitle": "We are by your side for your engineering, automation, mechanical, construction, and clean room needs.",
     "button": "Contact Us Now"
   }
 }
