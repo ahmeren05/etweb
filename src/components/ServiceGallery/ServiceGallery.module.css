@@ -158,13 +158,12 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.92);
+  background-color: rgba(0, 0, 0, 0.95);
   z-index: 999999;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Horizontal padding = button width (56px) + button offset (40px) + gap (16px) = 112px */
-  padding: var(--space-6) 112px;
+  padding: 0;
   animation: fadeIn var(--duration-fast) var(--ease-out);
 }
 
@@ -179,8 +178,8 @@
 
 .lightboxContent {
   position: relative;
-  max-width: 100%;
-  max-height: 85vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -188,10 +187,8 @@
 
 .lightboxImg {
   max-width: 100%;
-  max-height: 82vh;
+  max-height: 100vh;
   object-fit: contain;
-  border-radius: var(--radius-md);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   user-select: none;
 }
 
@@ -200,7 +197,7 @@
   position: fixed;
   top: 30px;
   right: 40px;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   width: 52px;
@@ -222,9 +219,8 @@
 .prevBtn,
 .nextBtn {
   position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.15);
+  bottom: 30px;
+  background: rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #FFFFFF;
   width: 56px;
@@ -241,20 +237,20 @@
 .prevBtn:hover,
 .nextBtn:hover {
   background: rgba(255, 255, 255, 0.35);
-  transform: translateY(-50%) scale(1.08);
+  transform: scale(1.08);
 }
 
 .prevBtn {
-  left: 40px;
+  left: calc(50% - 100px);
 }
 
 .nextBtn {
-  right: 40px;
+  left: calc(50% + 44px);
 }
 
 .counter {
   position: fixed;
-  bottom: 25px;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
   color: #FFFFFF;
@@ -262,10 +258,13 @@
   font-size: var(--text-lg);
   font-weight: 600;
   letter-spacing: 2px;
-  background: rgba(0, 0, 0, 0.6);
-  padding: var(--space-2) var(--space-6);
-  border-radius: var(--radius-full);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: transparent;
+  padding: 0;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
   z-index: 1000000;
 }
 
@@ -277,19 +276,20 @@
     padding: var(--space-6);
     margin: 0 var(--space-4);
   }
-  /* Reduce padding for smaller buttons on mobile */
   .lightboxModal {
-    padding: var(--space-4) 70px;
+    padding: 0;
   }
   .prevBtn {
-    left: 15px;
-    width: 44px;
-    height: 44px;
+    left: calc(50% - 80px);
+    width: 48px;
+    height: 48px;
+    bottom: 20px;
   }
   .nextBtn {
-    right: 15px;
-    width: 44px;
-    height: 44px;
+    left: calc(50% + 32px);
+    width: 48px;
+    height: 48px;
+    bottom: 20px;
   }
   .closeBtn {
     top: 15px;
@@ -298,7 +298,8 @@
     height: 44px;
   }
   .counter {
-    bottom: 15px;
+    bottom: 20px;
+    height: 48px;
     font-size: var(--text-sm);
   }
 }

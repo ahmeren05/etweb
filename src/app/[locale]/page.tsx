@@ -95,7 +95,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Banner CTA */}
+      {/* Banner CTA (Gizlendi)
       <section className={styles.bannerCTA} id="contact-cta">
         <div className="container">
           <div className={styles.bannerContent}>
@@ -108,6 +108,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      */}
     </>
   );
 }
