@@ -207,22 +207,23 @@ export default function ServiceGallery({ discipline }: ServiceGalleryProps) {
       {/* Lightbox Modal */}
       {isOpen && (
         <div className={styles.lightboxModal} onClick={closeLightbox}>
-          <div className={styles.lightboxContent} onClick={(e) => e.stopPropagation()}>
+          <div className={styles.lightboxContent}>
             <button className={styles.closeBtn} onClick={closeLightbox} aria-label="Close">
               <X size={28} />
             </button>
-            <button className={styles.prevBtn} onClick={prevImage} aria-label="Previous">
+            <button className={styles.prevBtn} onClick={(e) => { e.stopPropagation(); prevImage(e); }} aria-label="Previous">
               <ChevronLeft size={36} />
             </button>
             <img
               src={photos[currentIndex]}
               alt={`${disciplineTitle} - ${currentIndex + 1}`}
               className={styles.lightboxImg}
+              onClick={(e) => e.stopPropagation()}
             />
-            <button className={styles.nextBtn} onClick={nextImage} aria-label="Next">
+            <button className={styles.nextBtn} onClick={(e) => { e.stopPropagation(); nextImage(e); }} aria-label="Next">
               <ChevronRight size={36} />
             </button>
-            <div className={styles.counter}>
+            <div className={styles.counter} onClick={(e) => e.stopPropagation()}>
               {currentIndex + 1} / {photos.length}
             </div>
           </div>
